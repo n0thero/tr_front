@@ -1,0 +1,74 @@
+.team-staff-slider {
+  margin: -16px -12px;
+
+  &__list {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 16px 12px;
+    width: 25%;
+    box-sizing: border-box;
+  }
+
+  &__controls {
+    display: none;
+  }
+
+  @media (max-width: 1919px) {
+    margin: -16px -10px;
+
+    &__item {
+      padding: 16px 10px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    margin: 0;
+    padding-right: 32px;
+
+    &__controls {
+      display: flex;
+      align-items: center;
+    }
+
+    &__pagination {
+      margin: 0;
+      margin-right: auto;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    &__prev,
+    &__next {
+      display: none;
+      width: 56px;
+      height: 56px;
+    }
+
+    &__list {
+      flex-wrap: nowrap;
+      margin-bottom: 42px;
+    }
+
+    &__item {
+      padding: 0;
+      width: unset;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__list {
+      margin-bottom: 8px;
+    }
+
+    &__pagination {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 413px) {
+    padding-right: 24px;
+  }
+}

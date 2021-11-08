@@ -1,0 +1,772 @@
+.subscription-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(132.68deg, #1150F1 -10.41%, #D82D8D 51.3%, #FF0000 117%);
+
+    &-icon {
+      fill: var(--color-white);
+    }
+
+    &_gradient_green {
+      background: linear-gradient(132.68deg, #11F135 -10.41%, #2DB9D8 117%);
+    }
+    &_gradient_violet {
+      background: linear-gradient(141.71deg, #DB00FF 12.72%, #6100FF 88.75%);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 130%;
+    max-width: 254px;
+    letter-spacing: 0.02em;
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+
+  @media (max-width: 1439px) {
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 32px 24px;
+    &__title {
+      font-size: 18px;
+    }
+
+    &__desc{
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// Подписака по скидке
+.subscription-sale{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+  border-end-end-radius: 0;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(132.68deg, #1150F1 -10.41%, #D82D8D 51.3%, #FF0000 117%);
+
+    &-icon {
+      fill: var(--color-white);
+    }
+
+    &_gradient_green {
+      background: linear-gradient(132.68deg, #11F135 -10.41%, #2DB9D8 117%);
+    }
+    &_gradient_violet {
+      background: linear-gradient(141.71deg, #DB00FF 12.72%, #6100FF 88.75%);
+    }
+  }
+
+  .sale-item{
+    position: absolute;
+    margin: 0;
+    bottom: -43px;
+    right: -29px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 121%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    background-color: #E30B17;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    span{
+      position: absolute;
+      bottom: 50px;
+      right: 32px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 130%;
+    max-width: 254px;
+    letter-spacing: 0.02em;
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+
+  @media (max-width: 1439px) {
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 32px 24px;
+    &__title {
+      font-size: 18px;
+    }
+
+    &__desc{
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// Анонс подписки
+.subscription-teaser {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  border-radius: 10px;
+  background-color: var(--color-white);
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    margin-left: 32px;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 130%;
+    max-width: 254px;
+    letter-spacing: 0.02em;
+    margin-left: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+
+  .teaser-item{
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding: 7px 33px;
+    padding-left: 48px;
+    width: -webkit-fill-available;
+
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background: linear-gradient(86.17deg, #53183E 0%, #361B48 10.29%, #222222 42.86%, #1D1C57 100%);
+  }
+
+  @media (max-width: 1439px) {
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__title {
+      font-size: 18px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__desc{
+      font-size: 14px;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 48px;
+      padding-bottom: 0;
+    }
+
+    .teaser-item{
+      font-size: 12px;
+    }
+  }
+}
+
+// Анонс подписки со скидкой
+.subscription-teasersale {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+  border-end-end-radius: 0;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    margin-left: 32px;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 130%;
+    max-width: 254px;
+    letter-spacing: 0.02em;
+    margin-left: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+
+  .teaser-item{
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding: 7px 33px;
+    padding-left: 48px;
+    width: -webkit-fill-available;
+
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background: linear-gradient(86.17deg, #53183E 0%, #361B48 10.29%, #222222 42.86%, #1D1C57 100%);
+  }
+
+  .sale-item{
+    position: absolute;
+    margin: 0;
+    bottom: -43px;
+    right: -29px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 121%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    background-color: #E30B17;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    span{
+      position: absolute;
+      bottom: 50px;
+      right: 32px;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__title {
+      font-size: 18px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__desc{
+      font-size: 14px;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 48px;
+      padding-bottom: 0;
+    }
+
+    .teaser-item{
+      font-size: 12px;
+    }
+  }
+}
+
+
+// Оформленная подписка
+.subscription-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #171A2A;
+
+  &__head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 0 16px;
+
+    p{
+      margin: 0;
+      color: #fff;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 121%;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__head-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(132.68deg, #1150F1 -10.41%, #D82D8D 51.3%, #FF0000 117%);
+
+    &_gradient_green {
+      background: linear-gradient(132.68deg, #11F135 -10.41%, #2DB9D8 117%);
+    }
+    &_gradient_violet {
+      background: linear-gradient(141.71deg, #DB00FF 12.72%, #6100FF 88.75%);
+    }
+  }
+
+  .icon {
+    fill: var(--color-white);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 130%;
+    max-width: 254px;
+    letter-spacing: 0.02em;
+    color: #fff;
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+
+  @media (max-width: 1439px) {
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 32px 24px;
+    &__title {
+      font-size: 18px;
+    }
+
+    &__desc{
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// Оформленная подписка обновилась
+.subscription-update {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-color: #171A2A;
+
+  &__head{
+    margin-bottom: 25px;
+    width: -webkit-fill-available;
+    margin-top: 32px;
+
+    ul{
+      margin: 0;
+      padding: 7px 47px;
+      margin-right: 56px;
+      padding-right: 10px;
+      background: #E30B17;
+
+      li{
+        color: #fff;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 121%;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-left: 32px;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 130%;
+    max-width: 254px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-left: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+
+  @media (max-width: 1439px) {
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__title {
+      font-size: 18px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__desc{
+      font-size: 14px;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 48px;
+      padding-bottom: 0;
+    }
+
+    &__head{
+      ul{
+        margin-right: 44px;
+
+        li{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+// Новая подписка доступна
+.subscription-new {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #fff;
+
+  &__head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 0 16px;
+
+    p{
+      margin: 0;
+      color: #E30B17;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 121%;
+      letter-spacing: 0.02em;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 0 7px;
+
+      letter-spacing: 0.02em;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 121%;
+
+      &::after{
+        content: " ";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background: #E30B17;
+      }
+    }
+  }
+
+  &__head-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(132.68deg, #1150F1 -10.41%, #D82D8D 51.3%, #FF0000 117%);
+
+    &_gradient_green {
+      background: linear-gradient(132.68deg, #11F135 -10.41%, #2DB9D8 117%);
+    }
+    &_gradient_violet {
+      background: linear-gradient(141.71deg, #DB00FF 12.72%, #6100FF 88.75%);
+    }
+  }
+
+  .icon {
+    fill: var(--color-white);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    color: #3A3849;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 130%;
+    max-width: 254px;
+    letter-spacing: 0.02em;
+    color: #3A3849;
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+
+  @media (max-width: 1439px) {
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 32px 24px;
+    &__title {
+      font-size: 18px;
+    }
+
+    &__desc{
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// Новая подписка по скидке 
+.subscription-newsale {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  border-end-end-radius: 0;
+
+  &__head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 0 16px;
+
+    p{
+      margin: 0;
+      color: #E30B17;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 121%;
+      letter-spacing: 0.02em;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 0 7px;
+
+      letter-spacing: 0.02em;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 121%;
+
+      &::after{
+        content: " ";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background: #E30B17;
+      }
+    }
+  }
+
+  &__head-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(132.68deg, #1150F1 -10.41%, #D82D8D 51.3%, #FF0000 117%);
+
+    &_gradient_green {
+      background: linear-gradient(132.68deg, #11F135 -10.41%, #2DB9D8 117%);
+    }
+    &_gradient_violet {
+      background: linear-gradient(141.71deg, #DB00FF 12.72%, #6100FF 88.75%);
+    }
+  }
+
+  .icon {
+    fill: var(--color-white);
+  }
+
+  .sale-item{
+    position: absolute;
+    margin: 0;
+    bottom: -43px;
+    right: -29px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 121%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    background-color: #E30B17;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    span{
+      position: absolute;
+      bottom: 50px;
+      right: 32px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+    color: #3A3849;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 130%;
+    max-width: 254px;
+    letter-spacing: 0.02em;
+    color: #3A3849;
+  }
+
+  &__more {
+    margin-top: auto;
+  }
+
+  @media (max-width: 1439px) {
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 32px 24px;
+    &__title {
+      font-size: 18px;
+    }
+
+    &__desc{
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+  }
+}

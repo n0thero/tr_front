@@ -1,0 +1,102 @@
+.analitics-catalog{
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        min-height: 258px;
+        background: var(--color-white);
+        box-sizing: border-box;
+        padding: 40px 43px;
+        margin: 0 0 24px;
+        
+        &-description{
+            display: flex;
+            flex-direction: column;
+//            justify-content: space-between;
+        }
+        
+        &-personal{
+            display: flex;
+            justify-content: center;
+            
+            .webinar-card__master > .webinar-card__master-avatar{
+                width: 112px;
+                height: 112px;
+            }
+        }
+        
+        &-title{
+            font-weight: bold;
+            font-size: 36px;
+            color: var(--color-dark-dark);
+            margin: 0 0 15px;
+        }
+        
+        &-date{
+            font-weight: bold;
+            font-size: 36px;
+            color: var(--color-dark-gray);
+            margin: 0 0 30px;
+        }
+        
+        &-watch{
+            font-weight: bold;
+            font-size: 18px;
+            width: 198px;
+            height: 53px;
+            background: var(--color-red);
+            color: var(--color-white);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+    
+    @media(max-width: 1210px){
+        &__item{
+            &-title{
+                font-size: 28px;
+            }
+            
+            &-date{
+                font-size: 24px;
+            }
+            
+            &-watch{
+                width: 388px;
+                margin: 0 0 40px;
+            }
+            
+            &-personal{
+                justify-content: flex-start;
+                
+                .webinar-card__master > .webinar-card__master-avatar{
+                    width: 76px;
+                    height: 76px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1100px){
+        &__item{
+            flex-direction: column;
+            padding: 24px;
+        }
+    }
+    
+    @media(max-width: 500px){
+        &__item{
+            
+            &-watch{
+                max-width: 388px;
+                width: 100%;
+                margin: 0 0 40px;
+            }
+        }
+    }
+}

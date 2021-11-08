@@ -1,0 +1,34 @@
+section.courses
+  .container
+    header.courses__header
+      h2.courses__title Курсы
+
+      .courses__controls
+        button.courses__prev.btn-navigate.btn-navigate_color_primary_dark(type="button" aria-label="Назад")
+          svg(class="btn-navigate__icon icon" width="24" height="24")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+
+        button.courses__next.btn-navigate.btn-navigate_color_primary(type="button" aria-label="Вперед")
+          svg(class="btn-navigate__icon icon" width="24" height="24")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+
+  .courses__bottom.container
+    .courses__slider.swiper-container
+      .swiper-wrapper
+        .swiper-slide
+          article.course-card
+            .course-card__info
+              h3.course-card__title Инвестиции 3.0
+              p.course-card__desc 4 месяца обучения
+              a.course-card__details.btn-primary(href="#") Записаться
+
+            img.course-card__picture(src="wp-content/themes/trading/august/img/investment.svg" alt="flag usa" width="176" height="200")
+
+        .swiper-slide
+          article.course-card
+            .course-card__info
+              h3.course-card__title Инвестиции 3.0
+              p.course-card__desc 4 месяца обучения
+              a.course-card__details.btn-primary(href="#") Записаться
+
+            img.course-card__picture(src="wp-content/themes/trading/august/img/investment.svg" alt="flag usa" width="176" height="200")

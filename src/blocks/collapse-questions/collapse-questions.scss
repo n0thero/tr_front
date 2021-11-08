@@ -1,0 +1,122 @@
+.collapse-questions {
+  max-width: 100%;
+  counter-reset: questionsCounter;
+
+  &__item {
+    border-bottom: 1px solid #D3D3D3;
+    counter-increment: questionsCounter;
+  }
+
+  &__button {
+    display: flex;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      content: counter(questionsCounter, decimal-leading-zero);
+      flex-shrink: 0;
+      margin-right: 24px;
+      color: var(--color-primary);
+    }
+
+    &.collapsed {
+      .collapse-questions__plus {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  &__info {
+    box-sizing: border-box;
+    padding-right: 10px;
+    word-break: break-word;
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+  }
+
+  &__subtitle {
+    display: block;
+    margin: 0;
+    margin-top: 4px;
+    color: var(--color-dark-gray);
+    font-size: .8em;
+  }
+
+  &__plus {
+    flex-shrink: 0;
+    margin-left: auto;
+    transform: rotate(45deg);
+    transition: transform .3s;
+  }
+
+  &__body {
+    padding-left: 54px;
+    padding-right: 75px;
+    padding-bottom: 24px;
+  }
+
+  &__paragraph {
+    margin: 0;
+    color: var(--color-dark-gray);
+    font-size: 24px;
+    line-height: 52px;
+  }
+
+  @media (max-width: 1439px) {
+    &__button {
+      padding-top: 16px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__button {
+      font-size: 17px;
+
+      &::before {
+        margin-right: 21px;
+      }
+    }
+
+    &__info {
+      padding-right: 50px;
+    }
+
+    &__body {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__paragraph {
+      font-size: 17px;
+      line-height: 130%;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__button {
+      padding-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 413px) {
+    &__button {
+      padding-top: 8px;
+    }
+  }
+}

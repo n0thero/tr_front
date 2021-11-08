@@ -1,0 +1,58 @@
+.field-file {
+  display: flex;
+  flex-direction: column;
+
+  &__control {
+    display: none;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: 8px;
+    stroke: var(--color-white);
+  }
+
+  &__label {
+    color: var(--color-dark-gray);
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+    padding: 0;
+    padding-top: 32px;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+    margin: 8px;
+    width: 44px;
+    height: 47px;
+
+    &-icon {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      fill: var(--color-white);
+    }
+  }
+
+  &__remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &-icon {
+      transform: rotate(45deg);
+      fill: var(--color-primary);
+    }
+  }
+}

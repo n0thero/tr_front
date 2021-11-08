@@ -1,0 +1,111 @@
+.header-main-wrapper
+  header.header-main(style="display: none")
+    .header-main__container
+      .header-main__inner
+        a.header-main__logo(href="/")
+          include ../../../img/header-main-logo.svg
+
+        nav.header-main__nav
+          ul.header-main__menu
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/about/") О компании
+              .header-main__menu-tippy
+                ul.header-main__menu-submenu
+                  li.header-main__menu-submenu-item
+                    a.header-main__menu-submenu-link(href="/team/") Команда
+                  li.header-main__menu-submenu-item
+                    a.header-main__menu-submenu-link(href="/experts/") Эксперты
+                  li.header-main__menu-submenu-item
+                    a.header-main__menu-submenu-link(href="/contacts/") Контакты
+                  li.header-main__menu-submenu-item
+                    a.header-main__menu-submenu-link(href="/vacancies/") Вакансии
+                  li.header-main__menu-submenu-item
+                    a.header-main__menu-submenu-link(href="/replies/") Отзывы
+
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/catalog/") Каталог
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/webinars/") Вебинары
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/materials-2/") Материалы
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/wiki/") База знаний
+
+        ul.header-main__user-menu
+          li.header-main__user-menu-item
+            a.header-main__user-menu-link.btn-primary(href="/login/") Вход
+          li.header-main__user-menu-item
+            a.header-main__user-menu-link.btn-outline(href="/registration/") Регистрация
+
+        button.header-main__burger.btn-burger.btn-burger_theme_light(
+          data-bs-toggle="modal"
+          data-bs-target="#menu-modal"
+        )
+          span.btn-burger__line
+
+  header.header-main(style="display: none")
+    .header-main__container
+      .header-main__inner
+        a.header-main__logo.header-main__logo_type_admin(href="/")
+          include ../../../img/header-main-logo.svg
+
+        button.header-main__burger.btn-burger.btn-burger_theme_light(
+          data-bs-toggle="modal"
+          data-bs-target="#menu-modal"
+        )
+          span.btn-burger__line
+
+        nav.header-main__nav
+          ul.header-main__menu
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/") Обучение
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/catalog/") Каталог
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/webinars/") Вебинары
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/analitika/") Аналитика
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/materials-2/") Материалы
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/wiki/") База знаний
+            li.header-main__menu-item
+              a.header-main__menu-link(href="/algorithm/") Алгоритм
+
+        .header-main__account
+          a.header-main__account-btn(href="/courses/?schedule" aria-label="Календарь")
+            svg(class="header-main__account-btn-icon icon" width="24" height="24")
+              use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#calendar-dates")
+
+          a.header-main__account-btn(
+            href="/ask/"
+            aria-label="Оповещения"
+          )
+            svg(class="header-main__account-btn-icon icon" width="24" height="24")
+              use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#mail")
+
+          .header-main__account-user.dropdown
+            button.header-main__account-user-toggle.dropdown-toggle(
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-offset="-16,30"
+              aria-label=""
+            )
+              img.header-main__account-user-avatar(
+                src="https://trendup.pro/wp-content/themes/trading/wp-content/themes/trading/august/img/user-icon-august.svg"
+                alt="user"
+                width="25"
+                height="25"
+              )
+
+            ul.header-main__account-user-menu.dropdown-menu
+              li.header-main__account-user-item
+                a.header-main__account-user-btn.dropdown-item(href="/cabinet/") Мой профиль
+              li
+                hr.header-main__account-user-divider
+              li.header-main__account-user-item
+                a.header-main__account-user-btn.dropdown-item(href="/wp-login.php?action=logout&amp;redirect_to=%2F&amp;_wpnonce=e966405f85") Выйти
+
+  script
+    include header.js

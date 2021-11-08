@@ -1,0 +1,26 @@
+.webinar-gallery.swiper-container
+  .webinar-gallery__controls
+    button.webinar-gallery__prev.btn-navigate.btn-navigate_color_primary_dark
+      svg(class="btn-navigate__icon icon" width="24" height="24")
+        use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+
+    button.webinar-gallery__next.btn-navigate.btn-navigate_color_primary
+      svg(class="btn-navigate__icon icon" width="24" height="24")
+        use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+
+  .webinar-gallery__list.swiper-wrapper
+    - for (var n = 0; n < 9; n++)
+      a.swiper-slide.webinar-gallery__item(
+        href="../wp-content/themes/trading/august/img/back-articleBody.png"
+        target="_blank"
+        data-lg-size="744-332"
+      )
+        figure.webinar-gallery__item-figure
+          picture.webinar-gallery__item-picture
+            img.webinar-gallery__item-picture-img(
+              src="../wp-content/themes/trading/august/img/back-articleBody.png"
+              alt="Подпись"
+              width="236"
+              height="210"
+            )
+          figcaption.webinar-gallery__item-caption Подпись

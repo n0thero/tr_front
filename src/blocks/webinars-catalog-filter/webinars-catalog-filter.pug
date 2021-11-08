@@ -1,0 +1,79 @@
+form.webinars-catalog-filter(action="")
+  .webinars-catalog-filter__search
+    input.webinars-catalog-filter__search-input(
+      type="text"
+      placeholder="Введите название"
+    )
+
+  // button.webinars-catalog-filter__reset(type="reset") Сбросить фильтры
+
+  .webinars-catalog-filter__accordion.accordion
+    .webinars-catalog-filter__accordion-item.accordion-item
+      button.webinars-catalog-filter__accordion-button.accordion-button.collapsed(type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#theme"
+      ) Тема
+        svg(class="icon" width="20" height="20")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-down")
+
+      .accordion-collapse.collapse(id="theme")
+        .webinars-catalog-filter__accordion-body
+          .webinars-catalog-filter__fields
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox" checked)
+              span.field-checkbox__box
+                svg(class="field-checkbox__box-mark" width="16" height="12" viewBox="0 0 16 12")
+                  path(d="M5.95883 11.4879L15.2047 2.3163C15.4567 2.06628 15.4583 1.65925 15.2083 1.40714L14.001 0.190103C13.751 -0.0619501 13.344 -0.0635574 13.0919 0.18646L5.51949 7.69803L2.31635 4.46891C2.06633 4.2168 1.65929 4.21519 1.40724 4.46521L0.19015 5.6725C-0.0619568 5.92257 -0.0635639 6.3296 0.186454 6.58166L5.04972 11.4843C5.29974 11.7364 5.70677 11.738 5.95883 11.4879Z")
+              span.field-checkbox__label Инвестиции (4)
+
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox")
+              span.field-checkbox__box
+                svg(class="field-checkbox__box-mark" width="16" height="12" viewBox="0 0 16 12")
+                  path(d="M5.95883 11.4879L15.2047 2.3163C15.4567 2.06628 15.4583 1.65925 15.2083 1.40714L14.001 0.190103C13.751 -0.0619501 13.344 -0.0635574 13.0919 0.18646L5.51949 7.69803L2.31635 4.46891C2.06633 4.2168 1.65929 4.21519 1.40724 4.46521L0.19015 5.6725C-0.0619568 5.92257 -0.0635639 6.3296 0.186454 6.58166L5.04972 11.4843C5.29974 11.7364 5.70677 11.738 5.95883 11.4879Z")
+              span.field-checkbox__label Опционы (2)
+
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox" disabled)
+              span.field-checkbox__box
+                svg(class="field-checkbox__box-mark" width="16" height="12" viewBox="0 0 16 12")
+                  path(d="M5.95883 11.4879L15.2047 2.3163C15.4567 2.06628 15.4583 1.65925 15.2083 1.40714L14.001 0.190103C13.751 -0.0619501 13.344 -0.0635574 13.0919 0.18646L5.51949 7.69803L2.31635 4.46891C2.06633 4.2168 1.65929 4.21519 1.40724 4.46521L0.19015 5.6725C-0.0619568 5.92257 -0.0635639 6.3296 0.186454 6.58166L5.04972 11.4843C5.29974 11.7364 5.70677 11.738 5.95883 11.4879Z")
+              span.field-checkbox__label Трейдинг (0)
+
+    .webinars-catalog-filter__accordion-item.accordion-item
+      button.webinars-catalog-filter__accordion-button.accordion-button.collapsed(type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#level"
+      ) Уровень
+        svg(class="icon" width="20" height="20")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-down")
+
+      .accordion-collapse.collapse(id="level")
+        .webinars-catalog-filter__accordion-body
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox")
+              span.field-checkbox__box
+                svg(class="field-checkbox__box-mark" width="16" height="12" viewBox="0 0 16 12")
+                  path(d="M5.95883 11.4879L15.2047 2.3163C15.4567 2.06628 15.4583 1.65925 15.2083 1.40714L14.001 0.190103C13.751 -0.0619501 13.344 -0.0635574 13.0919 0.18646L5.51949 7.69803L2.31635 4.46891C2.06633 4.2168 1.65929 4.21519 1.40724 4.46521L0.19015 5.6725C-0.0619568 5.92257 -0.0635639 6.3296 0.186454 6.58166L5.04972 11.4843C5.29974 11.7364 5.70677 11.738 5.95883 11.4879Z")
+              span.field-checkbox__label Для всех (45)
+
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox" )
+              span.field-checkbox__box
+                svg(class="field-checkbox__box-mark" width="16" height="12" viewBox="0 0 16 12")
+                  path(d="M5.95883 11.4879L15.2047 2.3163C15.4567 2.06628 15.4583 1.65925 15.2083 1.40714L14.001 0.190103C13.751 -0.0619501 13.344 -0.0635574 13.0919 0.18646L5.51949 7.69803L2.31635 4.46891C2.06633 4.2168 1.65929 4.21519 1.40724 4.46521L0.19015 5.6725C-0.0619568 5.92257 -0.0635639 6.3296 0.186454 6.58166L5.04972 11.4843C5.29974 11.7364 5.70677 11.738 5.95883 11.4879Z")
+              span.field-checkbox__label Начальный (11)
+
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox" disabled)
+              span.field-checkbox__box
+                svg(class="field-checkbox__box-mark" width="16" height="12" viewBox="0 0 16 12")
+                  path(d="M5.95883 11.4879L15.2047 2.3163C15.4567 2.06628 15.4583 1.65925 15.2083 1.40714L14.001 0.190103C13.751 -0.0619501 13.344 -0.0635574 13.0919 0.18646L5.51949 7.69803L2.31635 4.46891C2.06633 4.2168 1.65929 4.21519 1.40724 4.46521L0.19015 5.6725C-0.0619568 5.92257 -0.0635639 6.3296 0.186454 6.58166L5.04972 11.4843C5.29974 11.7364 5.70677 11.738 5.95883 11.4879Z")
+              span.field-checkbox__label Средний (0)
+
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox")
+              span.field-checkbox__box
+                svg(class="field-checkbox__box-mark" width="16" height="12" viewBox="0 0 16 12")
+                  path(d="M5.95883 11.4879L15.2047 2.3163C15.4567 2.06628 15.4583 1.65925 15.2083 1.40714L14.001 0.190103C13.751 -0.0619501 13.344 -0.0635574 13.0919 0.18646L5.51949 7.69803L2.31635 4.46891C2.06633 4.2168 1.65929 4.21519 1.40724 4.46521L0.19015 5.6725C-0.0619568 5.92257 -0.0635639 6.3296 0.186454 6.58166L5.04972 11.4843C5.29974 11.7364 5.70677 11.738 5.95883 11.4879Z")
+              span.field-checkbox__label Эксперт (2)

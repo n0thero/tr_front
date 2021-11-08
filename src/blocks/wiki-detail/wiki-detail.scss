@@ -1,0 +1,65 @@
+.wiki {
+  
+  &__title{
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  &__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 104px;
+
+    &-item{
+      padding: 51px 30px 39px 30px;
+      background: #fff;
+      position: relative;
+      min-width: 250px;
+
+      &::before{
+        content: ' ';
+        border: 29px solid transparent;
+        border-top: 21px solid #70D4FF;
+        border-right: 40px solid #70D4FF;
+        top: 0px;
+        right: 0px;
+        position: absolute;
+      }
+
+      p{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.6px;
+        color: #3A3849;
+        margin-bottom: 32px;
+        margin-top: 0;
+      }
+
+      a{
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22.5px;
+        color: #3A3849;
+      }
+    }
+  }
+}
+
+
+@media(max-width:1100px){
+  .wiki{
+    &__items{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media(max-width:725px){
+  .wiki{
+    &__items{
+      grid-template-columns: 1fr;
+    }
+  }
+}

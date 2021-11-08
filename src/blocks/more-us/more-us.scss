@@ -1,0 +1,98 @@
+.more{
+    &-title{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 130%;
+        color: var(--color-black);
+    }
+    
+    &__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 0 100px;
+        
+        &-item{
+            width: 371px;
+            height: 161px;
+            padding: 24px;
+            box-sizing: border-box;
+            margin: 0 0 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            &-icon{
+                width: 28px;
+                height: 28px;
+                background: var(--color-red);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 24px;
+                
+                & svg{
+                    fill: var(--color-white);
+                }
+            }
+            
+            &-title{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 31px;
+                letter-spacing: 0.06em;
+                color: var(--color-white);
+            }
+            
+            &-link{
+                text-decoration: none;
+                cursor: pointer;
+                color: var(--color-light-white);
+            }
+        }
+        
+        @media(max-width: 1440px){
+            &-item{
+                width: 438px;
+            }
+        }
+        
+        @media(max-width: 1024px){
+            &-item{
+                width: 359px;
+            }
+        }
+        
+        @media(max-width: 800px){
+            &-item{
+                width: 438px;
+            }
+        }
+        
+        @media(max-width: 500px){
+            &-item{
+                width: 350px;
+            }
+        }
+    }
+    
+    @media(max-width: 1024px){
+        &__container{
+            margin: 0 0 75px;
+        }
+    }
+    
+    @media(max-width: 800px){
+        &__container{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media(max-width: 500px){
+        &__container{
+            margin: 0 0 100px;
+        }
+    }
+}

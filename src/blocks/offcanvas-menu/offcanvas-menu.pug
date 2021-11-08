@@ -1,0 +1,14 @@
+.offcanvas.offcanvas-end.offcanvas-menu(tabindex="-1" id="offcanvas-menu")
+  .offcanvas-body.offcanvas-menu__body
+    a.offcanvas-menu__logo.logo(href="/")
+      include ../../img/logo.svg
+
+    nav.offcanvas-menu__nav
+      ul.main-menu.main-menu_vertical
+        include ../main-menu/main-menu
+
+    ul.offcanvas-menu__user-menu.user-menu.user-menu_vertical
+      li.user-menu__item
+        a.header__auth(href="/login/") Войти
+      li.user-menu__item
+        a.header__registration(href="/register/") Зарегистрироваться

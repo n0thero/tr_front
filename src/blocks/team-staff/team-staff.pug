@@ -1,0 +1,236 @@
+section.team-staff
+  .container
+    h2.team-staff__title Сотрудники
+
+    ul.team-staff__nav.nav.nav-tabs
+      li.team-staff__nav-item.nav-item
+        button.team-staff__nav-btn.btn-tab.nav-link.active(
+          data-bs-toggle="tab" data-bs-target="#marketing"
+        ) Отдел маркетинга
+      li.team-staff__nav-item.nav-item
+        button.team-staff__nav-btn.btn-tab.nav-link(
+          data-bs-toggle="tab" data-bs-target="#sales"
+        ) Отдел продаж
+      li.team-staff__nav-item.nav-item
+        button.team-staff__nav-btn.btn-tab.nav-link(
+          data-bs-toggle="tab" data-bs-target="#programming"
+        ) Отдел программирования
+      li.team-staff__nav-item.nav-item
+        button.team-staff__nav-btn.btn-tab.nav-link(
+          data-bs-toggle="tab" data-bs-target="#teacher"
+        ) Преподаватели
+
+  .team-staff__bottom.container
+    .tab-content
+      .tab-pane.show.active(id="marketing")
+        .team-staff-slider.swiper-container
+          .team-staff-slider__list.swiper-wrapper
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-5.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-5-lg.jpg"
+                    alt="Никита Прокофьев"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Никита Прокофьев
+                p.person-card__position Маркетолог
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-6.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-6-lg.jpg"
+                    alt="Роман Головань"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Роман Головань
+                p.person-card__position Видеомонтажер
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-7.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-7-lg.jpg"
+                    alt="Юлия Шаповалова"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Юлия Шаповалова
+                p.person-card__position SMM - менеджер
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-8.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-8-lg.jpg"
+                    alt="Кристина Карасёва"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Кристина Карасёва
+                p.person-card__position Дизайнер
+
+          .team-staff-slider__controls
+            p.team-staff-slider__pagination
+
+            button.team-staff-slider__prev.btn-navigate.btn-navigate_color_primary_dark(type="button" aria-label="Назад")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+
+            button.team-staff-slider__next.btn-navigate.btn-navigate_color_primary(type="button" aria-label="Вперед")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+
+      .tab-pane(id="sales")
+        .team-staff-slider.swiper-container
+          .team-staff-slider__list.swiper-wrapper
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-9.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-9-lg.jpg"
+                    alt="Анна Кислая"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Анна Кислая
+                p.person-card__position Контроль и качество продаж
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-10.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-10-lg.jpg"
+                    alt="Валентина Богданова"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Валентина Богданова
+                p.person-card__position Менеджер по продажам
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-11.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-11-lg.jpg"
+                    alt="Елена Воронова"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Елена Воронова
+                p.person-card__position Менеджер по продажам
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-12.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-12-lg.jpg"
+                    alt="Николай Водолзский"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Николай Водолзский
+                p.person-card__position Менеджер по продажам
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-13.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-13-lg.jpg"
+                    alt="Григорий Фёдоров"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Григорий Фёдоров
+                p.person-card__position Клиентский менеджер
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-14.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-14-lg.jpg"
+                    alt="Андрей рубцов"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Андрей рубцов
+                p.person-card__position Техническая поддержка
+
+          .team-staff-slider__controls
+            p.team-staff-slider__pagination
+
+            button.team-staff-slider__prev.btn-navigate.btn-navigate_color_primary_dark(type="button" aria-label="Назад")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+
+            button.team-staff-slider__next.btn-navigate.btn-navigate_color_primary(type="button" aria-label="Вперед")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+
+      .tab-pane(id="programming")
+        .team-staff-slider.swiper-container
+          .team-staff-slider__list.swiper-wrapper
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-15.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-15-lg.jpg"
+                    alt="Сергей Киселёв"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Сергей Киселёв
+                p.person-card__position Программист
+
+      .tab-pane(id="teacher")
+        .team-staff-slider.swiper-container
+          .team-staff-slider__list.swiper-wrapper
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-16.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-16-lg.jpg"
+                    alt="Александр Поляков"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Александр Поляков
+
+            .team-staff-slider__item.swiper-slide
+              .person-card
+                picture.person-card__picture
+                  source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-17.jpg")
+                  img.person-card__picture-img(
+                    src="wp-content/themes/trading/august/img/team-management/team-management-17-lg.jpg"
+                    alt="Кирилл Перваков"
+                    width="273"
+                    height="273"
+                  )
+                p.person-card__title Кирилл Перваков
+
+          .team-staff-slider__controls
+            p.team-staff-slider__pagination
+
+            button.team-staff-slider__prev.btn-navigate.btn-navigate_color_primary_dark(type="button" aria-label="Назад")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+
+            button.team-staff-slider__next.btn-navigate.btn-navigate_color_primary(type="button" aria-label="Вперед")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+

@@ -1,0 +1,33 @@
+section.webinar-video
+  .webinar-video__player
+    iframe.webinar-video__player-video(
+      src="https://www.youtube.com/embed/axIBCb2BHg8"
+      title="YouTube video player" 
+      frameborder="0"
+    )
+
+  h2.webinar-video__title Наша раскрыть людям принцыпы заработка с помощью наших раскрыть людям принцыпы
+
+  .webinar-video__interaction
+    p.webinar-video__views
+      span Сейчас смотрят: 
+      span.webinar-video__views-value 2 344
+
+    .webinar-video__assessment
+      button.webinar-video__assessment-btn(
+        type="button"
+        aria-label="Нравится"
+      )
+        svg(class="webinar-video__assessment-btn-icon icon" width="24" height="24")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#thumbs-up")
+        | 319
+
+      button.webinar-video__assessment-btn(
+        type="button"
+        aria-label="Не нравится"
+      )
+        svg(class="webinar-video__assessment-btn-icon icon" width="24" height="24")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#thumbs-down")
+        | 12
+
+    p.webinar-video__date 24 июля 2021 года

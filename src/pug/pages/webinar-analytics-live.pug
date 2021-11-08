@@ -1,0 +1,37 @@
+extends ../templates/admin
+
+block content
+  section.webinar.container
+    h1.visually-hidden Аналитика
+
+    .webinar__inner
+      .webinar__content
+        include ../../blocks/webinar-video/webinar-video
+
+        hr.webinar__hr
+
+        button.webinar__additional-info-toggle(
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#webinar-additional-info"
+        )
+          svg(class="webinar__additional-info-toggle-icon icon" width="24" height="24")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#plus-circle")
+          span скрыть доп. информацию
+
+        .collapse.show(id="webinar-additional-info")
+          include ../../blocks/webinar-materials/webinar-materials
+
+        include ../../blocks/webinar-gallery/webinar-gallery
+
+      .webinar__aside
+        include ../../blocks/webinar-chat/webinar-chat
+        include ../../blocks/webinar-webinars/webinar-webinars
+
+
+block modal
+  include ../../blocks/modal/modal
+
+
+block scripts
+  script(src="js/script.js")

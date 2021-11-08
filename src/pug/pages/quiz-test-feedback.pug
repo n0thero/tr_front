@@ -1,0 +1,21 @@
+extends ../templates/admin
+
+block content
+  section.quiz
+    .container
+      header.quiz__header
+        a.quiz__back.link-back(href="#")
+          svg(class="link-back__icon icon" width="24" height="24")
+            use(xlink:href="img/svg/symbol/sprite.svg#chevron-left")
+          | Вернуться к уроку
+
+      .quiz__body
+        include ../../blocks/quiz-test/static/feedback
+
+
+block modal
+  include ../../blocks/modal/modal
+
+
+block scripts
+  script(src="js/script.js")

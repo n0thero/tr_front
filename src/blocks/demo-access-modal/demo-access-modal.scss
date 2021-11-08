@@ -1,0 +1,189 @@
+.demo-access-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+
+  &__dialog {
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    max-width: 942px;
+    min-height: 366px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--color-white);
+    background-color: var(--color-light-blue);
+    background-image:
+      url('../wp-content/themes/trading/august/img/demo-access-modal/demo-access-modal-bg.svg'),
+      linear-gradient(259.61deg, #3672C7 -20.28%, #13376B 113.92%, #13376B 113.92%);
+    background-repeat: no-repeat;
+    background-position: right bottom, center;
+    border-radius: 20px;
+    overflow-y: auto;
+  }
+
+  &__content {
+    padding: 32px 64px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &-icon {
+      fill: var(--color-white);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 16px;
+    max-width: 610px;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+    max-width: 717px;
+    width: 100%;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 15px 16px;
+    padding-right: 64px;
+    min-height: 73px;
+    box-sizing: border-box;
+    color: #13376B;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 130%;
+    background-repeat: no-repeat;
+    background-position: right bottom, center;
+    border-radius: 4px;
+  }
+
+  &__start-learn {
+    min-width: 263px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 1439px) {
+    &__dialog {
+      max-width: 748px;
+    }
+
+    &__content {
+      padding: 32px;
+      padding-right: 39px;
+    }
+
+    &__close {
+      top: 15px;
+      right: 20px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__list {
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__dialog {
+      max-width: 738px;
+    }
+
+    &__content {
+      padding-right: 29px;
+    }
+
+    &__title {
+      padding-right: 26px;
+      max-width: 506px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__dialog {
+      height: 100%;
+      max-width: 100%;
+      border-radius: 0;
+      background-image: linear-gradient(259.61deg, #3672C7 -20.28%, #13376B 113.92%, #13376B 113.92%);
+      background-position: center;
+    }
+
+    &__content {
+      padding-right: 32px;
+    }
+
+    &__close {
+      top: 17px;
+      right: 18px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    &__start-learn {
+      max-width: unset;
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__close {
+      top: 13px;
+      right: 18px;
+    }
+
+   &__list {
+     grid-template-columns: 1fr;
+     gap: 8px;
+   }
+  }
+}

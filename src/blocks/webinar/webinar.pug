@@ -1,0 +1,36 @@
+section.webinar.container
+  header.webinar__header
+    a.webinar__back(href="#")
+      svg(class="webinar__back-icon icon" width="24" height="24")
+        use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+      | Вернуться к курсу
+
+    h1.webinar__title Урок 4
+
+  .webinar__inner
+    .webinar__content
+
+      include ../webinar-video/webinar-video
+
+      include ../webinar-navigate/webinar-navigate_dropdown
+
+      button.webinar__additional-info-toggle(
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#webinar-additional-info"
+      )
+        svg(class="webinar__additional-info-toggle-icon icon" width="24" height="24")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#plus-circle")
+        span скрыть доп. информацию
+
+      .collapse.show(id="webinar-additional-info")
+        include ../webinar-leading/webinar-leading
+        include ../webinar-will-teach/webinar-will-teach
+        include ../webinar-materials/webinar-materials
+
+      include ../webinar-gallery/webinar-gallery
+
+    .webinar__aside
+      include ../webinar-navigate/webinar-navigate
+      include ../webinar-webinars/webinar-webinars
+      include ../webinar-chat/webinar-chat

@@ -1,0 +1,14 @@
+header.header
+  .header__inner.container
+    a.header__logo.logo(href="/")
+      include ../../img/logo.svg
+
+    nav.header__nav
+      ul.header__menu.main-menu
+        include ../main-menu/main-menu
+
+    ul.header__user-menu.user-menu
+      include ../user-menu/user-menu
+
+    button.header__burger.btn-burger(data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu")
+      span.btn-burger__line

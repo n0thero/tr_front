@@ -1,0 +1,40 @@
+section.consultation(id="consultation")
+  .consultation__inner.container
+    form.consultation__form.needs-validation(
+      action="/wp-json/forms/request-consultation/"
+      method="post"
+      novalidate
+    )
+      h2.consultation__title.section-title Получите подробную консультацию по курсу прямо сейчас
+
+      .form-message
+        .consultation__fields
+          .field.field_color_light
+            input.field__control(
+              type="text"
+              name="name"
+              id="name"
+              required
+            )
+            label.field__label(for="name") Ваше имя
+
+          .field.field_color_light
+            input.field__control(
+              type="text"
+              name="phone"
+              id="phone"
+              required
+            )
+            label.field__label(for="phone") Ваш номер телефона
+
+          .field.field_color_light
+            input.field__control(
+              type="email"
+              name="email"
+              id="email"
+            )
+            label.field__label(for="name") Ваш E-mail
+
+        .consultation__form-bottom
+          button.consultation__submit.btn-primary(type="submit") Получить консультацию
+          p.consultation__personal Нажимая на кнопку, я соглашаюсь на&nbsp;обработку персональных данных

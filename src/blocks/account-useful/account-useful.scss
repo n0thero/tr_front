@@ -1,0 +1,62 @@
+.account-useful {
+  margin-bottom: 104px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 130%;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    width: 33.33333%;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__list {
+      margin: -10px;
+    }
+
+    &__item {
+      padding: 10px;
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__list {
+      display: block;
+      margin: 0;
+    }
+
+    &__item + &__item  {
+      margin-top: 24px;
+    }
+
+    &__item {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+  }
+}

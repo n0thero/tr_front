@@ -1,0 +1,24 @@
+.webinar-will-teach {
+  margin-bottom: 24px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 13px;
+    color: var(--color-dark-gray);
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  &__inner {
+    :first-child {
+      margin-top: 0;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 26px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+section.recruting
+  .recruting__inner
+    .recruting__container.container
+      form.recruting__form.needs-validation(
+        action="/"
+        method="post"
+        enctype="multipart/form-data"
+        novalidate
+      )
+        h2.recruting__title Вступай в нашу команду
+
+        .recruting__form-fields
+          .field.field_color_light
+            input.field__control(
+              type="text"
+              name="name"
+              id="name"
+              required
+            )
+            label.field__label(for="name") Ваше имя
+
+          .field.field_color_light
+            input.field__control(
+              type="text"
+              name="phone"
+              id="phone"
+              required
+            )
+            label.field__label(for="phone") Ваш номер телефона
+
+          .field.field_color_light
+            input.field__control(
+              type="email"
+              name="email"
+              id="email"
+            )
+            label.field__label(for="email") Ваш E-mail
+
+          .field.field_color_light
+            input.field__control(type="text" name="link" id="link")
+            label.field__label(for="link") Ссылка на резюме,портфолио или сайт
+
+          .field.field_color_light
+            textarea.field__control(
+              name="message"
+              id="message"
+              rows="1"
+            )
+            label.field__label(for="message") Сообщение
+
+          include ../field-file/field-file
+
+        .recruting__form-bottom
+          button.recruting__form-submit.btn-primary(type="submit") Отправить заявку
+
+          p.recruting__form-personal Нажимая на кнопку, я 
+            a.recruting__form-personal-link(href="#") соглашаюсь на&nbsp;обработку персональных данных

@@ -1,0 +1,142 @@
+.wiki {
+  margin-bottom: 104px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+
+  &__list + &__list {
+    margin-top: 24px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  &__category-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    padding-top: 16px;
+    min-height: 132px;
+    height: 100%;
+    box-sizing: border-box;
+    color: var(--color-white);
+    background-color: var(--color-dark-dark);
+    text-decoration: none;
+    border-radius: 10px;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      width: 38px;
+      height: 38px;
+      background-color: var(--color-white);
+      border-radius: 50%;
+
+      .icon {
+        fill: var(--color-dark-dark);
+      }
+    }
+
+    &-title {
+      margin-top: auto;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    &-desc {
+      margin-top: 4px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 130%;
+    }
+  }
+
+  &__article-card {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    min-height: 125px;
+    height: 100%;
+    box-sizing: border-box;
+    color: var(--color-white);
+    background-color: var(--color-dark-dark);
+    background-image: linear-gradient(111.12deg, #0190D1 -20.77%, #ED1B24 120.72%);
+    text-decoration: none;
+    border-radius: 10px;
+
+    &-icon {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 28px;
+      width: 38px;
+      height: 38px;
+      background-color: var(--color-white);
+      border-radius: 50%;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 120%;
+    }
+  }
+
+  @media(max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 32px;
+      font-size: 32px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    &__article-card {
+      &-icon {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  @media(max-width: 833px) {
+    &__list {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    &__category-card {
+      padding: 16px 24px;
+      padding-right: 80px;
+      min-height: auto;
+
+      &-icon {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+      }
+    }
+
+    &__article-card {
+      min-height: auto;
+    }
+  }
+
+  @media(max-width: 499px) {
+    margin-bottom: 64px;
+  }
+}

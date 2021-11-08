@@ -1,0 +1,71 @@
+.book-card-large {
+  max-width: 322px;
+
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__cover {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  &__link {
+    position: relative;
+    display: flex;
+
+    &:hover,
+    &:focus {
+      .book-card-large__overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(58, 56, 73, .6);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+  }
+
+  &__download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    background-color: rgba(255, 0, 16, .6);
+    border-radius: 50%;
+
+    &-icon {
+      fill: var(--color-white);
+    }
+  }
+
+  &__rating {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--color-dark-dark);
+  }
+}

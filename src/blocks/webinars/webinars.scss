@@ -1,0 +1,102 @@
+.webinars {
+  padding: 63px 0;
+  color: var(--color-white);
+  background-color: var(--bg-color-black);
+  background-image: linear-gradient(82.96deg, #371617 26.63%, #171717 59.46%, #501418 100%);
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__nav {
+    position: relative;
+    display: flex;
+    margin: 0 -11px;
+    margin-bottom: 32px;
+    padding: 0;
+    margin-right: 112px;
+    list-style-type: none;
+    z-index: 5;
+
+    &-item {
+      padding: 0 11px;
+    }
+
+    &-btn {
+      min-width: 270px;
+    }
+  }
+
+  &__pane {
+    position: relative;
+  }
+
+  &__slider {
+    margin-top: -88px;
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+  }
+
+  &__prev,
+  &__next {
+    width: 56px;
+    height: 56px;
+  }
+
+  @media (max-width: 1439px) {
+    padding: 40px 0;
+
+    &__title {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__nav {
+      display: block;
+      margin: 0;
+      margin-bottom: 32px;
+
+      &-item + &-item {
+        margin-top: 16px;
+      }
+
+      &-item {
+        padding: 0;
+      }
+
+      &-btn {
+        min-width: unset;
+        width: 100%;
+      }
+    }
+
+    &__controls {
+      display: none;
+    }
+
+    &__slider {
+      margin: 0;
+      padding: 0;
+
+      .swiper-wrapper {
+        display: block;
+      }
+
+      .swiper-slide + .swiper-slide {
+        margin-top: 24px;
+      }
+    }
+  }
+}

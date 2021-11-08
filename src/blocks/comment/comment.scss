@@ -1,0 +1,90 @@
+.comment {
+  display: flex;
+
+  & + .comment {
+    margin-top: 24px;
+  }
+
+  &__avatar {
+    flex-shrink: 0;
+    margin-right: 16px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__info {
+    &-top {
+      display: flex;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    margin-right: 16px;
+    color: var(--color-dark-dark);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  &__date {
+    margin: 0;
+    color: var(--color-dark-gray);
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  &__message {
+    margin: 0;
+    color: var(--color-dark-dark);
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  &__reply {
+    margin-right: 16px;
+    padding: 0;
+    font-weight: 500;
+    color: var(--color-dark-dark);
+    font-size: 20px;
+    line-height: 130%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__favorite {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: var(--color-dark-dark);
+    font-size: 20px;
+    line-height: 26px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    .icon {
+      margin-right: 8px;
+      fill: none;
+      stroke: var(--color-dark-dark);
+      stroke-width: 2;
+    }
+
+    &_active {
+      .icon {
+        fill: var(--color-primary);
+        stroke: var(--color-primary);
+      }
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.learn {
+  margin-bottom: 104px;
+  padding: 77px 0;
+  background-color: var(--color-dark-blue);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    color: var(--color-white);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    background-color: var(--color-white);
+
+    &-inner {
+      padding: 24px;
+      min-height: 270px;
+      box-sizing: border-box;
+    }
+
+    &-picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      width: 46px;
+      height: 46px;
+      background-color: rgba(255, 0, 0, .1);
+      border-radius: 50%;
+    }
+
+    &-icon {
+      fill: var(--color-black);
+    }
+
+    &-title {
+      margin: 0;
+      margin-bottom: 16px;
+      font-size: 28px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
+    }
+
+    &-desc {
+      margin: 0;
+    }
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+    padding-top: 56px;
+    padding-bottom: 144px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__start-learn {
+      display: none;
+    }
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      &-inner {
+        min-height: 255px;
+      }
+
+      &-title {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    padding-bottom: 56px;
+
+    &__item {
+      &-inner {
+        min-height: 282px;
+      }
+    }
+  }
+
+  @media (max-width: 833px) {
+    padding-top: 40px;
+    padding-bottom: 42px;
+
+    &__inner {
+      padding: 0;
+    }
+
+    &__header {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    &__slider {
+      margin-bottom: 46px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    &__list {
+      display: flex;
+      gap: unset;
+    }
+
+    &__item {
+      &-inner {
+        padding-top: 32px;
+        min-height: 248px;
+      }
+    }
+
+    &__nav {
+      display: block;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    &__controls {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    &__nav-start-learn {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+
+    &__slider {
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      &-inner {
+        min-height: 282px;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+section.account-courses
+  .container
+    ul.account-courses__nav.nav.nav-tabs
+      li.account-courses__nav-item.nav-item
+        button.account-courses__nav-link.nav-link.active(
+          type="button"
+          data-bs-toggle="tab"
+          data-bs-target="#courses"
+        ) Мои курсы
+
+      li.account-courses__nav-item.nav-item
+        button.account-courses__nav-link.nav-link(
+          type="button"
+          data-bs-toggle="tab"
+          data-bs-target="#practice"
+        ) Практика
+
+    .account-courses__content.tab-content
+      .tab-pane.show.active(id="courses")
+        .account-courses__list
+          include ../account-course-card/account-course-card
+
+          article.account-course-card
+            a.account-course-card__link(
+              href="#"
+              style="background-image: url('../wp-content/themes/trading/august/img/account-course-card/account-course-card.svg')"
+            )
+              h3.account-course-card__title Бесплатные уроки с ценностью на 1 000 000 рублей
+
+              span.account-course-card__label
+                svg(class="account-course-card__label-icon icon" width="17" height="17")
+                  use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#file-video")
+                | Интенсив
+
+          article.account-course-card
+            a.account-course-card__link(
+              href="#"
+              style="background-image: url('../wp-content/themes/trading/august/img/account-course-card/account-course-card.svg')"
+            )
+              h3.account-course-card__title Бесплатные уроки с ценностью на 1 000 000 рублей
+
+              span.account-course-card__label
+                svg(class="account-course-card__label-icon icon" width="17" height="17")
+                  use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#file-video")
+                | Видеокурс
+
+          article.account-course-card
+            a.account-course-card__link(
+              href="#"
+              style="background-image: url('../wp-content/themes/trading/august/img/account-course-card/account-course-card.svg')"
+            )
+              h3.account-course-card__title Бесплатные уроки с ценностью на 1 000 000 рублей
+
+              span.account-course-card__label
+                svg(class="account-course-card__label-icon icon" width="17" height="17")
+                  use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#file-video")
+                | Мини-курс
+
+      .tab-pane(id="practice")
+        .account-courses__list
+          include ../account-course-card/static/practice
+          include ../account-course-card/static/practice
+          include ../account-course-card/static/practice
+          include ../account-course-card/static/practice

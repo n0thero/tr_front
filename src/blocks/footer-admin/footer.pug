@@ -1,0 +1,64 @@
+footer.footer.footer_theme_light
+  .footer__top.footer__top_padding_left
+    .footer__top-inner.container
+      .footer__social
+        a.footer__logo.logo(href="#" aria-label="TrendUp")
+          include ../../img/footer-logo.svg
+
+        ul.social
+          include ../social/social
+
+      .footer__nav
+        .footer__nav-item
+          h2.footer__title Информация
+
+          ul.footer__menu
+            li.footer__menu-item
+              a.footer__menu-link(href="/about/" target="_blank") О компании
+            li.footer__menu-item
+              a.footer__menu-link(href="/experts/" target="_blank") Эксперты
+            li.footer__menu-item
+              a.footer__menu-link(href="/contacts/" target="_blank") Контакты
+            //- li.footer__menu-item
+            //-   a.footer__menu-link(href="#") Вакансии
+            //- li.footer__menu-item
+            //-   a.footer__menu-link(href="#") Отзывы
+
+        .footer__nav-item
+          h2.footer__title Обучение
+
+          ul.footer__menu
+            //- li.footer__menu-item
+            //-   a.footer__menu-link(href="#") Полезные материалы
+            //- li.footer__menu-item
+            //-   a.footer__menu-link(href="#") Учиться бесплатно
+            li.footer__menu-item
+              a.footer__menu-link(href="/course/usa-invest/" target="_blank") Инвестиции
+            //- li.footer__menu-item
+            //-   a.footer__menu-link(href="#") База знаний
+
+        .footer__nav-item.footer__secondary-menu
+          h2.footer__secondary-menu-item.footer__title
+            a.footer__link(href="/oferta/" target="_blank") Договор оферты
+          //- h2.footer__secondary-menu-item.footer__title
+          //-   a.footer__link(href="#") Оплата
+          h2.footer__secondary-menu-item.footer__title
+            a.footer__link(href="/privacy_policy/" target="_blank") Политика конфиденциальности
+
+  .footer__middle.footer__middle_padding_left
+    .footer__middle-inner.container
+      p.footer__contact
+        a.footer__contact-title(href="tel:+7(800)551-09-22") +7 (800) 551-09-22
+        span.footer__contact-desc номер телефона
+
+      p.footer__contact
+        a.footer__contact-title(href="mailto:support@trendup.pro") support@trendup.pro
+        span.footer__contact-desc наш e-mail
+
+      p.footer__contact
+        span.footer__contact-title г. Москва, БЦ “Высший”, оф. 24
+        span.footer__contact-desc наш адрес
+
+  .footer__bottom.footer__bottom_padding_left
+    .footer__bottom-inner.container
+      p.footer__copy 2021 © TrendUp. Все права защищены

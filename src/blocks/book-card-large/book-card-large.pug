@@ -1,0 +1,20 @@
+article.book-card-large
+  h3.book-card-large__title Шпаргалка для трейдера
+
+  a.book-card-large__link(href="#" download="name.pdf")
+    picture.book-card-large__cover
+      img.book-card-large__cover-img(
+        src="wp-content/themes/trading/august/img/books/books-1.jpg"
+        srcset="wp-content/themes/trading/august/img/books/books-1@2x.jpg 2x"
+        alt="Шпаргалка для трейдера"
+        width="233"
+        height="330"
+      )
+
+    .book-card-large__rating
+      include ../rating/rating
+
+    .book-card-large__overlay
+      span.book-card-large__download
+        svg(class="book-card-large__download-icon icon" width="42" height="42")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#download")

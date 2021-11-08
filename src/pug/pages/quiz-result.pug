@@ -1,0 +1,33 @@
+extends ../templates/admin
+
+block content
+  section.quiz
+    .container
+      header.quiz__header
+        a.quiz__back.link-back(href="#")
+          svg(class="link-back__icon icon" width="24" height="24")
+            use(xlink:href="img/svg/symbol/sprite.svg#chevron-left")
+          | Вернуться к уроку
+
+        h1.quiz__header-title Итоговый тест
+
+        .quiz__navigate
+          p.quiz__navigate-label Выбор урока
+          include ../../blocks/webinar-navigate/static/quiz_dropdown
+
+    .quiz__fluid.container
+      .quiz__body
+        .quiz__body-inner
+          .quiz__content
+            include ../../blocks/quiz-result/quiz-result
+
+          .quiz__aside
+            include ../../blocks/webinar-navigate/static/quiz
+
+
+block modal
+  include ../../blocks/modal/modal
+
+
+block scripts
+  script(src="js/script.js")

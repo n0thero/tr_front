@@ -1,0 +1,224 @@
+.webinar-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__remind {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 16px;
+    color: var(--color-dark-gray);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &-icon {
+      margin-right: 16px;
+      fill: var(--color-dark-gray);
+    }
+
+    &_active {
+      color: var(--color-primary);
+
+      .webinar-card__remind-icon {
+        fill: var(--color-primary);
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    min-height: 366px;
+    height: 100%;
+    box-sizing: border-box;
+    color: var(--color-dark-dark);
+    background-color: var(--color-white);
+    background-image: url('../wp-content/themes/trading/august/img/webinar-card/webinar-card-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 4px;
+
+    &_size_sm {
+      padding: 24px;
+      min-height: 312px;
+      background-image: url('../wp-content/themes/trading/august/img/webinar-card/webinar-card__inner_size_sm-bg.png');
+      background-position: left bottom;
+    }
+
+    &_bg_bottom {
+      background-image: url('../wp-content/themes/trading/august/img/webinar-card/webinar-card-bg-1.jpg');
+      background-position: bottom left;
+    }
+
+    &_type_notification {
+      padding: 22px;
+      min-height: unset;
+      background-color: var(--bg-color-page-admin);
+    }
+  }
+
+  &__tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -4px -8px;
+    padding: 0;
+    padding-bottom: 40px;
+    color: var(--color-dark-gray);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    list-style-type: none;
+
+    &-item {
+      padding: 4px 8px;
+
+      &_position_right {
+        margin-left: auto;
+      }
+    }
+
+    &_size_sm {
+      padding-bottom: 32px;
+    }
+
+    &_padding_lg {
+      padding-bottom: 74px;
+    }
+  }
+
+  &__tag {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    background-color: #0CC7A5;
+    border-radius: 25px;
+
+    &_text_sm {
+      font-size: 14px;
+    }
+  }
+
+  &__status {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: var(--color-dark-dark);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 130%;
+
+    &-right {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+
+      &::before {
+        content: '';
+        margin-right: 8px;
+        width: 1px;
+        height: 32px;
+        background-color: var(--color-white-gray);
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: auto;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+
+    &-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &_size_sm {
+      font-size: 24px;
+    }
+  }
+
+  &__master {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 40px;
+
+    &-avatar {
+      flex-shrink: 0;
+      margin-right: 16px;
+      width: 79px;
+      height: 79px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &-name {
+      margin: 0;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: var(--color-black);
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: 0.04em;
+    }
+
+    &-activity {
+      margin: 0;
+      color: var(--color-dark-gray);
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.04em;
+    }
+
+    &_size_sm {
+      margin-top: 28px;
+    }
+  }
+
+  &_blue{
+    background: var(--color-blue);
+  }
+
+  @media (max-width: 833px) {
+    &__inner {
+      padding: 22px;
+      min-height: unset;
+
+      &_bg_bottom {
+        background-position: bottom -8px left -8px;
+      }
+    }
+
+    &__tags {
+      padding-bottom: 28px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__master {
+      margin-top: 28px;
+    }
+  }
+}

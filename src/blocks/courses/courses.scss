@@ -1,0 +1,45 @@
+.courses {
+  position: relative;
+  margin-bottom: 104px;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__controls {
+    margin-left: auto;
+    display: flex;
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__prev,
+    &__next {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__prev,
+    &__next {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+}

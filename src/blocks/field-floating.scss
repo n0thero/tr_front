@@ -1,0 +1,37 @@
+.field-floating {
+  position: relative;
+
+  &__control {
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+
+    &:not(:placeholder-shown),
+    &:focus {
+      & ~ .field-floating__label {
+        transform: translateY(-20px) scale(.85);
+      }
+    }
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 16px;
+    font-size: 17px;
+    line-height: 130%;
+    transform-origin: left;
+    transition-property: transform;
+    transition-duration: .2s;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "session_hash": "3k5k23k5k4k",
+  "use_questions_results": true,
+  "questions": {
+    "10": {
+      "id": 10,
+      "title": "Первый вопрос",
+      "image": "https://sun9-74.userapi.com/impg/8vUTpkuM2XL_8IkP9P3Mb6bGbBVWqXIlS6DV6Q/f1y3oHIKwRY.jpg?size=768x432&quality=96&sign=9caae6fa2c65e298ef7823fac92aadfc&type=album",
+      "type": "radio",
+      "answers": {
+        "11": {
+          "title": "Первый ответ",
+          "image": "https://sun9-6.userapi.com/impg/xEOMxhz4wZ1gE-wb_ZwEL84shipIgUNUSiQT6A/6NIP_gCTW_8.jpg?size=512x216&quality=96&sign=c4c222e02a674cc7e8acbb5efbc5c529&type=album"
+        },
+        "12": {
+          "title": "Второй ответ",
+          "image": null
+        }
+      }
+    },
+    "20": {
+      "id": 20,
+      "title": "Второй вопрос",
+      "image": null,
+      "type": "checkbox",
+      "answers": {
+        "21": {
+          "title": "Первый ответ",
+          "image": "https://sun9-6.userapi.com/impg/xEOMxhz4wZ1gE-wb_ZwEL84shipIgUNUSiQT6A/6NIP_gCTW_8.jpg?size=512x216&quality=96&sign=c4c222e02a674cc7e8acbb5efbc5c529&type=album"
+        },
+        "22": {
+          "title": "Второй ответ",
+          "image": "https://sun9-35.userapi.com/impg/KgAb8paatNFdZInP-TJihi1CXQ29Q32Jo4xe5g/L7O2r_qWEhI.jpg?size=1024x576&quality=96&sign=189cbe02c08dd7520f12aebe3a5f71f3&type=album"
+        }
+      }
+    },
+    "30": {
+      "id": 30,
+      "title": "Еще вопрос",
+      "image": null,
+      "type": "checkbox",
+      "answers": {
+        "31": {
+          "title": "Еще ответ",
+          "image": "https://sun9-6.userapi.com/impg/xEOMxhz4wZ1gE-wb_ZwEL84shipIgUNUSiQT6A/6NIP_gCTW_8.jpg?size=512x216&quality=96&sign=c4c222e02a674cc7e8acbb5efbc5c529&type=album"
+        },
+        "32": {
+          "title": "Еще ответ",
+          "image": "https://sun9-35.userapi.com/impg/KgAb8paatNFdZInP-TJihi1CXQ29Q32Jo4xe5g/L7O2r_qWEhI.jpg?size=1024x576&quality=96&sign=189cbe02c08dd7520f12aebe3a5f71f3&type=album"
+        }
+      }
+    }
+  }
+}

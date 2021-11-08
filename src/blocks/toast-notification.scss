@@ -1,0 +1,71 @@
+.toast-notification {
+  display: flex;
+  padding: 16px;
+  max-width: 460px;
+  width: 100%;
+  color: var(--color-dark-dark);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  box-sizing: border-box;
+  padding-right: 54px;
+  border-radius: 4px;
+  cursor: default;
+
+  &__inner {
+    color: var(--color-dark-gray);
+  }
+
+  &__show {
+    margin: 0;
+    padding: 0;
+    color: var(--color-danger);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .toast-close {
+      opacity: 1;
+    }
+  }
+
+  .toast-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    padding: 0;
+    width: 30px;
+    height: 32px;
+    color: transparent;
+    transition: opacity .3s;
+    opacity: 0;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M10 1.81818C5.48131 1.81818 1.81818 5.48131 1.81818 10C1.81818 14.5187 5.48131 18.1818 10 18.1818C14.5187 18.1818 18.1818 14.5187 18.1818 10C18.1818 5.48131 14.5187 1.81818 10 1.81818ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="%233A3849"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M6.76819 6.74295C7.12321 6.38793 7.69881 6.38793 8.05384 6.74295L13.1964 11.8855C13.5515 12.2406 13.5515 12.8162 13.1964 13.1712C12.8414 13.5262 12.2658 13.5262 11.9108 13.1712L6.76819 8.0286C6.41316 7.67358 6.41316 7.09797 6.76819 6.74295Z" fill="%233A3849"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M6.51117 12.9998C6.15615 12.6448 6.15615 12.0692 6.51117 11.7142L11.6538 6.57158C12.0088 6.21655 12.5844 6.21655 12.9394 6.57158C13.2944 6.9266 13.2944 7.5022 12.9394 7.85722L7.79682 12.9998C7.4418 13.3548 6.86619 13.3548 6.51117 12.9998Z" fill="%233A3849"/%3E%3C/svg%3E%0A');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .toastify-avatar {
+    flex-shrink: 0;
+    margin: 0;
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+}

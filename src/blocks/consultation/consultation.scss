@@ -1,0 +1,119 @@
+.consultation {
+  margin-bottom: 104px;
+
+  &__title {
+    margin-bottom: 48px;
+    max-width: 640px;
+  }
+    
+    &_border{
+        border-radius: 20px;
+    }
+    
+    &-subtitle{
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: var(--color-dark-gray);
+        margin-bottom: 15px;
+    }
+
+  &__form {
+    padding: 40px;
+    padding-top: 47px;
+    color: var(--color-white);
+    background-color: var(--bg-color-dark);
+    background-image: linear-gradient(82.96deg, #371617 26.63%, #171717 59.46%, #501418 100%);
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+        
+        
+        &_margin{
+            margin: 9px 0 0;
+        }
+    }
+  }
+
+  &__fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-bottom: 48px;
+  }
+
+  &__submit {
+    margin-right: 24px;
+  }
+
+  &__personal {
+    margin: 0;
+    max-width: 340px;
+  }
+    
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__title {
+      margin-bottom: 27px;
+    }
+
+    &__form {
+      padding: 32px;
+
+      &-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &__fields {
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    &__submit {
+      margin: 0;
+    }
+
+    &__personal {
+      order: -1;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__fields {
+      grid-template-columns: 1fr;
+    }
+      
+      &_border{
+          border-radius: 0;
+      }
+  }
+
+  @media (max-width: 833px) {
+    &__inner {
+      padding: 0;
+    }
+
+    &__form {
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+  }
+}

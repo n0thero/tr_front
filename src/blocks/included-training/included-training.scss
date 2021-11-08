@@ -1,0 +1,139 @@
+.included-training {
+  margin-bottom: 104px;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    max-width: 500px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 -57px;
+    list-style-type: none;
+  }
+
+  &__item {
+    padding: 0 57px;
+    margin-top: 103px;
+    width: 50%;
+    box-sizing: border-box;
+
+    &:nth-child(2n) {
+      margin-top: 0;
+    }
+
+    &:nth-child(2n + 4) {
+      margin-top: -47px;
+    }
+
+    &:first-child {
+      margin-top: 151px;
+    }
+
+    &-img {
+      margin-bottom: 32px;
+      max-width: 100%;
+      height: 623px;
+      object-fit: cover;
+    }
+
+    &-title {
+      margin: 0;
+      margin-bottom: 14px;
+      color: var(--color-black);
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    &-desc {
+      margin: 0;
+      color: var(--color-black);
+    }
+  }
+
+  &__show-more {
+    display: none;
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__title {
+      position: static;
+      max-width: unset;
+      font-size: 32px;
+    }
+
+    &__list {
+      display: block;
+      margin: 0;
+    }
+
+    &__item {
+      padding: 0;
+      width: 100%;
+
+      &:nth-child(n) {
+        margin: 0;
+      }
+
+      &-img {
+        margin-bottom: 24px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__item + &__item {
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      margin-bottom: 32px;
+    }
+
+    &__item + &__item {
+      margin-top: 32px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      picture {
+        order: 1;
+      }
+
+      &-img {
+        margin: 0;
+        margin-top: 32px;
+      }
+
+      &_hide {
+        display: none;
+      }
+    }
+
+    &__show-more {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+  }
+}

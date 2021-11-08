@@ -1,0 +1,238 @@
+.quiz-preview {
+  padding: 60px 58px;
+  min-height: 502px;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 130%;
+
+    &_weight_medium {
+      font-weight: 500;
+    }
+  }
+
+  &__includes {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    row-gap: 24px;
+    margin: 0 -48px;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+    &-item {
+      position: relative;
+      padding: 0 48px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 58px;
+        background-color: var(--color-light-gray-second);
+      }
+
+      &:nth-child(4n)::after,
+      &:last-child::after {
+        content: unset;
+      }
+    }
+
+    &-title {
+      display: block;
+      margin: 0;
+      font-size: 32px;
+      line-height: 130%;
+    }
+
+    &-desc {
+      display: block;
+      margin-top: 4px;
+      font-size: 17px;
+      line-height: 130%;
+    }
+  }
+
+  &__exam-includes {
+    display: grid;
+    grid-template-columns: repeat(4, 102px);
+    justify-content: space-between;
+    row-gap: 24px;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+    list-style-type: none;
+
+    &-item {
+      max-width: 102px;
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15px;
+      width: 98px;
+      height: 98px;
+      box-sizing: border-box;
+      background-color: var(--color-dark-dark);
+      background-image: url('../img/quiz/exam-includes-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 50%;
+    }
+
+    &-icon {
+      fill: var(--color-white);
+    }
+
+    &-title {
+      margin-top: 4px;
+      color: var(--color-white);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    &-desc {
+      display: block;
+      margin-top: 8px;
+      color: var(--color-light-blue);
+    }
+  }
+
+  &_exam {
+    padding: 48px 60px;
+    min-height: 518px;
+  }
+
+  @media (max-width: 1439px) {
+    padding: 24px;
+    min-height: unset;
+
+    &__title {
+      font-weight: 500;
+    }
+
+    &__includes {
+      margin-top: 55px;
+      margin-bottom: 35px;
+    }
+
+    &__exam-includes {
+      max-width: 624px;
+    }
+
+    &__start {
+      max-width: 388px;
+      width: 100%;
+    }
+
+    &_exam {
+      padding: 24px;
+      padding-bottom: 32px;
+      min-height: unset;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__exam-includes {
+      max-width: unset;
+    }
+  }
+
+  @media (max-width: 833px) {
+    background-image: none !important;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__includes {
+      grid-template-columns: repeat(2, auto);
+      margin-top: 24px;
+    }
+
+    &__exam-includes {
+      grid-template-columns: repeat(2, 190px);
+      margin-bottom: 64px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 500px;
+
+      &-item {
+        max-width: 190px;
+      }
+
+      &-top {
+        padding-top: 24px;
+        width: 165px;
+        height: 165px;
+      }
+
+      &-icon {
+        width: 53px;
+        height: 53px;
+      }
+
+      &-title {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 130%;
+      }
+
+      &-desc {
+        margin-top: 16px;
+        font-size: 24px;
+        line-height: 130%;
+      }
+    }
+
+    &__start {
+      max-width: unset;
+    }
+
+    &_exam {
+      padding: 24px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__includes {
+      margin-top: 32px;
+    }
+
+    &__exam-includes {
+      grid-template-columns: 1fr;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: unset;
+      }
+
+      &-desc {
+        text-align: center;
+      }
+    }
+  }
+}

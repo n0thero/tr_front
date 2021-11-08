@@ -1,0 +1,134 @@
+.course-for {
+  margin-bottom: 104px;
+
+  &__list {
+    display: flex;
+    margin: 0 -10px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 33.33333%;
+
+    &-picture {
+      &-img {
+        margin-bottom: 24px;
+        width: 100%;
+        height: 352px;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    &-title {
+      margin: 0;
+      margin-bottom: 16px;
+      color: var(--color-black);
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 130%;
+    }
+
+    &-desc {
+      margin: 0;
+      margin-bottom: 28px;
+      color: var(--color-dark-gray);
+    }
+
+    &-link {
+      margin-top: auto;
+      color: var(--color-primary);
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 130%;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__item {
+      &-picture {
+        &-img {
+          height: 269px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__title {
+      font-size: 32px;
+    }
+
+    &__item {
+      &-picture {
+        &-img {
+          height: 220px;
+        }
+      }
+
+      &-title {
+        font-size: 22px;
+      }
+
+      &-desc {
+        margin-bottom: 32px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__title {
+      margin-bottom: 32px;
+      max-width: 295px;
+    }
+
+    &__list {
+      display: block;
+      margin: 0;
+    }
+
+    &__item + &__item  {
+      margin-top: 32px;
+    }
+
+    &__item {
+      padding: 0;
+      width: unset;
+
+      &-picture {
+        &-img {
+          max-width: 500px;
+          height: 332px;
+        }
+      }
+
+      &-title {
+        font-size: 28px;
+      }
+
+      &-desc {
+        font-size: 17px;
+      }
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+}

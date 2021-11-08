@@ -1,0 +1,265 @@
+.events-calendar {
+  margin-bottom: 104px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__box {
+    display: flex;
+
+    &-left {
+      flex-grow: 1;
+      margin-right: 120px;
+    }
+  }
+
+  &__current {
+    flex-shrink: 0;
+    width: 360px;
+
+    &-title {
+      margin: 0;
+      margin-bottom: 16px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      text-transform: lowercase;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    margin-bottom: 38px;
+    padding: 0;
+    list-style-type: none;
+
+    &-item + &-item {
+      margin-left: 32px;
+    }
+
+    &-btn {
+      padding: 0;
+      color: var(--color-dark-gray);
+      font-size: 24px;
+      line-height: 130%;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &.active {
+        color: var(--color-black);
+        font-weight: 600;
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 26px;
+  }
+
+  &__month-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  &__month {
+    width: 110%;
+    transform: translateX(-5%);
+    border: none;
+    border-collapse: collapse;
+
+    &-title {
+      border-bottom: 1px solid var(--color-light-gray-second);
+    }
+
+    &-th {
+      padding-bottom: 20px;
+      color: var(--color-dark-gray);
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+    }
+
+    &-week {
+      &:first-child {
+        .events-calendar__month-day {
+          padding-top: 32px;
+        }
+      }
+    }
+
+    &-day {
+      position: relative;
+      padding: 16px 0;
+      width: 14.28571%;
+      color: #C8C8C8;
+      font-size: 20px;
+      line-height: 23px;
+      box-sizing: border-box;
+      text-align: center;
+
+      &-btn {
+        padding: 0;
+        font-size: 20px;
+        line-height: 23px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &_current {
+          font-weight: bold;
+        }
+
+        &_active {
+          color: var(--color-danger);
+          font-weight: bold;
+        }
+      }
+    }
+
+    &-marks {
+      position: absolute;
+      bottom: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-flex;
+    }
+
+    &-mark {
+      display: inline-flex;
+      margin-left: 1px;
+      width: 8px;
+      height: 8px;
+      background-color: var(--color-dark-gray);
+      border-radius: 50%;
+
+      &_color_blue {
+        background-color: $color-blue;
+      }
+      &_color_yellow {
+        background-color: $color-yellow;
+      }
+      &_color_orange {
+        background-color: $color-orange;
+      }
+    }
+  }
+
+  &__footnote {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &-item + &-item {
+      margin-top: 10px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+
+    &-mark {
+      margin-right: 5px;
+      width: 11px;
+      height: 11px;
+      background-color: var(--color-dark-gray);
+      border-radius: 50%;
+
+      &_color_blue {
+        background-color: $color-blue;
+      }
+      &_color_yellow {
+        background-color: $color-yellow;
+      }
+      &_color_orange {
+        background-color: $color-orange;
+      }
+    }
+
+    &-desc {
+      color: var(--color-dark-gray);
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__title {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    &__box {
+      display: block;
+
+      &-left {
+        margin: 0;
+        margin-bottom: 32px;
+      }
+    }
+
+    &__content {
+      margin-bottom: 20px;
+    }
+
+    &__current {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 80px;
+
+    &__box {
+      &-left {
+        margin-bottom: 64px;
+      }
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__nav {
+      margin-bottom: 32px;
+    }
+
+    &__box {
+      &-left {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__content {
+      margin: 0;
+    }
+
+    &__month {
+      &-th {
+        padding-bottom: 13px;
+      }
+
+      &-day {
+        padding: 21px 0;
+      }
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__month {
+      width: 105%;
+      transform: translateX(-2.5%);
+    }
+  }
+}

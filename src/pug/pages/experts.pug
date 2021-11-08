@@ -1,0 +1,19 @@
+extends ../templates/index
+
+block content
+  .container
+    ul.breadcrumbs
+      li.breadcrumbs__item
+        a.breadcrumbs__link(href="/") Назад
+      li.breadcrumbs__item
+        a.breadcrumbs__link Эксперты
+
+  include ../../blocks/experts/experts
+  include ../../blocks/form-experts/form-experts
+
+
+block modal
+  include ../../blocks/modal/modal
+
+block scripts
+  script(src="js/script.js")

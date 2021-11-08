@@ -1,0 +1,18 @@
+section.consultation
+  .consultation__inner.container
+    form.consultation__form(action="/")
+      h2.consultation__title.section-title Свяжитесь с нами, если не нашли нужной информации
+
+      .consultation__fields
+        .field.field_color_light
+          input.field__control(type="text" name="name" id="name")
+          label.field__label(for="name") Ваше имя
+
+        .field.field_color_light
+          input.field__control(type="text" name="phone" id="phone")
+          label.field__label(for="phone") Ваш номер телефона
+        .consultation__form-bottom_margin
+            button.consultation__submit.btn-primary(type="submit" id="visibleContBtn") Отправить сообщение
+      p.consultation__personal Нажимая на кнопку, я соглашаюсь на&nbsp;обработку персональных данных
+      .consultation__form-bottom_margin
+            button.consultation__submit.btn-primary(type="submit" id="hideContBtn") Отправить сообщение

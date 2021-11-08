@@ -1,0 +1,59 @@
+.notification-modal.modal(id="notification-modal" tabindex="-1" aria-hidden="true")
+  .notification-modal__dialog.modal-dialog
+    .notification-modal__inner.modal-content
+      .notification-modal__dropdown.dropdown
+        button.notification-modal__dropdown-toggle.dropdown-toggle(
+          type="button"
+          data-bs-toggle="dropdown"
+        )
+
+        button.notification-modal__close(type="button" data-bs-dismiss="modal" aria-label="Закрыть окно")
+          svg(class="icon" width="28" height="28")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#close-circle")
+
+        ul.notification-modal__nav.nav.dropdown-menu
+          li.notification-modal__nav-item.nav-item.dropdown-item
+            button.notification-modal__nav-btn.nav-link.active(
+              type="button"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-notifications"
+            )
+              span.notification-modal__nav-btn-icon
+                svg(class="icon" width="16" height="16")
+                  use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#mail")
+                span.notification-modal__nav-btn-counter 99
+              span Оповещения
+
+          li.notification-modal__nav-item.nav-item.dropdown-item
+            button.notification-modal__nav-btn.nav-link(
+              type="button"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-news"
+            )
+              span.notification-modal__nav-btn-icon
+                svg(class="icon" width="16" height="16")
+                  use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#globe")
+                span.notification-modal__nav-btn-counter.notification-modal__nav-btn-counter_alert 99
+              span Новости
+
+          li.notification-modal__nav-item.nav-item.dropdown-item
+            button.notification-modal__nav-btn.nav-link(
+              type="button"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-messages"
+            )
+              span.notification-modal__nav-btn-icon
+                svg(class="icon" width="16" height="16")
+                  use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#user-check")
+                span.notification-modal__nav-btn-counter 99
+              span Чат поддержки
+
+      .notification-modal__content
+        .notification-modal__content-item.tab-pane.show.active(id="pills-notifications")
+          include ../notification-modal-item/static/notifications
+
+        .notification-modal__content-item.tab-pane(id="pills-news")
+          include ../notification-modal-item/static/news
+
+        .notification-modal__content-item.tab-pane(id="pills-messages")
+          include ../notification-modal-chat/notification-modal-chat

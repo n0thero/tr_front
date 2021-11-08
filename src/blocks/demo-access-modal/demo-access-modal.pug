@@ -1,0 +1,30 @@
+.demo-access-modal.modal(id="demo-access-modal" tabindex="-1" aria-hidden="true")
+  .demo-access-modal__dialog.modal-dialog
+    section.demo-access-modal__content.modal-content
+      button.demo-access-modal__close(
+        type="button"
+        data-bs-dismiss="modal"
+        aria-label="Закрыть окно"
+      )
+        svg(class="demo-access-modal__close-icon icon" width="32" height="32")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#close-circle")
+
+      h2.demo-access-modal__title Проходите обучение прямо сейчас!
+
+      p.demo-access-modal__desc Вам открыты первые 3 модуля для прохождения курса Инвестиции по-американски
+
+      ul.demo-access-modal__list
+        li.demo-access-modal__item(
+          style="background-image: url('wp-content/themes/trading/august/img/demo-access-modal/demo-access-modal-1.svg'), linear-gradient(180deg, #FFFFFF 0%, #E4E4E4 100%)"
+        ) Ценные бамаги
+        li.demo-access-modal__item(
+          style="background-image: url('wp-content/themes/trading/august/img/demo-access-modal/demo-access-modal-2.svg'), linear-gradient(180deg, #FFFFFF 0%, #E4E4E4 100%)"
+        ) Инвестиционная экономика
+        li.demo-access-modal__item(
+          style="background-image: url('wp-content/themes/trading/august/img/demo-access-modal/demo-access-modal-3.svg'), linear-gradient(180deg, #FFFFFF 0%, #E4E4E4 100%)"
+        ) Инвестируем в фонды
+
+      button.demo-access-modal__start-learn.btn-primary(
+        type="button"
+        data-bs-dismiss="modal"
+      ) Начать обучение

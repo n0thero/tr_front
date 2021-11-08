@@ -1,0 +1,52 @@
+* {
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 1px var(--color-focus);
+  }
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 17px;
+  line-height: 130%;
+  background-color: var(--bg-color-page);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 130%;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+html [data-content-type] {
+  display: none;
+}

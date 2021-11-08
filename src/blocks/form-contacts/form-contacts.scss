@@ -1,0 +1,17 @@
+#hideContBtn{
+    display: none;
+}
+
+#visibleContBtn{
+    display: block;
+}
+
+@media(max-width: 834px){
+    #hideContBtn{
+        display: block;
+    }
+
+    #visibleContBtn{
+        display: none;
+    }  
+}

@@ -1,0 +1,94 @@
+.account-courses {
+  margin-bottom: 104px;
+
+  &__nav {
+    display: flex;
+    margin: 0 -16px;
+    margin-bottom: 32px;
+    padding: 0;
+    list-style-type: none;
+
+    &-item {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    &-link {
+      position: relative;
+      padding: 0;
+      padding-bottom: 2px;
+      color: var(--color-dark-gray);
+      font-size: 24px;
+      line-height: 130%;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &.active {
+        color: var(--color-red);
+        font-weight: 500;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 2px;
+          background-color: var(--color-red);
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__nav {
+      &-link {
+        font-size: 17px;
+      }
+    }
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__nav {
+      margin-bottom: 24px;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: 413px) {
+    &__nav {
+      margin-bottom: 16px;
+
+      &-link {
+        font-size: 14px;
+      }
+    }
+
+    &__list {
+      gap: 8px;
+    }
+  }
+}

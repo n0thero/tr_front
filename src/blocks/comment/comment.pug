@@ -1,0 +1,22 @@
+.comment
+  img.comment__avatar(
+    src="wp-content/themes/trading/august/img/webinar-card.jpg"
+    alt=""
+    width="50"
+    height="50"
+  )
+  .comment__info
+    .comment__info-top
+      p.comment__name Олег Антонов
+      p.comment__date 15 окт. 19:30
+    .comment__body
+      p.comment__message Школа биржевой торговли TrendUP основана в 2017 году в Ростове-на-Дону. Мы обучаем торговле по следующим направлениям: инвестции и трейдинг. Мы не являемся брокером или его представителем. Сообщество создано исключительно для общения инвесторов и обучения новичков.
+    .comment__controls
+      button.comment__reply(type="button") Ответить
+      button.comment__favorite(
+        type="button"
+        aria-label="Нравится"
+      )
+        svg(class="comment__favorite-item-icon icon" width="24" height="24")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#like")
+        | 285

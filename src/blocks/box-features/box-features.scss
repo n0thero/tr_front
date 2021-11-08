@@ -1,0 +1,29 @@
+.box-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  &__desc {
+    margin: 0;
+    color: var(--color-dark-gray);
+  }
+}

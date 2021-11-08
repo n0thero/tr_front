@@ -1,0 +1,35 @@
+article.webinar-card
+  button.webinar-card__remind
+    svg(class="icon webinar-card__remind-icon" width="20" height="20")
+      use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#bell")
+
+    | Напомнить о вебинаре
+
+  .webinar-card__inner
+    // .webinar-card__tags_padding_lg - модификатор для карточки без эксперта
+    ul.webinar-card__tags
+      // .webinar-card__tags-item_position_right - модификатор для смещения вправо
+      li.webinar-card__tags-item
+        span.webinar-card__tag Инвестиции
+      li.webinar-card__tags-item
+        span.webinar-card__status В эфире
+
+      // Текст
+      //- li.webinar-card__tags-item
+      //-   | Смотреть в записи
+      //- li.webinar-card__tags-item
+
+      // Время
+      //-   p.webinar-card__date
+      //-     span.webinar-card__date-left 21.05
+      //-     span.webinar-card__date-right 16:30
+
+    h3.webinar-card__title
+      a.webinar-card__title-link(href="#") Наша раскрыть людям принципы заработка с помощью финансовых рынков
+
+    a.webinar-card__master(href="#" target="_blank")
+      img.webinar-card__master-avatar(src="wp-content/themes/trading/august/img/webinar-card.jpg" alt="" width="79" height="79")
+
+      .webinar-card__master-info
+        p.webinar-card__master-name Александр Поляков
+        p.webinar-card__master-activity Специалист в области инвестиций

@@ -1,0 +1,24 @@
+.quiz-result
+  p.quiz-result__title Набрано баллов:
+
+  // quiz-result__result_defided - провал
+  // quiz-result__result_correct - успех
+  // quiz-result__result_final - итоговый (к финальному добавить провал или успех)
+  p.quiz-result__result.quiz-result__result_defided.quiz-result__result_final
+    span.quiz-result__result-current 5 
+    | из 
+    span.quiz-result__result-all 14
+
+  .quiz-result__info
+    p.quiz-result__info-title Вы допустили ошибки в следующих вопросах:
+
+    ul.quiz-result__info-list
+      li.quiz-result__info-item Что такое ранжированиеЧто такое ранжированиеЧто такое ранжированиеЧто такое ранжирование
+      li.quiz-result__info-item Что такое ранжирование
+      li.quiz-result__info-item Что такое ранжирование
+      li.quiz-result__info-item Что такое ранжирование
+      li.quiz-result__info-item Что такое ранжирование
+
+  .quiz-result__footer
+    button.quiz-result__again.btn-primary(type="button") Попробовать еще раз
+    //- button.quiz-result__next.btn-outline(type="button") Следующий модуль

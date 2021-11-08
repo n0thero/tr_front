@@ -1,0 +1,72 @@
+.journal {
+  margin-bottom: 104px;
+
+  &__list-one {
+    display: grid;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+
+  &__list-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 24px;
+    margin-bottom: 48px;
+  }
+
+  &__list-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px 24px;
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__list-three {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__list-one {
+      margin-bottom: 32px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__list-one {
+      margin-bottom: 48px;
+    }
+
+    &__list-two {
+      grid-template-columns: 1fr;
+    }
+
+    &__list-three {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+
+    &__list-one {
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+
+    &__list-two {
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+
+    &__list-three {
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+  }
+}

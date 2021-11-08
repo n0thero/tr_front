@@ -1,0 +1,42 @@
+section.account-useful
+  .container
+    h2.account-useful__title Полезное
+
+    .account-useful__list
+      .account-useful__item
+        include ../useful-card/useful-card
+
+      .account-useful__item
+        article.useful-card
+          .useful-card__inner
+            ul.useful-card__tags
+              li.useful-card__tags-item
+                span.useful-card__tag(style="background: #49A3D5") База знаний
+
+            h3.useful-card__title
+              a.useful-card__title-link(href="#") База знаний для тех, кто хочет научиться
+
+            a.useful-card__link(href="#") Подробнее
+
+      .account-useful__item
+        include ../webinar-card/webinar-card_size_sm
+
+      .account-useful__item
+        article.practice-card
+          .practice-card__inner
+            ul.practice-card__tags
+              li.practice-card__tags-item
+                span.practice-card__tag Практика
+              li.practice-card__tags-item.practice-card__tags-item_position_right
+                | День 1
+
+            h3.practice-card__title
+              a.practice-card__title-link(href="#") Инвестиции с нуля до максимума
+
+            footer.practice-card__footer
+              .practice-card__date
+                p.practice-card__date-left 02
+                  span.practice-card__date-desc Июля
+                .practice-card__date-line
+                p.practice-card__date-right 16:30
+                  span.practice-card__date-desc По Москве

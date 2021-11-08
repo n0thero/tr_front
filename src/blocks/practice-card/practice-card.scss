@@ -1,0 +1,147 @@
+.practice-card {
+  height: 100%;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    min-height: 310px;
+    height: 100%;
+    box-sizing: border-box;
+    color: var(--color-dark-dark);
+    background-color: var(--color-white);
+    background-image: url('../wp-content/themes/trading/august/img/practice-card/practice-card-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border-radius: 4px;
+  }
+
+  &__tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -4px;
+    padding: 0;
+    padding-bottom: 45px;
+    color: var(--color-dark-gray);
+    font-size: 17px;
+    line-height: 130%;
+    list-style-type: none;
+
+    &-item {
+      padding: 4px;
+
+      &_position_right {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__tag {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    background-color: #0CC7A5;
+    border-radius: 25px;
+  }
+
+  &__status {
+    display: inline-block;
+    margin: 0;
+    padding: 9px 17px;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: auto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+
+    &-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &_size_sm {
+      font-size: 24px;
+    }
+  }
+
+  &__date {
+    display: flex;
+    color: var(--color-dark-dark);
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 130%;
+
+    &-left,
+    &-right {
+      margin: 0;
+    }
+
+    &-line {
+      margin: auto 24px;
+      width: 1px;
+      height: 54px;
+      background-color: var(--color-white-gray);
+    }
+
+    &-desc {
+      display: block;
+      margin-top: -4px;
+      color: var(--color-dark-gray);
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 130%;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 16px;
+    color: var(--color-dark-gray);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  &__footer {
+    margin-top: 46px;
+  }
+
+  @media (max-width: 833px) {
+    &__inner {
+      min-height: unset;
+      background-image: url('../wp-content/themes/trading/august/img/practice-card/practice-card-bg-1.jpg');
+    }
+
+    &__tags {
+      padding-bottom: 40px;
+
+      &-item {
+        &_position_right {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__status {
+      margin-top: 32px;
+    }
+
+    &__desc {
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
+  }
+}

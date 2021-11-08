@@ -1,0 +1,23 @@
+.link {
+  color: var(--color-link);
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.link-back {
+  display: inline-flex;
+  margin-left: -16px;
+  color: var(--color-dark-dark);
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  text-decoration: none;
+
+  &__icon {
+    margin-right: 5px;
+    width: 36px;
+    height: 36px;
+    fill: var(--color-dark-dark);
+  }
+}

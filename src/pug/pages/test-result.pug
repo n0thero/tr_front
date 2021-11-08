@@ -1,0 +1,61 @@
+extends ../templates/admin
+
+block content
+
+  section.tests-breadcrumbs
+    .container
+        a.tests-breadcrumbs__container
+            img.tests-breadcrumbs-arrow(src="wp-content/themes/trading/august/img/arrow-back.png")
+            .tests-breadcrumbs-back Вернуться к уроку
+  section.tests
+    .container
+            
+        h2.tests-title Итоговый тест
+        .tests__side-mobile
+            h3.tests__side-mobile-title Выбор урока
+            select
+                option Здесь будет select
+    .container.tests_container_mobile
+        .tests__blocks
+            .tests__block
+                .tests__container
+                    h3.tests__container-title Набрано баллов:
+                    .tests__questions.tests__questions_miss
+                        .tests__questions_miss-result 5 из 14
+                        .tests__questions_miss-title Вы допустили ошибки в следующих вопросах:
+                        .tests__questions_miss-errors
+                            .tests__questions_miss-line
+                            .tests__questions_miss-error Что такое ранжированиеЧто такое ранжированиеЧто такое ранжированиеЧто такое ранжирование
+                        .tests__questions_miss-errors
+                            .tests__questions_miss-line
+                            .tests__questions_miss-error Что такое ранжирование
+                        .tests__questions_miss-errors
+                            .tests__questions_miss-line
+                            .tests__questions_miss-error Что такое ранжирование
+                        .tests__questions_miss-errors
+                            .tests__questions_miss-line
+                            .tests__questions_miss-error Что такое ранжирование
+                        .tests__questions_miss-errors
+                            .tests__questions_miss-line
+                            .tests__questions_miss-error Что такое ранжирование
+                        button.btn-primary Попробовать еще раз
+                            
+
+            .tests__block
+                .tests__sidebar
+                    h3.tests__sidebar-title Другие уроки
+                    .tests__sidebar__list
+                        a.tests__sidebar__list-item.tests_marker Обучение платное или бесплатное?
+                        a.tests__sidebar__list-item.tests_marker Обучение платное
+                        a.tests__sidebar__list-item.tests_marker Или бесплатное?
+                        a.tests__sidebar__list-item.tests_marker Обучение платное или бесплатное?
+                        a.tests__sidebar__list-item.tests_marker Обучение платное или бесплатное?
+                        a.tests__sidebar__list-item.tests_activated Зачем и почему?
+                        a.tests__sidebar__list-item Обучение платное
+                    button.btn-primary Попробовать еще раз
+
+block modal
+  include ../../blocks/modal/modal
+
+block scripts
+  script(src="js/script.js")

@@ -1,0 +1,151 @@
+extends ../templates/admin
+
+block content
+  section.quiz
+    .quiz__box.quiz__box_active.quiz__preview
+      .container
+        header.quiz__header
+          a.quiz__back.link-back(href="#")
+            svg(class="link-back__icon icon" width="24" height="24")
+              use(xlink:href="img/svg/symbol/sprite.svg#chevron-left")
+            | Вернуться к уроку
+
+          .quiz__navigate
+            p.quiz__navigate-label Выбор урока
+            include ../../blocks/webinar-navigate/static/quiz_dropdown
+
+        .quiz__body
+          //  quiz__title_color_blue - задает синий цвет
+          h1.quiz__title Промежуточный тест за первый урок
+
+          .quiz__body-inner
+            .quiz__content
+              include ../../blocks/quiz-preview/quiz-preview
+
+            .quiz__aside
+              include ../../blocks/webinar-navigate/static/quiz
+
+    .quiz__box.quiz__test
+      .container
+        header.quiz__header
+          a.quiz__back.link-back(href="#")
+            svg(class="link-back__icon icon" width="24" height="24")
+              use(xlink:href="img/svg/symbol/sprite.svg#chevron-left")
+            | Вернуться к уроку
+
+        .quiz__body
+          section.quiz-test
+            ol.quiz-test__navigate
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_wrong(type="button") 1
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_correctly(type="button") 2
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_correctly(type="button") 3
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_correctly(type="button") 4
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_correctly(type="button") 5
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_correctly(type="button") 6
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_correctly(type="button") 7
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_correctly(type="button") 8
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_wrong(type="button") 9
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn.quiz-test__navigate-btn_wrong(type="button") 10
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn(type="button" disabled) 11
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn(type="button" disabled) 12
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn(type="button" disabled) 13
+              //- li.quiz-test__navigate-item
+              //-   button.quiz-test__navigate-btn(type="button" disabled) 14
+
+            .quiz-test__items
+              //- .quiz-test__item
+              //-   .quiz-test__question
+              //-     h2.quiz-test__question-title Задание 1
+
+              //-     p.quiz-test__question-question Как уже отмечалось, технология коммуникации означает сет. Полиряд Как уже отмечалось, технология коммуникации означает сет?
+
+              //-   .quiz-test__answers
+              //-     .quiz-test__answer
+              //-       label.field-radio.quiz-test__answer-control
+              //-         input.field-radio__input(type="radio" name="one" checked)
+              //-         span.field-radio__box
+              //-         span.field-radio__label Как уже отмечалось, технология коммуникации означает сет.
+
+              //-     .quiz-test__answer
+              //-       label.field-radio.quiz-test__answer-control
+              //-         input.field-radio__input(type="radio" name="one")
+              //-         span.field-radio__box
+              //-         span.field-radio__label Как уже отмечалось, технология коммуникации означает сет.
+
+              //-     .quiz-test__answer
+              //-       label.field-radio.quiz-test__answer-control
+              //-         input.field-radio__input(type="radio" name="one")
+              //-         span.field-radio__box
+              //-         span.field-radio__label Как уже отмечалось, технология коммуникации означает сет.
+
+              //-     .quiz-test__answer
+              //-       label.field-radio.quiz-test__answer-control
+              //-         input.field-radio__input(type="radio" name="one")
+              //-         span.field-radio__box
+              //-         span.field-radio__label Как уже отмечалось, технология коммуникации означает сет.
+
+            button.quiz-test__reply.btn-primary(type="button") Ответить
+
+
+    .quiz__box.quiz__result
+      .container
+        header.quiz__header
+          a.quiz__back.link-back(href="#")
+            svg(class="link-back__icon icon" width="24" height="24")
+              use(xlink:href="img/svg/symbol/sprite.svg#chevron-left")
+            | Вернуться к уроку
+
+          h1.quiz__header-title Итоговый тест
+
+          .quiz__navigate
+            p.quiz__navigate-label Выбор урока
+            include ../../blocks/webinar-navigate/static/quiz_dropdown
+
+      .quiz__fluid.container
+        .quiz__body
+          .quiz__body-inner
+            .quiz__content
+              .quiz-result
+                p.quiz-result__title Набрано баллов:
+
+                // quiz-result__result_defided - провал
+                // quiz-result__result_correct - успех
+                // quiz-result__result_final - итоговый (к финальному добавить провал или успех)
+                p.quiz-result__result
+                  span.quiz-result__result-current 5 
+                  | из 
+                  span.quiz-result__result-all 14
+
+                .quiz-result__info
+                  p.quiz-result__info-title Вы допустили ошибки в следующих вопросах:
+
+                  ul.quiz-result__info-list
+
+
+                .quiz-result__footer
+                  button.quiz-result__again.btn-primary(type="button") Попробовать еще раз
+                  //- button.quiz-result__next.btn-outline(type="button") Следующий модуль
+
+            .quiz__aside
+              include ../../blocks/webinar-navigate/static/quiz
+
+
+block modal
+  include ../../blocks/modal/modal
+
+
+block scripts
+  script(src="js/script.js")

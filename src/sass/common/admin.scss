@@ -1,0 +1,38 @@
+.page-admin {
+  background-color: var(--bg-color-page-admin);
+
+  &__top {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 450px;
+
+    &-left {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1664px) {
+    &__top {
+      &-left {
+        width: calc(100% - 224px);
+      }
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__top {
+      &-left {
+        width: calc(100% - 176px);
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__top {
+      &-left {
+        width: 100%;
+      }
+    }
+  }
+}

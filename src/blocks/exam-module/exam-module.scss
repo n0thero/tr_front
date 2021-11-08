@@ -1,0 +1,358 @@
+.exam-module{
+    
+  &__blocks{
+      display: flex;
+      justify-content: space-between;
+      gap: 0 24px;
+  }
+  
+  &-title{
+      font-weight: bold;
+      font-size: 42px;
+      color: #00236A;
+      margin: 0;
+  }
+  
+  &__container{
+      max-width: 750px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 60px 60px 130px;
+      background: var(--color-white);
+      margin: 32px 0 120px;
+      background-image: url(../../wp-content/themes/trading/august/img/exam-back.png);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      
+      &-title{
+          margin: 0;
+          font-weight: normal;
+          font-size: 24px;
+          color: var(--color-dark-dark);
+      }
+  }
+  
+  &__questions{
+      display: flex;
+      align-items: center;
+      margin: 80px 0 50px;
+      justify-content: space-between;
+      
+      &-item{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-image: url(../../wp-content/themes/trading/august/img/back-itemExam.png);
+          width: 98px;
+          height: 98px;
+
+          p{
+            margin: 0;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-top: 5px;
+            color: #fff;
+          }
+
+          p:nth-child(1){
+            font-size: 13px;
+          }
+
+          img{
+            width: 28px;
+            height: 28px;
+          }
+      }
+      
+      &-line{
+          width: 2px;
+          height: 58px;
+          background: var(--color-light-gray-second);
+          margin: 0;
+      }
+      
+      &_miss{
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 32px 0 100px;
+          
+          &-result{
+              font-weight: bold;
+              font-size: 42px;
+              color: var(--color-primary);
+              margin: 0 0 45px;
+          }
+          
+          &-title{
+              font-weight: 500;
+              font-size: 20px;
+              color: var(--color-dark-dark);
+              margin: 0 0 32px;
+          }
+          
+          &-errors{
+              display: flex;
+              margin: 0 0 15px;
+          }
+          
+          &-error{
+              width: 100%;
+              font-weight: normal;
+              font-size: 20px;
+          }
+          
+          &-line{
+              width: 35px;
+              height: 2px;
+              background: var(--color-dark-gray);
+              margin: 10px 15px 0 0;
+          }
+          
+          .btn-primary{
+              display: none;
+          }
+      }
+  }
+  
+  &__sidebar{
+      max-width: 360px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 32px;
+      background: var(--color-white);
+      margin: 32px 0 120px 0px;
+      
+      &-title{
+          font-weight: 600;
+          font-size: 28px;
+          color: var(--color-black);
+      }
+      
+      &__list{
+          display: flex;
+          flex-direction: column;
+          margin: 0 0 20px;
+          
+          &-item{
+              position: relative;
+              margin: 0 0 0 20px;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 3em;
+              color: var(--color-dark-dark);
+              
+              &:hover{
+                  color: var(--color-primary);
+                  cursor: pointer;
+              }
+          }
+      }
+  }
+  
+  &__side-mobile{
+      display: none;
+      
+      &-title{
+          font-weight: 600;
+          font-size: 20px;
+          color: var(--color-darl-dark);
+      }
+      
+      select{
+          width: 100%;
+          margin: 0 0 25px;
+          font-size: 16px;
+          padding: 17px 32px 17px 16px;
+          font-weight: 500;
+          border: none;
+          cursor: pointer;
+          color: #fff;
+          background-color: #3A3849;
+          background-image: url(../../wp-content/themes/trading/august/img/arrow-selector.svg);
+          background-repeat: no-repeat;
+          background-position-y: center;
+          background-position-x: 97%;
+          -webkit-appearance: none;
+      }
+
+  }
+  
+  &-button{
+      width: 100%;
+  }
+  
+  &_marker{
+      &::before{
+          content: "●";
+          position: absolute;
+          right: 105%;
+      }    
+  }
+  
+  &_activated{
+      color: var(--color-dark-gray);
+  }
+.exam-module__questions-items{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+.exam-module__questions-content:nth-child(3) .exam-module__questions-item p{
+  font-size: 16px;
+}
+
+.exam-module__questions-text p{
+  font-size: 17px;
+  line-height: 22.1px;
+  font-weight: 400;
+  max-width: 102px;
+  margin: 0;
+  margin-top: 8px;
+  color: #00236A;
+}
+
+
+
+  @media(max-width:1100px){
+      
+      &__blocks{
+        gap: 0;
+      }
+
+      &__block:first-child{
+        width: 100%;
+      }
+
+      &__block:last-child{
+        display: none;
+      }
+
+      &__side-mobile{
+          display: block;    
+      }
+      
+      &-title{
+          font-size: 32px;
+      }
+      
+      &__sidebar{
+          display: none;
+      }
+      
+      &__container{
+          padding: 25px;
+          background-size: contain;
+          background-position-x: 95%;
+          .btn-primary{
+              width: 209px;
+          }
+      }
+      
+      &__questions_miss{
+          .btn-primary{
+              display: inline-flex;
+          }
+      }
+    .exam-module__questions{
+      margin-top: 42px;
+      margin-bottom: 32px;
+    }
+
+    .exam-module__container{
+      max-width: inherit;
+    }
+  }
+  
+  @media(max-width:834px){
+      &__container{
+          margin: 25px 0 100px;
+      }
+      
+      &__questions{
+          margin: 55px 0 25px;
+      }
+  }
+
+  @media(max-width: 550px){
+    .exam-module__questions-items{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 15px;
+    }
+    .exam-module__questions-content{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .exam-module__questions-text p{
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    .exam-module__questions-item img {
+      width: 52.8px;
+      height: 52.8px;
+    }
+
+    .exam-module__questions-item p {
+      margin: 0;
+      font-size: 32px!important;
+      font-weight: 500;
+      line-height: 130%;
+      margin-top: 10px;
+      color: #fff;
+      max-width: 190px;
+    }
+
+    .exam-module__questions-item{
+      background-image: url(../../wp-content/themes/trading/august/img/back-itemXS.png);
+      max-width: 165px;
+      height: 165px;
+      width: 165px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .exam-module__container{
+      background-image: inherit;
+    }
+  }
+  
+  @media(max-width:500px){
+      &__container{
+          margin: 25px 0 80px;
+          
+          .btn-primary{
+              width: 100%;
+          }
+      }
+      
+      &__questions{
+          margin: 32px 0 25px;
+      }
+      
+      &_container_mobile{
+          padding: 0;
+      }
+
+    .exam-module__questions-items{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px 15px;
+    }
+    .exam-module__questions-content{
+      align-items: center;
+    }
+
+    .exam-module__questions-text p{
+      max-width: 100%;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+  
+}

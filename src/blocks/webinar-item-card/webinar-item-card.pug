@@ -1,0 +1,39 @@
+article.webinar-item-card
+  .webinar-item-card__cover(style="background-color: #222222;")
+    a.webinar-item-card__cover-link(href="#")
+      span.webinar-item-card__subtitle Инвестиции
+      span.webinar-item-card__label 21 сентября в 19:00
+
+    a.webinar-item-card__leading(href="#")
+      img.webinar-item-card__leading-avatar(
+        src="wp-content/themes/trading/august/img/webinar-card.jpg"
+        alt=""
+      )
+      .webinar-item-card__leading-info
+        p.webinar-item-card__leading-title Александр Поляков
+        p.webinar-item-card__leading-desc Трейдер
+
+  h3.webinar-item-card__title
+    a.webinar-item-card__title-link(href="#") Фишки, которые помогают найти акции с максимальной доходностью! Зарабатывай сейчас же!
+
+  .webinar-item-card__controls
+    p.webinar-item-card__controls-item.webinar-item-card__views(aria-label="Количество просмотров")
+      svg(class="webinar-item-card__controls-item-icon icon" width="16" height="16")
+        use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#eye")
+      | 567
+
+    button.webinar-item-card__controls-item.webinar-item-card__favorite(
+      type="button"
+      aria-label="Добавить в избранное"
+    )
+      svg(class="webinar-item-card__controls-item-icon icon" width="16" height="16")
+        use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#like")
+      | 285
+
+    button.webinar-item-card__controls-item.webinar-item-card__messages(
+      type="button"
+      aria-label="Посмотреть комментарии"
+    )
+      svg(class="webinar-item-card__controls-item-icon icon" width="16" height="16")
+        use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#message-circle")
+      | 3

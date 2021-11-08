@@ -1,0 +1,11 @@
+section.account-help
+  .container
+    h2.account-help__title Часто задаваемые вопросы
+
+    .account-help__box
+      include ../collapse-questions/static/account-help
+
+      button.btn-outline.btn-outline_color_primary.account-help__show-more.show-more(
+        data-query-items=".collapse-questions__item"
+        data-show-items="5"
+      ) Смотреть полностью

@@ -1,0 +1,31 @@
+.webinar-navigate.webinar-navigate_dropdown.dropdown
+
+  h3.webinar-navigate__section-title Выбор урока
+
+  button.webinar-navigate__toggle.dropdown-toggle(
+    type="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  ) Обучение платное или бесплатное?
+    svg(class="webinar-navigate__toggle-icon icon" width="24" height="24")
+      use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-down")
+
+  .webinar-navigate__menu.dropdown-menu
+    nav.webinar-navigate__nav
+      ul.webinar-navigate__list
+        li.webinar-navigate__item
+          a(href="#").webinar-navigate__link.webinar-navigate__link_past.dropdown-item Обучение платное или бесплатное?
+        li.webinar-navigate__item
+          a(href="#").webinar-navigate__link.webinar-navigate__link_past.dropdown-item Обучение платное
+        li.webinar-navigate__item
+          a(href="#").webinar-navigate__link.webinar-navigate__link_past.dropdown-item Или бесплатное?
+        li.webinar-navigate__item
+          a(href="#").webinar-navigate__link.webinar-navigate__link_current.dropdown-item Обучение платное или бесплатное?
+        li.webinar-navigate__item
+          a(href="#").webinar-navigate__link.dropdown-item Обучение платное или бесплатное?
+        li.webinar-navigate__item
+          a(href="#").webinar-navigate__link.dropdown-item Зачем и почему?
+        li.webinar-navigate__item
+          a(href="#").webinar-navigate__link.dropdown-item Обучение платное
+
+    a.webinar-navigate__btn.btn-outline.btn-outline_color_primary(href="#") Пройти тест

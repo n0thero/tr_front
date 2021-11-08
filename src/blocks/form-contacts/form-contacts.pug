@@ -1,0 +1,35 @@
+section.consultation
+  .consultation__inner.container
+    form.consultation__form.needs-validation(
+      action="/wp-json/forms/request-consultation/"
+      method="post"
+      novalidate
+    )
+      h2.consultation__title.section-title Свяжитесь с нами
+      .consultation-subtitle Вы можете написать нам по любому интересующему вас вопросу: от обучения до сотрудничества.
+
+      .form-message
+        .consultation__fields
+          .field.field_color_light
+            input.field__control(
+              type="text"
+              name="name"
+              id="name"
+              required
+            )
+            label.field__label(for="name") Ваше имя
+
+          .field.field_color_light
+            input.field__control(
+              type="text"
+              name="phone"
+              id="phone"
+              required
+            )
+            label.field__label(for="phone") Ваш номер телефона
+          .consultation__form-bottom_margin
+              button.consultation__submit.btn-primary(type="submit" id="visibleContBtn") Отправить сообщение
+
+        p.consultation__personal Нажимая на кнопку, я соглашаюсь на&nbsp;обработку персональных данных
+        .consultation__form-bottom_margin
+              button.consultation__submit.btn-primary(type="submit" id="hideContBtn") Отправить сообщение

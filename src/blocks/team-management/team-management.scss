@@ -1,0 +1,107 @@
+.team-management {
+  margin-bottom: 48px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  &__controls {
+    display: none;
+    margin-left: auto;
+  }
+
+  &__slider {
+    margin: -16px -12px;
+  }
+
+  &__list {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 16px 12px;
+    width: 25%;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1919px) {
+    &__slider {
+      margin: -16px -10px;
+    }
+
+    &__item {
+      padding: 16px 10px;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 32px;
+
+    &__title {
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__header {
+      margin-bottom: 32px;
+    }
+
+    &__controls {
+      display: flex;
+    }
+
+    &__prev,
+    &__next {
+      width: 56px;
+      height: 56px;
+    }
+
+    &__bottom {
+      padding-right: 0;
+    }
+
+    &__slider {
+      margin: 0;
+      padding-right: 32px;
+    }
+
+    &__list {
+      flex-wrap: nowrap;
+    }
+
+    &__item {
+      padding: 0;
+      width: unset;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__header {
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      font-size: 17px;
+    }
+
+    &__slider {
+      padding-right: 24px;
+    }
+  }
+}

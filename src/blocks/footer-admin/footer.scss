@@ -1,0 +1,271 @@
+.footer {
+  color: var(--color-white);
+  background-color: var(--bg-color-black);
+
+  &__top {
+    padding: 56px 0;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__social {
+    margin-right: 66px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__link {
+    color: var(--color-dark-gray);
+    text-decoration: none;
+    transition: color .2s;
+    
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 90px;
+  }
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &-item + &-item {
+      margin-top: 16px;
+    }
+
+    &-link {
+      color: var(--color-dark-gray);
+      font-size: 16px;
+      line-height: 21px;
+      text-decoration: none;
+      transition: color .2s;
+
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__middle {
+    padding: 32px 0;
+    border: 1px solid #515151;
+    border-left: none;
+    border-right: none;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__contact {
+    margin: 0;
+
+    &-title {
+      display: block;
+      margin: 0;
+      margin-bottom: 8px;
+      color: var(--color-white);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      text-decoration: none;
+      transition: text-shadow .2s;
+
+      &:hover[href] {
+        text-shadow: -.25px -.25px 0 var(--color-white), .25px .25px var(--color-white);
+      }
+    }
+
+    &-desc {
+      color: var(--color-dark-gray);
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  &__bottom {
+    padding-top: 32px;
+    padding-bottom: 25px;
+
+    &-inner {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__copy {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 1664px) {
+    &__top,
+    &__middle,
+    &__bottom {
+      padding-left: 224px;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__top {
+      padding: 48px 0;
+    }
+
+    &__nav {
+      column-gap: 66px;
+
+      &-item {
+        max-width: 225px;
+      }
+    }
+
+    &__bottom {
+      padding: 32px 0;
+    }
+
+    &__top,
+    &__middle,
+    &__bottom {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__top {
+      padding-top: 32px;
+      padding-bottom: 64px;
+
+      &-inner {
+        flex-direction: column;
+      }
+    }
+
+    &__social {
+      margin-bottom: 40px;
+    }
+
+    &__nav {
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__top {
+      padding-bottom: 32px;
+    }
+
+    &__social {
+      margin-bottom: 28px;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      column-gap: unset;
+
+      &-item + &-item {
+        margin-left: 100px;
+      }
+
+      &-item {
+        max-width: unset;
+
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__secondary-menu {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 35px;
+      margin-bottom: -24px;
+      width: 100%;
+      
+      &-item {
+        margin-right: 20px;
+      }
+    }
+
+    &__middle {
+      &-inner {
+        display: block;
+      }
+    }
+
+    &__contact + &__contact {
+      margin-top: 24px;
+    }
+
+    &__bottom {
+      padding-top: 27px;
+      padding-bottom: 60px;
+
+      &-inner {
+        display: block;
+      }
+    }
+
+    &__copy {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__top {
+      padding-bottom: 42px;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      column-gap: unset;
+
+      &-item + &-item {
+        margin-left: 55px;
+      }
+
+      &-item {
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__secondary-menu {
+      margin-top: 48px;
+    }
+
+    &__bottom {
+      padding-top: 24px;
+      padding-bottom: 28px;
+    }
+  }
+}

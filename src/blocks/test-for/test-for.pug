@@ -1,0 +1,117 @@
+
+section.account-useful
+  .container
+    h2.account-useful__title Полезное
+
+    .account-useful__list
+      .account-useful__item
+        article.practice-card
+          .practice-card__inner
+            ul.practice-card__tags
+              li.practice-card__tags-item
+                span.practice-card__tag Практика
+              li.practice-card__tags-item.practice-card__tags-item_position_right
+                | День 1
+
+            h3.practice-card__title
+              a.practice-card__title-link(href="#") Инвестиции с нуля до максимума
+
+            footer.practice-card__footer
+              .practice-card__date
+                p.practice-card__date-left 02
+                  span.practice-card__date-desc Июля
+                .practice-card__date-line
+                p.practice-card__date-right 16:30
+                  span.practice-card__date-desc По Москве
+
+      .account-useful__item
+        article.practice-card
+          .practice-card__inner
+            ul.practice-card__tags
+              li.practice-card__tags-item
+                span.practice-card__tag Практика
+              li.practice-card__tags-item.practice-card__tags-item_position_right
+                | День 1
+
+            h3.practice-card__title
+              a.practice-card__title-link(href="#") Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatem distinctio nihil eos laboriosam aspernatur hic laudantium magnam eligendi totam quod, labore repellat sequi rem aliquid aperiam ex facilis atque.
+
+            footer.practice-card__footer
+              .practice-card__date
+                p.practice-card__date-left 02
+                  span.practice-card__date-desc Июля
+                .practice-card__date-line
+                p.practice-card__date-right 16:30
+                  span.practice-card__date-desc По Москве
+
+      .account-useful__item
+        article.useful-card
+          .useful-card__inner
+            ul.useful-card__tags
+              li.useful-card__tags-item
+                span.useful-card__tag Полезные материалы
+
+            h3.useful-card__title
+              a.useful-card__title-link(href="#") Набор материалов по биржевой торговли
+
+            a.useful-card__link(href="#") Подробнее
+
+      .account-useful__item
+        article.useful-card
+          .useful-card__inner
+            ul.useful-card__tags
+              li.useful-card__tags-item
+                span.useful-card__tag Полезные материалы
+
+            h3.useful-card__title
+              a.useful-card__title-link(href="#") Набор материалов по биржевой торговли
+
+            a.useful-card__link(href="#") Подробнее
+
+
+section.events-calendar
+  .container
+    h1.events-calendar__title Календарь мероприятий
+
+    .events-calendar__box
+      .events-calendar__box-left
+
+      .events-calendar__current
+        h3.events-calendar__current-title 1 июля, четверг
+
+        .events-calendar__current-list
+          // Пример карточки
+          article.event-card
+            button.event-card__notice(type="button" aria-label="Уведомление вкючено")
+              svg(class="event-card__notice-icon icon" width="20" height="20")
+                use(xlink:href="img/svg/symbol/sprite.svg#bell")
+            p.event-card__type.event-card__type_color_blue Вебинар
+            h4.event-card__title Инвестирование в ценные бумаги
+            p.event-card__time
+              span.event-card__time-start 17:00
+              span.event-card__time-divider -
+              span.event-card__time-end 21:00
+              span.event-card__time-zone по МСК
+            p.event-card__desc Бесплатные уроки с ценностью 1 000 000 000 рублей
+
+          article.event-card
+            button.event-card__notice(type="button" aria-label="Уведомление вкючено")
+              svg(class="event-card__notice-icon icon" width="20" height="20")
+                use(xlink:href="img/svg/symbol/sprite.svg#bell")
+            p.event-card__type.event-card__type_color_yellow Бесплатный тренинг
+            h4.event-card__title Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cum expedita assumenda animi quisquam ea laboriosam, architecto, maiores distinctio ad officiis possimus praesentium excepturi pariatur quis molestias, minus ullam quam?
+            p.event-card__time
+              span.event-card__time-start 17:00
+              span.event-card__time-zone по МСК
+
+          article.event-card
+            button.event-card__notice(type="button" aria-label="Уведомление вкючено")
+              svg(class="event-card__notice-icon icon" width="20" height="20")
+                use(xlink:href="img/svg/symbol/sprite.svg#bell")
+            p.event-card__type.event-card__type_color_orange Практика
+            h4.event-card__title Акции и фьючерсы
+            p.event-card__time
+              span.event-card__time-start 17:00
+              span.event-card__time-divider -
+              span.event-card__time-end 21:00
+              span.event-card__time-zone по МСК

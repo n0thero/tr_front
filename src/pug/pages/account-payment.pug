@@ -1,0 +1,12 @@
+extends ../templates/admin-white
+
+block content
+  include ../../blocks/account-navigation/static/account-payment
+  include ../../blocks/payment-history/payment-history
+  include ../../blocks/payment-history/static/payment-subscribe
+
+block modal
+  include ../../blocks/modal/modal
+
+block scripts
+  script(src="js/script.js")

@@ -1,0 +1,50 @@
+section.webinars
+  .container
+    h2.webinars__title Присоединяйтесь к моим вебинарам
+
+    ul.webinars__nav.nav.nav-tabs
+      li.webinars__nav-item.nav-item
+        button.webinars__nav-btn.btn-tab.btn-tab_color_white.nav-link.active(
+          data-bs-toggle="tab" data-bs-target="#upcoming-webinars"
+        ) Ближайшие вебинары
+      li.webinars__nav-item.nav-item
+        button.webinars__nav-btn.btn-tab.btn-tab_color_white.nav-link(
+          data-bs-toggle="tab" data-bs-target="#all-webinars"
+        ) Все вебинары
+
+  .webinars__bottom.container
+    .webinars__content.tab-content
+      .webinars__pane.tab-pane.fade.show.active(id="upcoming-webinars")
+        .webinars__slider.swiper-container
+          .webinars__controls
+            button.webinars__prev.btn-navigate.btn-navigate_color_primary_dark(type="button" aria-label="Назад")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+
+            button.webinars__next.btn-navigate.btn-navigate_color_primary(type="button" aria-label="Вперед")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+
+          .swiper-wrapper
+            .swiper-slide
+              include ../webinar-card/webinar-card
+            .swiper-slide
+              include ../webinar-card/webinar-card
+
+      .webinars__pane.tab-pane.fade(id="all-webinars")
+        .webinars__slider.swiper-container
+          .webinars__controls
+            button.webinars__prev.btn-navigate.btn-navigate_color_primary_dark(type="button" aria-label="Назад")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+
+            button.webinars__next.btn-navigate.btn-navigate_color_primary(type="button" aria-label="Вперед")
+              svg(class="btn-navigate__icon icon" width="24" height="24")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+
+          .swiper-wrapper
+            .swiper-slide
+              include ../webinar-card/webinar-card
+
+            .swiper-slide
+              include ../webinar-card/webinar-card

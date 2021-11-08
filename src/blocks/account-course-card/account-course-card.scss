@@ -1,0 +1,121 @@
+.account-course-card {
+  &__link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    color: var(--color-white);
+    text-decoration: none;
+    background-color: #000a3d;
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 10px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+
+    &-icon {
+      margin-right: 8px;
+      fill: var(--color-white);
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__link {
+      min-height: 138px;
+    }
+
+    &__subtitle {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      margin: 0;
+      max-width: 110px;
+    }
+
+    &__label {
+      padding-right: 120px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__link {
+      min-height: 165px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+
+    &__label {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    &__link {
+      min-height: 133px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 17px;
+    }
+
+    &__label {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 413px) {
+    &__link {
+      min-height: 104px;
+    }
+
+    &__title {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__label {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.comments
+  form.comments__form(action="#")
+    textarea.comments__textarea(
+      name=""
+      placeholder="Оставьте комментарий"
+    )
+    button.comments__send(type="submit") Отправить
+
+  .comments__list
+    include ../comment/comment
+    include ../comment/comment
+    include ../comment/comment
+    include ../comment/comment
+
+  button.comments__show-more.btn-outline.btn-outline_color_primary(type="button") Загрузить ещё

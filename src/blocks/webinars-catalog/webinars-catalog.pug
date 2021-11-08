@@ -1,0 +1,32 @@
+.webinars-catalog
+  .webinars-catalog__inner
+    include ../webinars-catalog-aside/webinars-catalog-aside
+
+    .webinars-catalog__content
+      .webinars-catalog__header
+        button.webinars-catalog__btn-filter.btn-outline(
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#webinars-catalog-aside"
+        )
+          svg(class="icon" width="17" height="17")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#sliders")
+          | Фильтр
+
+        p.webinars-catalog__coincidence 59 совпадений
+
+      .webinars-catalog__preview-list
+        include ../webinar-item-card/static/webinar-item-card_size_lg
+        div.webinars-catalog__preview-col
+          include ../webinar-item-card/static/webinar-item-card_size_sm
+          include ../webinar-item-card/static/webinar-item-card_size_sm
+
+      .webinars-catalog__list
+        include ../webinar-item-card/webinar-item-card
+        include ../webinar-item-card/webinar-item-card
+        include ../webinar-item-card/webinar-item-card
+        include ../webinar-item-card/webinar-item-card
+        include ../webinar-item-card/webinar-item-card
+        include ../webinar-item-card/webinar-item-card
+        include ../webinar-item-card/webinar-item-card
+        include ../webinar-item-card/webinar-item-card

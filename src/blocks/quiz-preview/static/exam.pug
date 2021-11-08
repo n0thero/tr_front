@@ -1,0 +1,36 @@
+// style="background-image: url(img/quiz/quiz-bg.svg)" - задать фон
+// .quiz-preview_exam - модификатор для экзамена
+.quiz-preview.quiz-preview_exam(style="background-image: url(img/quiz/quiz-bg.svg)")
+  // .quiz-preview__title_weight_medium = (font-weight: 500)
+  p.quiz-preview__title.quiz-preview__title_weight_medium Пройдите тест, чтобы проверить, насколько хорошо вы усвоили материал данного урока
+
+  ul.quiz-preview__exam-includes
+    li.quiz-preview__exam-includes-item
+      span.quiz-preview__exam-includes-top
+        svg(class="quiz-preview__exam-includes-icon con" width="32" height="32")
+          use(xlink:href="img/svg/symbol/sprite.svg#file-text")
+        b.quiz-preview__exam-includes-title 35
+      span.quiz-preview__exam-includes-desc Количество вопросов
+
+    li.quiz-preview__exam-includes-item
+      span.quiz-preview__exam-includes-top
+        svg(class="quiz-preview__exam-includes-icon con" width="32" height="32")
+          use(xlink:href="img/svg/symbol/sprite.svg#check-circle")
+        b.quiz-preview__exam-includes-title 25
+      span.quiz-preview__exam-includes-desc Необходимо правильных ответов
+
+    li.quiz-preview__exam-includes-item
+      span.quiz-preview__exam-includes-top
+        svg(class="quiz-preview__exam-includes-icon con" width="32" height="32")
+          use(xlink:href="img/svg/symbol/sprite.svg#star")
+        b.quiz-preview__exam-includes-title Легкий
+      span.quiz-preview__exam-includes-desc Уровень сложности
+
+    li.quiz-preview__exam-includes-item
+      span.quiz-preview__exam-includes-top
+        svg(class="quiz-preview__exam-includes-icon con" width="32" height="32")
+          use(xlink:href="img/svg/symbol/sprite.svg#award")
+        b.quiz-preview__exam-includes-title 1489
+      span.quiz-preview__exam-includes-desc Успешно прошли тест
+
+  button.quiz-preview__start.btn-primary(type="button") Начать экзамен

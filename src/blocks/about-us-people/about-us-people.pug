@@ -1,0 +1,57 @@
+section.team-staff
+  .container
+    h2.team-staff__title TrendUP - это люди
+
+  .team-staff__bottom.container
+    .team-staff-slider.swiper-container
+      .team-staff-slider__list.swiper-wrapper
+        .team-staff-slider__item.swiper-slide
+          .person-card
+            picture.person-card__picture
+              source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-1.jpg")
+              img.person-card__picture-img(
+                src="wp-content/themes/trading/august/img/team-management/team-management-1-lg.jpg" alt="" width="273" height="273"
+              )
+            p.person-card__title Артём Сребный
+            p.person-card__position Генеральный директор
+
+        .team-staff-slider__item.swiper-slide
+          .person-card
+            picture.person-card__picture
+              source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-2.jpg")
+              img.person-card__picture-img(
+                src="wp-content/themes/trading/august/img/team-management/team-management-2-lg.jpg" alt="" width="273" height="273"
+              )
+            p.person-card__title Екатерина Сребная
+            p.person-card__position Исполнительный директор
+
+        .team-staff-slider__item.swiper-slide
+          .person-card
+            picture.person-card__picture
+              source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-3.jpg")
+              img.person-card__picture-img(
+                src="wp-content/themes/trading/august/img/team-management/team-management-3-lg.jpg" alt="" width="273" height="273"
+              )
+            p.person-card__title Александр Ерёмин
+            p.person-card__position Руководитель отдела маркетинга
+
+        .team-staff-slider__item.swiper-slide
+          .person-card
+            picture.person-card__picture
+              source(media="(min-width: 834px)" srcset="wp-content/themes/trading/august/img/team-management/team-management-4.jpg")
+              img.person-card__picture-img(
+                src="wp-content/themes/trading/august/img/team-management/team-management-4-lg.jpg" alt="" width="273" height="273"
+              )
+            p.person-card__title Ксения Хавалджи
+            p.person-card__position Руководитель отдела продаж
+
+      .team-staff-slider__controls
+        p.team-staff-slider__pagination
+
+        button.team-staff-slider__prev.btn-navigate.btn-navigate_color_primary_dark(type="button" aria-label="Назад")
+          svg(class="btn-navigate__icon icon" width="24" height="24")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+
+        button.team-staff-slider__next.btn-navigate.btn-navigate_color_primary(type="button" aria-label="Вперед")
+          svg(class="btn-navigate__icon icon" width="24" height="24")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")

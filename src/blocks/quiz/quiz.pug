@@ -1,0 +1,25 @@
+section.quiz
+  .container
+    header.quiz__header
+      a.quiz__back.link-back(href="#")
+        svg(class="link-back__icon icon" width="24" height="24")
+          use(xlink:href="img/svg/symbol/sprite.svg#chevron-left")
+        | Вернуться к курсу
+
+      // Заголовок посередине навигации и кнопки назад
+      // h1.quiz__header-title Итоговый тест
+
+      .quiz__navigate
+        p.quiz__navigate-label Выбор урока
+        include ../../blocks/webinar-navigate/static/quiz_dropdown
+
+    .quiz__body
+      //  quiz__title_color_blue - задает синий цвет
+      h1.quiz__title Промежуточный тест за первый урок
+
+      .quiz__body-inner
+        .quiz__content
+          include ../../blocks/quiz-preview/quiz-preview
+
+        .quiz__aside
+          include ../../blocks/webinar-navigate/static/quiz

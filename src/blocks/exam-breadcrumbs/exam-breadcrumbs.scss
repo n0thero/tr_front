@@ -1,0 +1,19 @@
+.exem-breadcrumbs{
+    &__container{
+        display: flex;
+        align-items: center;
+        margin: 0 0 24px;
+        cursor: pointer;
+        width: fit-content;
+    }
+    
+    &-arrow{
+        margin: 0 15px 0 0;
+    }
+    
+    &-back{
+        font-weight: 500;
+        color: var(--color-dark-dark);
+        cursor: pointer;
+    }
+}

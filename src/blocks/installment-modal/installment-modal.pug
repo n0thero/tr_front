@@ -1,0 +1,56 @@
+.installment-modal.modal(id="installment-modal" tabindex="-1" aria-hidden="true")
+  .installment-modal__dialog.modal-dialog
+    section.installment-modal__content.modal-content
+      button.installment-modal__close(
+        type="button"
+        data-bs-dismiss="modal"
+        aria-label="Закрыть окно"
+      )
+        svg(class="installment-modal__close-icon icon" width="32" height="32")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#close-circle")
+
+      .form-message
+        form.installment-modal__form.needs-validation(
+          action="/"
+          method="post"
+          novalidate
+        )
+          h2.installment-modal__title Оставьте свою заявку на получение рассрочки и наш менеджер свяжется с вами
+
+          .installment-modal__fields
+            input(type="hidden" name="tariff" value="premium")
+
+            .field.field_color_blue
+              input.field__control(
+                type="text"
+                name="name"
+                id="installment-modal-name"
+                required
+              )
+              label.field__label(for="installment-modal-name") Ваше имя
+
+            .field.field_color_blue
+              input.field__control(
+                type="text"
+                name="phone"
+                id="installment-modal-phone"
+                required
+              )
+              label.field__label(for="installment-modal-phone") Ваш номер телефона
+
+            .field.field_color_blue
+              input.field__control(
+                type="email"
+                name="email"
+                id="installment-modal-email"
+              )
+              label.field__label(for="installment-modal-email") Ваш E-mail
+
+          .installment-modal__form-bottom
+            p.installment-modal__personal Нажимая на кнопку, я соглашаюсь на&nbsp;обработку персональных данных
+            button.installment-modal__submit.btn-primary(type="submit") Взять в рассрочку
+            button.installment-modal__back(
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#recording-course-modal"
+            ) Вернуться к полной оплате курса

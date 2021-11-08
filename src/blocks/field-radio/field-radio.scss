@@ -1,0 +1,110 @@
+.field-radio {
+  display: flex;
+  width: fit-content;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  &__input {
+    @include visually-hidden;
+
+    &:checked + .field-radio__box {
+      background-color: transparent;
+      border-color: var(--color-dark-dark);
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &_invalid {
+      &:checked + .field-radio__box {
+        border-color: var(--color-primary);
+      }
+
+      & + .field-radio__box {
+        background-color: transparent;
+        border-color: var(--color-primary);
+
+        &::before {
+          background-color: var(--color-primary);
+        }
+      }
+
+      & ~ .field-radio__label .field-radio__feedback {
+        color: var(--color-primary);
+      }
+    }
+
+    &_valid {
+      &:checked + .field-radio__box {
+        border-color: var(--color-success);
+      }
+
+      & + .field-radio__box {
+        background-color: transparent;
+        border-color: var(--color-success);
+
+        &::before {
+          background-color: var(--color-success);
+        }
+      }
+
+      & ~ .field-radio__label .field-radio__feedback {
+        color: var(--color-success);
+      }
+    }
+
+    &:focus-visible + .field-radio__box {
+      box-shadow: 0 0 0 1px var(--color-focus);
+    }
+
+    &:disabled {
+      & + .field-radio__box {
+        opacity: 0.5;
+      }
+
+      & ~ .field-radio__label {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__box {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-white-gray);
+    border: 1px solid var(--color-white-gray);
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background-color: var(--color-dark-dark);
+      border-radius: 50%;
+      opacity: 0;
+    }
+  }
+
+  &__label {
+    margin-top: 2px;
+  }
+
+  &__feedback {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  @media (max-width: 1439px) {
+    &__feedback {
+      margin-top: 16px;
+    }
+  }
+}

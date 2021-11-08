@@ -1,0 +1,18 @@
+extends ../templates/index
+
+block content
+  .container
+    ul.breadcrumbs
+      li.breadcrumbs__item
+        a.breadcrumbs__link(href="/") Назад
+      li.breadcrumbs__item
+        a.breadcrumbs__link Команда
+
+  include ../../blocks/team/team
+
+
+block modal
+  include ../../blocks/modal/modal
+
+block scripts
+  script(src="js/script.js")

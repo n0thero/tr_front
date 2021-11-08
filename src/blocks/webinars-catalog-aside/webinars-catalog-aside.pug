@@ -1,0 +1,12 @@
+.webinars-catalog-aside.modal(id="webinars-catalog-aside")
+  .webinars-catalog-aside__dialog.modal-dialog
+    .webinars-catalog-aside__content.modal-content
+      button.webinars-catalog-aside__close(
+        type="button"
+        data-bs-dismiss="modal"
+        aria-label="Закрыть окно"
+      )
+        svg(class="icon" width="20" height="20")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#close")
+
+      include ../webinars-catalog-filter/webinars-catalog-filter

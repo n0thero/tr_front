@@ -1,0 +1,149 @@
+.instructor {
+  margin-bottom: 104px;
+  background-color: var(--color-dark-blue);
+  background: linear-gradient(118.34deg, #161928 22.83%, #1B2035 85.38%);
+  box-shadow: inset 0 92px var(--bg-color-page), inset 0 -92px var(--bg-color-page);
+
+  &__inner {
+    display: flex;
+  }
+
+  &__picture {
+    &-img {
+      margin-right: 118px;
+      width: 468px;
+      height: 600px;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding: 162px 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 11px;
+    color: var(--color-white);
+
+    &-top {
+      display: block;
+      margin-bottom: 13px;
+      color: var(--color-gray);
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 130%;
+    }
+  }
+
+  &__activity {
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--color-dark-gray);
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__social-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__social {
+    margin-right: 24px;
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__picture {
+      &-img {
+        margin-right: 62px;
+        width: 438px;
+        height: 562px;
+      }
+    }
+
+    &__title {
+      &-title {
+        font-size: 36px;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    box-shadow: inset 0 26px var(--bg-color-page), inset 0 -26px var(--bg-color-page);
+
+    &__info {
+      padding: 50px 0;
+    }
+
+    &__title {
+      &-top {
+        font-size: 24px;
+        font-weight: normal;
+      }
+
+      &-title {
+        font-size: 32px;
+      }
+    }
+
+    &__picture {
+      &-img {
+        margin-right: 59px;
+        width: 280px;
+        height: 360px;
+      }
+    }
+  }
+
+  @media (max-width: 833px) {
+    box-shadow: inset 0 197px var(--bg-color-page);
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__picture {
+      align-self: center;
+
+      &-img {
+        margin-right: 0;
+        width: 436px;
+        height: 560px;
+      }
+    }
+
+    &__info {
+      padding-top: 24px;
+      padding-bottom: 36px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__more {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+    box-shadow: inset 0 142px var(--bg-color-page);
+
+    &__picture {
+      &-img {
+        width: 350px;
+        height: 450px;
+      }
+    }
+
+    &__info {
+      padding-top: 32px;
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.course-card-lg {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  padding-bottom: 244px;
+  min-height: 491px;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  background-image:
+    url('../wp-content/themes/trading/august/img/course-card/course-card-1.jpg'),
+    url('../wp-content/themes/trading/august/img/course-card/course-card-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center, top right;
+  background-size: calc(min(400px, 100%)) auto, auto;
+  border-radius: 4px;
+
+  :nth-child(2) {
+    margin-top: auto;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 3px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--color-dark-gray);
+    font-size: 17px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+  }
+
+  &__progress {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 121%;
+    letter-spacing: 0.02em;
+
+    &-label {
+      color: var(--color-primary);
+
+      &_color_success {
+        color: var(--color-success);
+      }
+    }
+
+    &-status {
+      margin-left: 10px;
+    }
+  }
+
+  &__progress-progress {
+    margin-bottom: 36px;
+  }
+
+  &__link {
+    width: 100%;
+  }
+}

@@ -1,0 +1,122 @@
+.quiz-result {
+  padding: 60px 58px;
+  min-height: 638px;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  &__result {
+    margin: 0;
+    margin-bottom: 46px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 130%;
+
+    &_defided {
+      color: var(--color-red);
+
+      .quiz-result__result-current {
+        color: var(--color-red);
+      }
+    }
+
+    &_correct {
+      color: var(--color-success);
+
+      .quiz-result__result-current {
+        color: var(--color-success);
+      }
+    }
+
+    &_final {
+      color: var(--color-light-blue);
+    }
+  }
+
+  &__info {
+    margin-bottom: 74px;
+
+    &-title {
+      margin: 0;
+      margin-bottom: 32px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &-item + &-item {
+      margin-top: 16px;
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 50px;
+      font-size: 20px;
+      line-height: 130%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 0;
+        width: 35px;
+        height: 1px;
+        background-color: var(--color-dark-gray);
+      }
+    }
+  }
+
+  &__footer {
+    display: none;
+  }
+
+  @media (max-width: 1439px) {
+    padding: 28px 32px;
+    min-height: unset;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__result {
+      margin-bottom: 24px;
+    }
+
+    &__info {
+      margin-bottom: 24px;
+
+      &-title {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__footer {
+      display: grid;
+      row-gap: 24px;
+      max-width: 436px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    background-image: none !important;
+  }
+}

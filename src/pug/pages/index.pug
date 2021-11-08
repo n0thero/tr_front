@@ -1,0 +1,22 @@
+extends ../templates/main
+
+block header
+  include ../../blocks/header-main/static/header
+
+block content
+  .index-content(style="min-height: 600px")
+    .index-content__main(style="display: none")
+      include ../../blocks/educational-platform/educational-platform
+      include ../../blocks/innovation/innovation
+      include ../../blocks/specialists/specialists
+      include ../../blocks/utterance/utterance
+    .index-content__admin(style="display: none")
+      include ../../blocks/start-learn/start-learn
+      include ../../blocks/account-courses/dynamic/account-courses
+      include ../../blocks/account-useful/account-useful
+
+block modal
+  include ../../blocks/modal/modal
+
+block scripts
+  script(src="js/script.js")

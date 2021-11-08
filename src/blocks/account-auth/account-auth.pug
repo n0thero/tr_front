@@ -1,0 +1,100 @@
+section.account-personal
+  .container
+    h1.account-personal__title Данные авторизации
+
+    form.account-personal__form(
+    action="/wp-json/user/update-login/"
+      method="post"
+      novalidate
+    )
+      .account-personal__form-body
+        p.account-personal__form-title Контактные данные
+
+        .account-personal__form-fields
+          .field
+            input.field__control(
+              type="text"
+              name="login"
+              id="login"
+              value="kozhamniyazovv"
+              minlength="3"
+              required
+            )
+            label.field__label(for="login") Ваш логин
+
+          .field
+            input.field__control(
+              type="email"
+              name="email"
+              id="email"
+              value="kozhamniyazov01@gmail.com"
+              required
+            )
+            label.field__label(for="email") Ваш почтовый ящик
+
+        button.account-personal__form-submit.btn-primary(type="submit") Сохранить изменения
+
+        .account-personal__form-status.account-personal__form-status_success
+          svg(class="account-personal__form-status-icon icon" width="40" height="40")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#check-circle")
+          p.account-personal__form-status-title Изменения сохранены
+            span.account-personal__form-status-desc Данные будут отображаться на вашей странице
+
+        .account-personal__form-status.account-personal__form-status_danger
+          svg(class="account-personal__form-status-icon icon" width="40" height="40")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#close-circle")
+          p.account-personal__form-status-title Ошибка изменения данных
+            span.account-personal__form-status-desc Данные введены некоректно
+
+    form.account-personal__form(
+      action="/wp-json/user/update-password/"
+      method="post"
+      novalidate
+    )
+      .account-personal__form-body
+        p.account-personal__form-title Изменить пароль
+
+        .account-personal__form-fields
+          .field
+            input.field__control(
+              type="password"
+              name="current_password"
+              id="current_password"
+              value="123"
+              required
+            )
+            label.field__label(for="current_password") Ваш текущий пароль
+
+          .account-personal__form-field-row-two.field
+            input.field__control(
+              type="password"
+              name="password"
+              id="password"
+              value="456"
+              required
+            )
+            label.field__label(for="name") Новый пароль
+
+          .account-personal__form-field-row-two.field
+            input.field__control(
+              type="password"
+              name="password_new"
+              id="password_new"
+              value="456"
+              required
+            )
+            label.field__label(for="password_new") Потвердите новый пароль
+
+        button.account-personal__form-submit.btn-primary(type="submit") Сохранить изменения
+
+        .account-personal__form-status.account-personal__form-status_success
+          svg(class="account-personal__form-status-icon icon" width="40" height="40")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#check-circle")
+          p.account-personal__form-status-title Изменения сохранены
+            span.account-personal__form-status-desc Данные будут отображаться на вашей странице
+
+        .account-personal__form-status.account-personal__form-status_danger
+          svg(class="account-personal__form-status-icon icon" width="40" height="40")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#close-circle")
+          p.account-personal__form-status-title Ошибка изменения данных
+            span.account-personal__form-status-desc Данные введены некоректно

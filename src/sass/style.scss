@@ -1,0 +1,227 @@
+@import 'vendor/swiper';
+@import 'vendor/bootstrap';
+@import 'vendor/normalize';
+@import 'vendor/video-js';
+@import 'vendor/quality-selector';
+@import 'vendor/lightgallery';
+@import 'vendor/toastify-js';
+
+@import "common/fonts";
+@import "common/colors";
+@import "common/common";
+@import "common/admin";
+@import "common/index";
+
+@import '../blocks/visually-hidden';
+@import "../blocks/text-content/text-content";
+
+@import '../blocks/section-title';
+@import '../blocks/link';
+@import '../blocks/button';
+@import "../blocks/switch/switch";
+@import '../blocks/field/field';
+@import '../blocks/field-file/field-file';
+@import '../blocks/field-radio/field-radio';
+@import '../blocks/field-checkbox/field-checkbox';
+@import '../blocks/form-message';
+// @import '../blocks/field-floating';
+@import '../blocks/logo';
+@import "../blocks/container-index";
+@import "../blocks/section-centred";
+@import "../blocks/rating/rating";
+@import "../blocks/comment/comment";
+@import "../blocks/comments/comments";
+@import '../blocks/toast-notification';
+
+@import '../blocks/breadcrumbs/breadcrumbs';
+@import '../blocks/main-menu/main-menu';
+@import '../blocks/user-menu/user-menu';
+@import '../blocks/box-features/box-features';
+@import '../blocks/social/social';
+@import '../blocks/personal-rating/personal-rating';
+@import '../blocks/page-top';
+@import "../blocks/collapse-questions/collapse-questions";
+
+// cards
+@import "../blocks/webinar-card/webinar-card";
+@import "../blocks/webinar-item-card/webinar-item-card";
+@import "../blocks/practice-card/practice-card";
+@import "../blocks/account-course-card/account-course-card";
+@import "../blocks/course-card/course-card";
+@import "../blocks/course-card-lg/course-card-lg";
+@import "../blocks/person-card/person-card";
+@import "../blocks/event-card/event-card";
+@import "../blocks/subscription-card/subscription-card";
+@import "../blocks/book-card-large/book-card-large";
+@import "../blocks/book-card/book-card";
+@import "../blocks/useful-card/useful-card";
+
+// index
+@import "../blocks/hero/hero";
+@import "../blocks/investment/investment";
+@import "../blocks/course-for/course-for";
+@import "../blocks/learn/learn";
+@import "../blocks/included-training/included-training";
+@import "../blocks/training-program/training-program";
+@import "../blocks/instructor/instructor";
+@import "../blocks/tariff/tariff";
+@import "../blocks/tariffs/tariffs";
+@import "../blocks/consultation/consultation";
+@import "../blocks/support/support";
+@import "../blocks/recording-course/recording-course";
+
+// index2
+@import "../blocks/educational-platform/educational-platform";
+@import "../blocks/innovation/innovation";
+@import "../blocks/specialists/specialists";
+@import "../blocks/utterance/utterance";
+
+// admin
+@import "../blocks/header-admin/header-admin";
+@import "../blocks/sidebar/sidebar";
+
+// experts
+@import "../blocks/experts/experts";
+
+// expert
+@import "../blocks/expert/expert";
+@import "../blocks/courses/courses";
+@import "../blocks/certificates/certificates";
+@import "../blocks/webinars/webinars";
+
+// contacts
+@import "../blocks/contacts/contacts";
+@import "../blocks/form-contacts/form-contacts";
+
+// team
+@import "../blocks/team-management/team-management";
+@import "../blocks/team-staff-slider/team-staff-slider";
+@import "../blocks/team-staff/team-staff";
+@import "../blocks/info-message";
+@import "../blocks/recruting/recruting";
+@import "../blocks/team/team";
+
+@import "../blocks/header/header";
+@import "../blocks/header-main/header-main";
+@import "../blocks/footer/footer";
+
+@import "../blocks/offcanvas-menu/offcanvas-menu";
+@import "../blocks/recording-course-modal/recording-course-modal";
+@import "../blocks/installment-modal/installment-modal";
+@import "../blocks/demo-access-modal/demo-access-modal";
+@import "../blocks/menu-modal/menu-modal";
+
+//vacancies
+@import "../blocks/vacancies/vacancies";
+
+//about us
+@import "../blocks/school/school";
+@import "../blocks/trandup-result/trandup-result";
+@import "../blocks/partners/partners";
+@import "../blocks/atmosphere/atmosphere";
+@import "../blocks/more-us/more-us";
+
+//reviews
+@import "../blocks/reviews/reviews";
+
+// notification-modal
+@import "../blocks/notification-modal-item/notification-modal-item";
+@import "../blocks/notification-modal-chat/notification-modal-chat";
+@import "../blocks/notification-modal/notification-modal";
+
+// account-courses
+@import "../blocks/start-learn/start-learn";
+@import "../blocks/account-courses/account-courses";
+@import "../blocks/account-useful/account-useful";
+
+//account-help
+@import "../blocks/account-navigation/account-navigation";
+@import "../blocks/training-program/training-program";
+@import "../blocks/consultation/consultation";
+@import "../blocks/form-account-help/form-account-help";
+
+// account-personal
+@import "../../node_modules/pikaday/scss/pikaday";
+@import "../blocks/warning-modal/warning-modal";
+@import "../blocks/account-personal/account-personal";
+
+//account-payment
+@import "../blocks/payment-history/payment-history";
+
+// account-alert
+@import "../blocks/account-alert/account-alert";
+
+// account-alert
+@import "../blocks/account-help/account-help";
+
+//webinars-catalog
+@import "../blocks/webinars-catalog-filter/webinars-catalog-filter";
+@import "../blocks/webinars-catalog-aside/webinars-catalog-aside";
+@import "../blocks/webinars-catalog/webinars-catalog";
+@import "../blocks/webinar-practice/webinar-practice";
+
+//analitics-catalog
+@import "../blocks/analitics-catalog/analitics-catalog";
+
+// learning-programm
+@import "../blocks/learning-programm/learning-programm";
+
+// events-calendar
+@import "../blocks/events-calendar/events-calendar";
+
+// wiki
+@import "../blocks/wiki/wiki";
+@import "../blocks/wiki-detail/wiki-detail";
+@import "../blocks/wiki-article/wiki-article";
+@import "../blocks/wiki-breadcrumbs/wiki-breadcrumbs";
+
+// catalog-subscriptions
+@import "../blocks/subscriptions/subscriptions";
+
+// materials
+@import "../blocks/books/books";
+@import "../blocks/materials-video/materials-video";
+@import "../blocks/materials/materials";
+@import "../../node_modules/lightgallery/scss/lightgallery-bundle";
+
+//tests
+@import "../blocks/tests/tests";
+@import "../blocks/tests-breadcrumbs/tests-breadcrumbs";
+
+// exam
+@import "../blocks/exam-breadcrumbs/exam-breadcrumbs";
+@import "../blocks/exam-form/exam-form";
+
+@import "../blocks/exam-module/exam-module";
+
+// course
+@import "../blocks/progress/progress";
+@import "../blocks/progress-circle/progress-circle";
+@import "../blocks/course/course";
+
+// webinar
+@import "../blocks/webinar-video/webinar-video";
+@import "../blocks/webinar-leading/webinar-leading";
+@import "../blocks/webinar-will-teach/webinar-will-teach";
+@import "../blocks/webinar-materials/webinar-materials";
+@import "../blocks/webinar-gallery/webinar-gallery";
+@import "../blocks/webinar-navigate/webinar-navigate";
+@import "../blocks/webinar-webinars/webinar-webinars";
+@import "../blocks/webinar-chat/webinar-chat";
+@import "../blocks/webinar/webinar";
+
+// privacy-policy
+@import "../blocks/document-page/document-page";
+
+// journal
+@import "../blocks/journal-card/journal-card";
+@import "../blocks/journal/journal";
+
+// journal-article
+@import "../blocks/journal-article/journal-article";
+
+// quiz
+@import '../blocks/quiz-preview/quiz-preview';
+@import '../blocks/quiz-test/quiz-test';
+@import '../blocks/quiz-result/quiz-result';
+@import '../blocks/quiz/quiz';

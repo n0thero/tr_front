@@ -1,0 +1,52 @@
+.rating {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item + &__item {
+    margin-left: 8px;
+  }
+
+  &__item {
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 12.8589L12.944 16L11.632 10.08L16 6.09684L10.248 5.57474L8 0L5.752 5.57474L0 6.09684L4.36 10.08L3.056 16L8 12.8589Z" fill="%23C4C8DB"/%3E%3Cpath d="M8 12.8589V0L10.248 5.57474L16 6.09684L11.64 10.08L12.944 16L8 12.8589Z" fill="%23C4C8DB"/%3E%3C/svg%3E%0A');
+    background-size: cover;
+  }
+
+  @for $i from 1 through 5 {
+    &[data-rating="#{$i}"] {
+      .rating__item {
+        &:nth-last-child(n + #{6 - $i}) {
+          background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 12.8589L12.944 16L11.632 10.08L16 6.09684L10.248 5.57474L8 0L5.752 5.57474L0 6.09684L4.36 10.08L3.056 16L8 12.8589Z" fill="%23FFAD4C"/%3E%3C/svg%3E%0A');
+        }
+      }
+    }
+  }
+
+  @for $i from 0 through 4 {
+    &[data-rating="#{$i + 0.5}"] {
+      .rating__item {
+        &:nth-last-child(n + #{5 - $i}) {
+          background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 12.8589L12.944 16L11.632 10.08L16 6.09684L10.248 5.57474L8 0L5.752 5.57474L0 6.09684L4.36 10.08L3.056 16L8 12.8589Z" fill="%23FFAD4C"/%3E%3C/svg%3E%0A');
+        }
+
+        &:nth-child(#{$i + 1}) {
+          background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 12.8589L12.944 16L11.632 10.08L16 6.09684L10.248 5.57474L8 0L5.752 5.57474L0 6.09684L4.36 10.08L3.056 16L8 12.8589Z" fill="%23FFAD4C"/%3E%3Cpath d="M8 12.8589V0L10.248 5.57474L16 6.09684L11.64 10.08L12.944 16L8 12.8589Z" fill="%23C4C8DB"/%3E%3C/svg%3E%0A');
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__item + &__item {
+      margin-left: 4px;
+    }
+
+    &__item {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

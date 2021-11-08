@@ -1,0 +1,24 @@
+extends ../templates/main
+
+block content
+  .page-top.page-top_color_dark
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link.breadcrumbs__link_color_light(href="/") Назад
+        li.breadcrumbs__item
+          a.breadcrumbs__link.breadcrumbs__link_color_light(href="/experts/") Эксперты
+        li.breadcrumbs__item
+          a.breadcrumbs__link.breadcrumbs__link_color_light Артем Сребный
+
+  include ../../blocks/expert/static/srebnyi
+  //- include ../../blocks/courses/courses
+  include ../../blocks/certificates/static/srebnyi
+  //- include ../../blocks/webinars/webinars
+
+
+block modal
+  include ../../blocks/modal/modal
+
+block scripts
+  script(src="js/script.js")

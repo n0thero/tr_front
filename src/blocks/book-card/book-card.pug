@@ -1,0 +1,27 @@
+article.book-card
+  a.book-card__link(
+    href="https://trendup.pro/wp-content/uploads/2021/02/instruktsia_2021-1.pdf"
+    download="instruktsia_2021-1.pdf"
+    target="_blank"
+  )
+    span.book-card__download
+      svg(class="book-card__download-icon icon" width="21" height="21")
+        use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#download")
+
+    picture.book-card__cover
+      img.book-card__cover-img(
+        src="wp-content/themes/trading/august/img/books/books-6.jpg"
+        srcset="wp-content/themes/trading/august/img/books/books-6@2x.jpg 2x"
+        alt="Шпаргалка для трейдеров поможет избежать 95% ошибок"
+      )
+
+    .book-card__info
+      h3.book-card__title Бесплатные уроки с ценностью<br>1 000 000 рублей
+      p.book-card__desc Взаимодействие корпорации и клиента, вопреки мнению П.Друкера, однократно.
+
+      ul.book-card__rating.rating(data-rating="4.5")
+        li.rating__item
+        li.rating__item
+        li.rating__item
+        li.rating__item
+        li.rating__item

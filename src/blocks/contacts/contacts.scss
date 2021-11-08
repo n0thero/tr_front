@@ -1,0 +1,179 @@
+.contacts {
+  margin-bottom: 104px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 130%;
+  }
+
+  &__content {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__info {
+    flex-shrink: 0;
+    display: grid;
+    gap: 24px;
+    margin-right: 62px;
+  }
+
+  &__field {
+    &-title {
+      margin: 0;
+      margin-bottom: 16px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 130%;
+    }
+
+    &-text {
+      display: block;
+      margin: 0;
+      color: var(--color-primary);
+      text-decoration: none;
+
+      &_space {
+        line-height: 184.5%;
+      }
+    }
+  }
+
+  &__map {
+    flex-grow: 1;
+    margin-top: -40px;
+    height: inherit;
+    overflow: hidden;
+
+    &-inner {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__info {
+      gap: 32px;
+      margin-right: 60px;
+    }
+
+    &__map {
+      margin-top: 18px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__content {
+      display: block;
+    }
+
+    &__info {
+      grid-template-columns: auto auto;
+      gap: 0 101px;
+      margin: 0;
+      margin-bottom: 32px;
+    }
+
+    &__field {
+      margin-top: 32px;
+      order: 5;
+
+      &-address {
+        order: 1;
+        margin-top: 0;
+      }
+
+      &-law-address {
+        order: 2;
+        margin-top: 0;
+      }
+
+      &-email {
+        order: 3;
+      }
+
+      &-requisite {
+        order: 4;
+      }
+
+      &-phone {
+        margin-top: -8px;
+      }
+
+      &-social {
+        grid-column: 1 / span 1;
+      }
+    }
+
+    &__map {
+      height: 348px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__title {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+
+    &__info {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    &__field {
+      margin: 0;
+      order: unset;
+
+      &-address,
+      &-law-address,
+      &-email,
+      &-requisite,
+      &-phone {
+        order: unset;
+      }
+
+      &-title {
+        margin-bottom: 4px;
+        font-size: 20px;
+      }
+    }
+
+    &__map {
+      height: 375px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+
+    &__map {
+      height: 301px;
+    }
+  }
+
+  @media (max-width: 413px) {
+    &__info {
+      gap: 12px;
+    }
+
+    &__field {
+      &-title {
+        font-size: 17px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+    }
+
+    &__map {
+      height: 276px;
+    }
+  }
+}

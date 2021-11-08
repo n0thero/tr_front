@@ -1,0 +1,278 @@
+section.course
+  .container
+    h1.course__title Инвестиции по-американски
+
+    .course__box
+      .course__box-left.course__box-left_first
+        .course__progress
+          h2.course__progress-title Мои результаты
+
+          .course__progress-list
+            .course__progress-item
+              .progress-circle(data-progress="25")
+                svg(width="170" height="170" viewBox="0 0 100 100")
+                  circle.progress-circle__bg(
+                    cx="50"
+                    cy="50"
+                    r="46"
+                    fill="transparent"
+                    stroke="#F1F1F1"
+                    stroke-width="8"
+                  )
+                  circle.progress-circle__bar(
+                    cx="50"
+                    cy="50"
+                    r="46"
+                    fill="transparent"
+                    stroke="red"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    transform="rotate(90)"
+                    transform-origin="center"
+                  )
+
+                .progress-circle__info
+                  p.course__progress-item-title 7 уроков
+                  p.course__progress-item-desc из 34
+
+            .course__progress-item
+              .progress-circle(data-progress="50")
+                svg(width="170" height="170" viewBox="0 0 100 100")
+                  circle.progress-circle__bg(
+                    cx="50"
+                    cy="50"
+                    r="46"
+                    fill="transparent"
+                    stroke="#F1F1F1"
+                    stroke-width="8"
+                  )
+                  circle.progress-circle__bar(
+                    cx="50"
+                    cy="50"
+                    r="46"
+                    fill="transparent"
+                    stroke="red"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    transform="rotate(90)"
+                    transform-origin="center"
+                  )
+
+                .progress-circle__info
+                  p.course__progress-item-title 1 модуль
+                  p.course__progress-item-desc из 10
+
+            .course__progress-item
+              .progress-circle(data-progress="100")
+                svg(width="170" height="170" viewBox="0 0 100 100")
+                  defs
+                    pattern(
+                      viewBox="0, 0, 100, 100"
+                      width="100%"
+                      height="100%"
+                      id="flag"
+                      patternUnits="userSpaceOnUse"
+                    )
+                      image(
+                        width="100%"
+                        height="100%"
+                        xlink:href="wp-content/themes/trading/august/img/progress-bg.jpg"
+                        transform="rotate(-90)"
+                        transform-origin="center"
+                      )
+                  circle.progress-circle__bg(
+                    cx="50"
+                    cy="50"
+                    r="46"
+                    fill="transparent"
+                    stroke="#F1F1F1"
+                    stroke-width="8"
+                  )
+                  circle.progress-circle__bar(
+                    cx="50"
+                    cy="50"
+                    r="46"
+                    fill="transparent"
+                    stroke="url(#flag)"
+                    stroke-width="8"
+                    transform="rotate(90)"
+                    transform-origin="center"
+                  )
+
+                .progress-circle__info
+                  p.course__progress-item-title 8 тестов
+                  p.course__progress-item-desc из 56
+
+      .course__box-right
+        .course__progress-info
+          .course__progress-info-rank
+            picture.course__progress-info-picture
+              img.course__progress-info-picture-img(
+                src="wp-content/themes/trading/august/img/rank.png"
+                alt="Рейтинг"
+                width="107"
+                height="129"
+              )
+
+            h3.course__progress-info-title Инвестор II&nbsp;уровня
+            p.course__progress-info-label Мой ранг
+
+          ul.course__progress-info-list
+            li.course__progress-info-item.course__progress-info-item_checked Сдать домашнии задания
+            li.course__progress-info-item.course__progress-info-item_checked Уроков пройденно
+            li.course__progress-info-item.course__progress-info-item_checked Принять участие в вебинаре
+            li.course__progress-info-item Пройти 1 итоговый тест
+            li.course__progress-info-item Принять участие в практике
+
+          .course__progress-info-progress.progress
+            .progress__bar(
+              role="progressbar"
+              style="width: 80%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            )
+
+          p.course__progress-info-desc Смотрите видео, сдавайте тесты и получайте очки, чтобы повысить Ваше звание
+
+      .course__box-left
+        ol.course__lesson-list.accordion
+          li.course__lesson-item.accordion-item
+            button.course__lesson-item-button.accordion-button(
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#test-1"
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Ценные бамаги
+                span.course__lesson-item-status Пройдено
+              svg(class="course__lesson-item-plus-circle icon" width="18" height="18")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#plus-2")
+
+            .accordion-collapse.collapse.show(id="test-1")
+              .course__lesson-item-body
+                ol.course__lesson-links
+                  li.course__lesson-links-item
+                    a.course__lesson-links-link(href="#") Урок от американского хеджфонда Поиск инсайдерской информации с доходностью от 25% со сделки
+                  li.course__lesson-links-item
+                    a.course__lesson-links-link(href="#") Урок от американского хеджфонда Поиск инсайдерской информации с доходностью от 25% со сделки
+                    a.course__lesson-links-test(href="#") Пройти тест
+                  li.course__lesson-links-item
+                    a.course__lesson-links-link(href="#") Урок от американского хеджфонда Поиск инсайдерской информации с доходностью от 25% со сделки
+                  li.course__lesson-links-item.course__lesson-links-item_current
+                    a.course__lesson-links-link(href="#") Урок от американского хеджфонда Поиск инсайдерской 
+                    a.course__lesson-links-test(href="#") Пройти тест
+                  li.course__lesson-links-item
+                    a.course__lesson-links-link Урок от американского хеджфонда Поиск инсайдерской информации с доходностью от 25% со сделки
+                    a.course__lesson-links-test Итоговый тест
+
+                p.course__lesson-alert Поздравляем ! Вы прошли первый модуль. Это был первый шаг на пути становления обеспеченного инвестора! Не останавливайся на достигнутом и переходи к следующему модулю.
+
+          li.course__lesson-item.accordion-item
+            button.course__lesson-item-button.accordion-button.collapsed(
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#test-2"
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Инвестиционная экономика
+                span.course__lesson-item-status.course__lesson-item-status_active В процессе
+              svg(class="course__lesson-item-plus-circle icon" width="18" height="18")
+                use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#plus-2")
+
+            .accordion-collapse.collapse(id="test-2")
+              .course__lesson-item-body
+                ol.course__lesson-links
+                  li.course__lesson-links-item.course__lesson-links-item_current
+                    a.course__lesson-links-link(href="#") Урок от американского хеджфонда Поиск инсайдерской информации с доходностью от 25% со сделки
+                  li.course__lesson-links-item
+                    a.course__lesson-links-link Урок от американского хеджфонда Поиск инсайдерской информации с доходностью от 25% со сделки
+                    a.course__lesson-links-test Пройти тест
+                  li.course__lesson-links-item
+                    a.course__lesson-links-link Урок от американского хеджфонда Поиск инсайдерской информации с доходностью от 25% со сделки
+                  li.course__lesson-links-item
+                    a.course__lesson-links-link Урок от американского хеджфонда Поиск инсайдерской 
+                    a.course__lesson-links-test Пройти тест
+                  li.course__lesson-links-item
+                    a.course__lesson-links-link Урок от американского хеджфонда Поиск инсайдерской информации с доходностью от 25% со сделки
+                    a.course__lesson-links-test Итоговый тест
+
+          li.course__lesson-item.accordion-item
+            button.course__lesson-item-button(
+              type="button"
+              disabled
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Инвестируем в фонды
+                span.course__lesson-item-status Не пройдено
+
+          li.course__lesson-item.accordion-item
+            button.course__lesson-item-button(
+              type="button"
+              disabled
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Инвестируем в облигации
+                span.course__lesson-item-status Не пройдено
+
+          li.course__lesson-item.accordion-item
+            button.course__lesson-item-button(
+              type="button"
+              disabled
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Инвестирование в акции: Дивиденды
+                span.course__lesson-item-status Не пройдено
+
+          li.course__lesson-item.accordion-item.course__lesson-item_hide
+            button.course__lesson-item-button(
+              type="button"
+              disabled
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Инвестирование в акции: На остаток
+                span.course__lesson-item-status Не пройдено
+
+          li.course__lesson-item.accordion-item.course__lesson-item_hide
+            button.course__lesson-item-button(
+              type="button"
+              disabled
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Инвестирование в акции: Торговля на новостях
+                span.course__lesson-item-status Не пройдено
+
+          li.course__lesson-item.accordion-item.course__lesson-item_hide
+            button.course__lesson-item-button(
+              type="button"
+              disabled
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Инвестирование в акции: Инсайдеры
+                span.course__lesson-item-status Не пройдено
+
+          li.course__lesson-item.accordion-item.course__lesson-item_hide
+            button.course__lesson-item-button(
+              type="button"
+              disabled
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Инвестирование в акции: Покупка хорошего бизнеса
+                span.course__lesson-item-status Не пройдено
+
+          li.course__lesson-item.accordion-item.course__lesson-item_hide
+            button.course__lesson-item-button(
+              type="button"
+              disabled
+            )
+              span.course__lesson-item-info
+                span.course__lesson-item-title Что со всем этим делать: Теория на практике
+                span.course__lesson-item-status Не пройдено
+
+          li.course__lesson-item.accordion-item.course__lesson-item_hide
+            .course__lesson-item-button.course__lesson-item-button_disabled
+              span.course__lesson-item-info
+                span.course__lesson-item-title Какую стратегию выбрать: собираем<br>пазл Сложный %: как с 1 000 сделать 1 000 000
+                span.course__lesson-item-status Не пройдено
+
+        button.course__lesson-more.btn-outline.btn-outline_color_primary(type="button") Остальные уроки

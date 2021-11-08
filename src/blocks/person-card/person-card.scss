@@ -1,0 +1,96 @@
+.person-card {
+  &__picture {
+    &-img {
+      margin-bottom: 16px;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 264 / 267;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 10px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    color: var(--color-dark-dark);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__position {
+    margin: 0;
+    color: var(--color-dark-gray);
+    line-height: 130%;
+  }
+
+  @media (max-width: 1439px) {
+    &__picture {
+      &-img {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__picture {
+      &-img {
+        margin-bottom: 8px;
+        aspect-ratio: 170 / 199;
+      }
+    }
+
+    &__title {
+      margin-bottom: 4px;
+      font-size: 17px;
+    }
+
+    &__position {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__picture {
+      &-img {
+        margin-bottom: 24px;
+        aspect-ratio: 350 / 310;
+      }
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    &__position {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    display: flex;
+    flex-direction: column;
+
+    &__picture {
+      order: 1;
+
+      &-img {
+        margin: 0;
+        margin-top: 8px;
+        aspect-ratio: 350 / 197;
+      }
+    }
+
+    &__title {
+      margin-bottom: 2px;
+      font-size: 16px;
+    }
+
+    &__position {
+      font-size: 14px;
+    }
+  }
+}

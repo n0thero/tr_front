@@ -1,0 +1,137 @@
+.webinars-catalog {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 104px;
+
+  &__inner {
+    display: flex;
+    margin-left: -313px;
+    padding-left: 24px;
+    padding-right: 48px;
+  }
+
+  &__content {
+    max-width: 1128px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__btn-filter {
+    display: none;
+    padding: 6px 35px;
+    padding-right: 46px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+
+    .icon {
+      margin-right: 8px;
+    }
+  }
+
+  &__coincidence {
+    margin: 0;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__preview-list {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    align-items: start;
+    gap: 24px;
+    margin-bottom: 66px;
+  }
+
+  &__preview-col {
+    display: grid;
+    gap: 14px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 1919px) {
+    &__inner {
+      margin-left: unset;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+
+    &__inner {
+      padding-left: 16px;
+      padding-right: 64px;
+    }
+
+    &__coincidence {
+      font-size: 17px;
+    }
+
+    &__preview-list {
+      gap: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    &__preview-col {
+      gap: 10px;
+    }
+
+    &__list {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__inner {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
+    &__btn-filter {
+      display: inline-flex;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__inner {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    &__preview-list {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    &__preview-col {
+      gap: 16px;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: 413px) {
+    &__inner {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+}

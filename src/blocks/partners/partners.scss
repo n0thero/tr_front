@@ -1,0 +1,31 @@
+.partners{
+    margin: 0 0 104px;
+    
+    &-title{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 130%;
+        color: var(--color-dark-dark);
+    }
+    
+    &__container{
+        display: flex;
+        flex-direction: row;
+        
+        &-item{
+            width: 273px;
+            height: 86px;
+            background: var(--color-light-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px 0 0;
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .partners{
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+.progress-circle(data-progress="25")
+  svg(width="170" height="170" viewBox="0 0 100 100")
+    defs
+      pattern(
+        viewBox="0, 0, 100, 100"
+        width="100%"
+        height="100%"
+        id="flag"
+        patternUnits="userSpaceOnUse"
+      )
+        image(
+          width="100%"
+          height="100%"
+          xlink:href="wp-content/themes/trading/august/img/progress-bg.jpg"
+          transform="rotate(-90)"
+          transform-origin="center"
+        )
+    circle.progress-circle__bg(
+      cx="50"
+      cy="50"
+      r="46"
+      fill="transparent"
+      stroke="#F1F1F1"
+      stroke-width="8"
+    )
+    circle.progress-circle__bar(
+      cx="50"
+      cy="50"
+      r="46"
+      fill="transparent"
+      stroke="url(#flag)"
+      stroke-width="8"
+      transform="rotate(90)"
+      transform-origin="center"
+    )
+
+  .progress-circle__info

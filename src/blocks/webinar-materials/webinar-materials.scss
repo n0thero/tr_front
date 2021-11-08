@@ -1,0 +1,103 @@
+.webinar-materials {
+  margin-bottom: 24px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &__notice {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--color-dark-gray);
+    font-size: 12px;
+    line-height: 130%;
+
+    &-title {
+      margin: 0;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    &-info {
+      margin: 0;
+      max-width: 405px;
+    }
+
+    &-link {
+      color:  var(--color-dark-gray);
+
+      &:hover {
+        text-shadow: 0 0 1px  var(--color-dark-gray);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    padding: 8px;
+
+    &-link {
+      display: block;
+      padding: 10px 6px;
+      padding-left: 30px;
+      color: var(--color-black);
+      font-size: 17px;
+      line-height: 130%;
+      text-decoration: none;
+      background-color: var(--color-smoke-white);
+      background-image: url('data:image/svg+xml,%3Csvg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M6.75 0.624786C6.91576 0.624786 7.07473 0.690252 7.19194 0.806781L10.3169 3.91362C10.4342 4.03015 10.5 4.1882 10.5 4.353V11.188C10.5 12.2176 9.66053 13.0522 8.625 13.0522H2.375C1.33947 13.0522 0.5 12.2176 0.5 11.188V2.48889C0.5 1.45937 1.33947 0.624786 2.375 0.624786H6.75ZM5.49919 1.86753H2.37482C2.02964 1.86753 1.74982 2.14572 1.74982 2.4889V11.1881C1.74982 11.5312 2.02964 11.8094 2.37482 11.8094H8.62482C8.97 11.8094 9.24982 11.5312 9.24982 11.1881V5.59574H6.12482C5.8043 5.59574 5.54013 5.35586 5.50402 5.04683L5.49982 4.97437L5.49919 1.86753ZM8.99109 4.35296L6.74921 2.12474L6.74984 4.35296H8.99109Z" fill="%23FF0010"/%3E%3C/svg%3E%0A');
+      background-repeat: no-repeat;
+      background-position: center left 10px;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__title {
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    &__list {
+      margin: -4px;
+    }
+  
+    &__item {
+      padding: 4px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__title {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    &__list {
+      margin: -2px;
+    }
+
+    &__item {
+      padding: 2px;
+  
+      &-link {
+        font-size: 14px;
+      }
+    }
+  }
+}

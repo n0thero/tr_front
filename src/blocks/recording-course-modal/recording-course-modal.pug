@@ -1,0 +1,72 @@
+.recording-course-modal.modal(id="recording-course-modal" tabindex="-1" aria-hidden="true")
+  .recording-course-modal__dialog.modal-dialog
+    section.recording-course-modal__content.modal-content
+      button.recording-course-modal__close(
+        type="button"
+        data-bs-dismiss="modal"
+        aria-label="Закрыть окно"
+      )
+        svg(class="recording-course-modal__close-icon icon" width="32" height="32")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#close-circle")
+
+      h2.recording-course-modal__title Получите полный доступ к курсу прямо сейчас!
+
+      .recording-course-modal__box
+        .recording-course-modal__toggle
+          button.recording-course-modal__toggle-button.recording-course-modal__toggle-button_active(
+            type="button"
+            data-value="premium"
+            disabled
+          ) TrendUp Premium
+
+          button.recording-course-modal__toggle-button(
+            type="button"
+            data-value="self"
+          ) Cамостоятельный
+
+        .recording-course-modal__controls
+          button.recording-course-modal__controls-prev(type="button" aria-label="Предыдущий тариф")
+            svg(class='recording-course-modal__controls-icon icon' width="24" height="24")
+              use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+          button.recording-course-modal__controls-next(type="button" aria-label="Следующий тариф")
+            svg(class='recording-course-modal__controls-icon icon' width="24" height="24")
+              use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+
+        .recording-course-modal__item-prices
+          .recording-course-modal__prices
+            p.recording-course-modal__price 2 930 ₽
+              span.recording-course-modal__price-desc Рассрочка на 12 месяцев
+
+            p.recording-course-modal__price-full 34 990 ₽
+              span.recording-course-modal__price-full-desc Полная стоимость
+
+          .recording-course-modal__prices.recording-course-modal__prices_hidden
+            p.recording-course-modal__price 2 390 ₽
+              span.recording-course-modal__price-desc Рассрочка на 12 месяцев
+
+            p.recording-course-modal__price-full 27 990 ₽
+              span.recording-course-modal__price-full-desc Полная стоимость
+
+        .recording-course-modal__item-lists
+          ul.recording-course-modal__list
+            li.recording-course-modal__list-item Техническая поддержка
+            li.recording-course-modal__list-item Дневник трейдера
+            li.recording-course-modal__list-item Анализ инвест-портфеля
+            li.recording-course-modal__list-item Онлайн-практика
+
+          ul.recording-course-modal__list.recording-course-modal__list_hidden
+            li.recording-course-modal__list-item Техническая поддержка
+
+        .recording-course-modal__item-plan
+          ul.recording-course-modal__plan
+            li.recording-course-modal__plan-item 8 блоков
+            li.recording-course-modal__plan-item 32 урока
+            li.recording-course-modal__plan-item 31 тест
+
+      footer.recording-course-modal__footer
+        a.recording-course-modal__buy.btn-primary(href="/") Купить курс
+        button.recording-course-modal__installment.btn-outline.btn-outline_color_light(
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#installment-modal"
+        ) Взять в рассрочку

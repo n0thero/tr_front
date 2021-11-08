@@ -1,0 +1,45 @@
+extends ../templates/admin
+
+block content
+  section.webinar.container
+    header.webinar__header
+      a.webinar__back(href="#")
+        svg(class="webinar__back-icon icon" width="24" height="24")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+        | Вернуться к курсу
+
+      h1.webinar__title Урок 4
+
+    .webinar__inner
+      .webinar__content
+        include ../../blocks/webinar-video/static/lesson
+        include ../../blocks/webinar-navigate/webinar-navigate_dropdown
+
+        button.webinar__additional-info-toggle(
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#webinar-additional-info"
+        )
+          svg(class="webinar__additional-info-toggle-icon icon" width="24" height="24")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#plus-circle")
+          span скрыть доп. информацию
+
+        .collapse.show(id="webinar-additional-info")
+          include ../../blocks/webinar-leading/webinar-leading
+          include ../../blocks/webinar-will-teach/webinar-will-teach
+          include ../../blocks/webinar-materials/webinar-materials
+
+        include ../../blocks/webinar-chat/webinar-chat
+
+      .webinar__aside
+        include ../../blocks/webinar-navigate/webinar-navigate
+
+
+block modal
+  include ../../blocks/modal/modal
+
+
+block scripts
+  script(src="https://vjs.zencdn.net/7.14.3/video.min.js")
+  script(src="https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js")
+  script(src="js/script.js")

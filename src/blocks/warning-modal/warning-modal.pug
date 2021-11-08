@@ -1,0 +1,13 @@
+.warning-modal.modal(id="warning-modal" tabindex="-1" aria-hidden="true")
+  .warning-modal__dialog.modal-dialog
+    .warning-modal__content.modal-content
+      p.warning-modal__header Предупреждение
+
+      .warning-modal__body
+        p Вы изменили информацию о себе. Вы уверены, что 
+          b не 
+          | хотите сохранить изменения?
+
+      .warning-modal__footer
+        button.warning-modal__cancel(type="button") Отмена
+        button.warning-modal__proceed(type="button") Продолжить

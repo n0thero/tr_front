@@ -1,0 +1,264 @@
+.utterance {
+  position: relative;
+  color: var(--color-white);
+  background-color: #172433;
+  background-image: url("../wp-content/themes/trading/august/img/utterance/utterance-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom 30px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 324px;
+    background-color: var(--color-white);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 45%);
+  }
+
+  &__box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &-left {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding-bottom: 75px;
+    }
+  }
+
+  &__picture {
+    flex-shrink: 0;
+    display: block;
+    margin-right: -20px;
+    width: 129%;
+
+    &-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  &__quote {
+    margin: 0;
+    margin-bottom: 36px;
+
+    &-blockquote {
+      margin: 0;
+      margin-left: 13px;
+      // font-family: 'ABeeZee', 'IBM Plex Sans', sans-serif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 30px;
+      quotes: "\00ab""\00bb";
+
+      &::before {
+        content: open-quote;
+      }
+
+      &::after {
+        content: close-quote;
+      }
+    }
+
+    &-picture {
+      display: none;
+    }
+
+    &-caption {
+      margin-top: 8px;
+      text-align: right;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 120%;
+      font-style: italic;
+    }
+  }
+
+  &__join {
+    padding: 16px;
+    min-width: 264px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 1919px) {
+    margin-top: 40px;
+
+    &::before {
+      padding-top: 17%;
+      height: unset;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 34%);
+    }
+
+    &__box {
+      &-right {
+        padding-left: 24px;
+        padding-bottom: 36px;
+      }
+    }
+
+    &__picture {
+      margin: 0;
+      width: 110%;
+    }
+
+    &__quote {
+      margin-bottom: 42px;
+
+      &-blockquote {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1439px) {
+    margin-top: 0;
+
+    &::before {
+      padding-top: 14%;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 0%);
+    }
+
+    &__box {
+      &-right {
+        padding-left: 0;
+        padding-bottom: 46px;
+      }
+    }
+
+    &__picture {
+      margin-right: -20px;
+    }
+
+    &__quote {
+      margin-bottom: 60px;
+
+      &-blockquote {
+        font-size: 20px;
+      }
+
+      &-caption {
+        margin-top: 24px;
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    margin-top: 28px;
+
+    &::before {
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 0%);
+    }
+
+    &__box {
+      &-right {
+        padding-bottom: 19px;
+      }
+    }
+
+    &__quote {
+      margin-bottom: 52px;
+
+      &-blockquote {
+        font-size: 17px;
+      }
+
+      &-caption {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 833px) {
+    margin-top: 47px;
+
+    &::before {
+      padding-top: 6%;
+    }
+
+    &__box {
+      display: block;
+
+      &-left {
+        display: none;
+      }
+
+      &-right {
+        padding-top: 47px;
+        padding-bottom: 32px;
+      }
+    }
+
+    &__quote {
+      position: relative;
+      margin-bottom: 10px;
+
+      &-blockquote {
+        font-size: 24px;
+      }
+
+      &-picture {
+        display: block;
+        margin-top: 25px;
+
+        &-img {
+          margin-left: 16%;
+        }
+      }
+
+      &-caption {
+        position: absolute;
+        left: 0;
+        bottom: 82px;
+        margin: 0;
+        text-align: left;
+      }
+    }
+
+    &__join {
+      min-width: unset;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-top: 0;
+
+    &__box {
+      &-right {
+        padding-top: 32px;
+      }
+    }
+
+    &__quote {
+      margin-bottom: 28px;
+
+      &-picture {
+        margin-top: 0;
+
+        &-img {
+          margin-left: 10%;
+        }
+      }
+
+      &-caption {
+        bottom: 46px;
+      }
+    }
+  }
+}

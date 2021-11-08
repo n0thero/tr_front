@@ -1,0 +1,10 @@
+.section-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 130%;
+
+  @media (max-width: 1439px) {
+    font-size: 32px;
+  }
+}

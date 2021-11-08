@@ -1,0 +1,83 @@
+section.events-calendar
+  .container
+    h1.events-calendar__title Календарь мероприятий
+
+    .events-calendar__box
+      .events-calendar__box-left
+        ul.events-calendar__nav.nav.nav-tabs(role="tablist")
+          //- li.events-calendar__nav-item.nav-item
+          //-   button.events-calendar__nav-btn.nav-link(
+          //-     type="button" data-bs-toggle="tab" data-bs-target="#july" role="tab" aria-selected="true"
+          //-   ) Июль
+          li.events-calendar__nav-item.nav-item
+            button.events-calendar__nav-btn.nav-link.active(
+              type="button" data-bs-toggle="tab" data-bs-target="#august" role="tab" aria-selected="true"
+            ) Август
+          li.events-calendar__nav-item.nav-item
+            button.events-calendar__nav-btn.nav-link(
+              type="button" data-bs-toggle="tab" data-bs-target="#september" role="tab" aria-selected="true"
+            ) Сентябрь
+
+        .events-calendar__content.tab-content
+          //- .tab-pane(id="july" role="tabpanel")
+          //-   include months/july
+
+          .tab-pane.show.active(id="august" role="tabpanel")
+            include months/august
+
+          .tab-pane(id="september" role="tabpanel")
+            include months/september
+
+        ul.events-calendar__footnote
+          li.events-calendar__footnote-item
+            span.events-calendar__footnote-mark.events-calendar__footnote-mark_color_blue
+            span.events-calendar__footnote-desc - Бесплатный тренинг
+          li.events-calendar__footnote-item
+            span.events-calendar__footnote-mark.events-calendar__footnote-mark_color_yellow
+            span.events-calendar__footnote-desc - Вебинар
+          li.events-calendar__footnote-item
+            span.events-calendar__footnote-mark.events-calendar__footnote-mark_color_orange
+            span.events-calendar__footnote-desc - Практика
+
+      .events-calendar__current
+        h3.events-calendar__current-title 1 июля, четверг
+
+        .events-calendar__current-list
+          // Пример карточки
+
+          //- article.event-card
+          //-   button.event-card__notice(type="button" aria-label="Уведомление вкючено")
+          //-     svg(class="event-card__notice-icon icon" width="20" height="20")
+          //-       use(xlink:href="img/svg/symbol/sprite.svg#bell")
+          //-   p.event-card__type.event-card__type_color_blue Вебинар
+          //-   h4.event-card__title Инвестирование в ценные бумаги
+          //-   p.event-card__time
+          //-     span.event-card__time-start 17:00
+          //-     span.event-card__time-divider -
+          //-     span.event-card__time-end 21:00
+          //-     span.event-card__time-zone по МСК
+          //-   p.event-card__desc Бесплатные уроки с ценностью 1 000 000 000 рублей
+
+          //- article.event-card
+          //-   button.event-card__notice(type="button" aria-label="Уведомление вкючено")
+          //-     svg(class="event-card__notice-icon icon" width="20" height="20")
+          //-       use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#bell")
+          //-   p.event-card__type.event-card__type_color_yellow Бесплатный тренинг
+          //-   h4.event-card__title Предпренимательство как смысл жизни
+          //-   p.event-card__time
+          //-     span.event-card__time-start 17:00
+          //-     span.event-card__time-divider -
+          //-     span.event-card__time-end 21:00
+          //-     span.event-card__time-zone по МСК
+
+          //- article.event-card
+          //-   button.event-card__notice(type="button" aria-label="Уведомление вкючено")
+          //-     svg(class="event-card__notice-icon icon" width="20" height="20")
+          //-       use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#bell")
+          //-   p.event-card__type.event-card__type_color_orange Практика
+          //-   h4.event-card__title Акции и фьючерсы
+          //-   p.event-card__time
+          //-     span.event-card__time-start 17:00
+          //-     span.event-card__time-divider -
+          //-     span.event-card__time-end 21:00
+          //-     span.event-card__time-zone по МСК

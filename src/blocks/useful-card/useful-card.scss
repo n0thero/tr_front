@@ -1,0 +1,87 @@
+.useful-card {
+  height: 100%;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    height: 100%;
+    min-height: 310px;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    border-radius: 4px;
+
+    &_bg_new {
+      background-image: url('../wp-content/themes/trading/august/img/useful-card/useful-card-new.jpg');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px -8px;
+    padding: 0;
+    padding-bottom: 32px;
+    list-style-type: none;
+
+    &-item {
+      padding: 4px 8px;
+
+      &_position_right {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__tag {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    background-color: #FF9900;
+    border-radius: 25px;
+  }
+
+  &__status {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 63px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+
+    &-link {
+      color: var(--color-dark-dark);
+      text-decoration: none;
+    }
+  }
+
+  &__link {
+    margin-top: auto;
+    color: var(--color-dark-gray);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    text-decoration: none;
+  }
+
+  @media (max-width: 833px) {
+    &__inner {
+      min-height: unset;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.notification-modal-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 24px;
+  height: 100%;
+  box-sizing: border-box;
+
+  &__messages {
+    padding: 0 24px;
+    padding-bottom: 24px;
+    overflow-y: auto;
+  }
+
+  &__message + &__message {
+    margin-top: 16px;
+  }
+
+  &__info {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: var(--color-dark-gray);
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__message {
+    display: flex;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      padding-top: 6px;
+      margin-bottom: 8px;
+    }
+
+    &-picture {
+      display: none;
+      flex-shrink: 0;
+
+      &-img {
+        margin-right: 8px;
+        width: 29px;
+        height: 29px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    &-name {
+      margin: 0;
+      margin-right: 8px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+    }
+
+    &-time {
+      margin: 0;
+      color: var(--color-dark-gray);
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+    }
+
+    &-body {
+      margin: 0;
+      color: var(--color-black);
+      font-size: 14px;
+      line-height: 130%;
+    }
+  }
+}

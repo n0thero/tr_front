@@ -1,0 +1,126 @@
+.hero {
+  display: flex;
+  margin-bottom: 104px;
+  padding-top: 106px;
+  padding-bottom: 208px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: var(--color-white);
+
+  background-color: var(--color-dark-blue);
+  background-image: 
+    url('../wp-content/themes/trading/august/img/hero/hero.png'),
+    url('../wp-content/themes/trading/august/img/hero-grid.svg'),
+    linear-gradient(118.34deg, #161928 22.83%, #1B2035 85.38%);
+  background-image: 
+    url('../wp-content/themes/trading/august/img/hero/hero.webp'),
+    url('../wp-content/themes/trading/august/img/hero-grid.svg'),
+    linear-gradient(118.34deg, #161928 22.83%, #1B2035 85.38%);
+  background-repeat: no-repeat;
+  background-size: auto, cover, cover;
+  background-position: right calc(50% - 365px) bottom, left bottom, center;
+
+  &__inner {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__info {
+    max-width: 420px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: var(--color-dark-gray);
+  }
+
+  &__title {
+    margin-top: 76px;
+    margin-bottom: 24px;
+    font-size: 42px;
+    line-height: 130%;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 1439px) {
+    margin-bottom: 80px;
+    padding-top: 94px;
+    padding-bottom: 201px;
+    background-size: 950px auto, cover, cover;
+    background-position: right calc(50% - 285px) bottom, left bottom, center;
+
+    &__title {
+      margin-top: 32px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    padding-top: 47px;
+    padding-bottom: 94px;
+    background-size: 750px auto, cover, cover;
+    background-position: right calc(50% - 215px) bottom, left bottom, center;
+
+    &__info {
+      max-width: 360px;
+    }
+
+    &__title {
+      margin-top: 16px;
+    }
+
+    &__desc {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media (max-width: 833px) {
+    padding-top: 52px;
+    padding-bottom: 421px;
+    background-image:
+      url('../wp-content/themes/trading/august/img/hero/hero-sm.webp'),
+      url('../wp-content/themes/trading/august/img/hero-grid.svg'),
+      linear-gradient(118.34deg, #161928 22.83%, #1B2035 85.38%);
+    background-image:
+      url('../wp-content/themes/trading/august/img/hero/hero-sm.png'),
+      url('../wp-content/themes/trading/august/img/hero-grid.svg'),
+      linear-gradient(118.34deg, #161928 22.83%, #1B2035 85.38%);
+    background-size: auto 430px, cover, cover;
+    background-position: right 86% bottom, left bottom, center;
+
+    &__info {
+      max-width: unset;
+    }
+
+    &__title {
+      margin-top: 32px;
+      font-size: 38px;
+    }
+
+    &__desc {
+      margin-bottom: 44px;
+    }
+
+    &__start-learn {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 499px) {
+    margin-bottom: 64px;
+    padding-bottom: 455px;
+    background-position: right 88% bottom, left bottom, center;
+
+    &__title {
+      margin-top: 64px;
+      margin-bottom: 36px;
+    }
+
+    &__desc {
+      margin-bottom: 32px;
+    }
+  }
+}

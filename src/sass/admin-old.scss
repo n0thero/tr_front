@@ -1,0 +1,145 @@
+@import 'vendor/swiper';
+@import 'vendor/bootstrap';
+@import 'vendor/normalize';
+@import 'vendor/video-js';
+@import 'common/colors';
+
+@import 'common/common';
+@import 'common/admin';
+
+@import '../blocks/visually-hidden';
+@import '../blocks/container-admin';
+
+@import '../blocks/section-title';
+@import '../blocks/link';
+@import '../blocks/button';
+@import '../blocks/field/field';
+@import '../blocks/logo';
+
+@import '../blocks/breadcrumbs/breadcrumbs';
+@import '../blocks/social/social';
+
+@import '../blocks/header-admin/header-admin';
+@import '../blocks/sidebar/sidebar';
+@import '../blocks/footer-admin/footer';
+
+// notification-modal
+
+@import '../blocks/notification-modal-item/notification-modal-item';
+@import '../blocks/notification-modal-chat/notification-modal-chat';
+@import '../blocks/notification-modal/notification-modal';
+
+// index
+
+@import '../blocks/form-message';
+@import '../blocks/box-features/box-features';
+@import '../blocks/personal-rating/personal-rating';
+
+@import '../blocks/hero/hero';
+@import '../blocks/investment/investment';
+@import '../blocks/course-for/course-for';
+@import '../blocks/learn/learn';
+@import '../blocks/included-training/included-training';
+@import '../blocks/training-program/training-program';
+@import '../blocks/instructor/instructor';
+@import '../blocks/tariff/tariff';
+@import '../blocks/tariffs/tariffs';
+@import '../blocks/consultation/consultation';
+@import '../blocks/support/support';
+@import '../blocks/recording-course/recording-course';
+
+// account-courses
+
+@import '../blocks/course-card-lg/course-card-lg';
+@import '../blocks/account-courses/account-courses';
+@import '../blocks/account-useful/account-useful';
+
+//account-help
+
+@import '../blocks/account-navigation/account-navigation';
+@import '../blocks/training-program/training-program';
+@import '../blocks/consultation/consultation';
+@import '../blocks/form-account-help/form-account-help';
+
+// account-personal
+
+@import '../../node_modules/pikaday/scss/pikaday';
+@import '../blocks/warning-modal/warning-modal';
+@import '../blocks/account-personal/account-personal';
+
+
+//account-payment
+
+@import '../blocks/payment-history/payment-history';
+
+//webinars-catalog
+
+@import '../blocks/webinars-catalog/webinars-catalog';
+@import '../blocks/webinar-card/webinar-card';
+@import '../blocks/webinar-practice/webinar-practice';
+
+//analitics-catalog
+
+@import '../blocks/analitics-catalog/analitics-catalog';
+
+// learning-programm
+
+@import '../blocks/learning-programm/learning-programm';
+@import '../blocks/course-card/course-card';
+
+// events-calendar
+
+@import '../blocks/event-card/event-card';
+@import '../blocks/events-calendar/events-calendar';
+
+// wiki
+
+@import '../blocks/wiki/wiki';
+@import '../blocks/wiki-detail/wiki-detail';
+@import '../blocks/wiki-article/wiki-article';
+@import '../blocks/wiki-breadcrumbs/wiki-breadcrumbs';
+
+// catalog-subscriptions
+
+@import '../blocks/subscription-card/subscription-card';
+@import '../blocks/subscriptions/subscriptions';
+
+// materials
+
+@import '../blocks/rating/rating';
+@import '../blocks/book-card-large/book-card-large';
+@import '../blocks/book-card/book-card';
+@import '../blocks/books/books';
+@import '../blocks/materials-video/materials-video';
+@import '../blocks/materials/materials';
+@import '../../node_modules/lightgallery/scss/lightgallery-bundle';
+
+//tests
+
+@import '../blocks/tests/tests';
+@import '../blocks/tests-breadcrumbs/tests-breadcrumbs';
+
+// exam
+@import '../blocks/exam-breadcrumbs/exam-breadcrumbs';
+@import '../blocks/exam-form/exam-form';
+
+@import '../blocks/exam-module/exam-module';
+
+// course
+
+@import '../blocks/progress/progress';
+@import '../blocks/progress-circle/progress-circle';
+@import '../blocks/course/course';
+
+// webinar
+@import '../blocks/webinar-video/webinar-video';
+@import '../blocks/webinar-leading/webinar-leading';
+@import '../blocks/webinar-will-teach/webinar-will-teach';
+@import '../blocks/webinar-materials/webinar-materials';
+@import '../blocks/webinar-gallery/webinar-gallery';
+@import '../blocks/webinar-navigate/webinar-navigate';
+@import '../blocks/webinar-webinars/webinar-webinars';
+@import '../blocks/webinar-chat/webinar-chat';
+@import '../blocks/webinar/webinar';
+
+

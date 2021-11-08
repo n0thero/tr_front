@@ -1,0 +1,24 @@
+.progress-circle(data-progress="25")
+  svg(width="170" height="170" viewBox="0 0 100 100")
+    circle.progress-circle__bg(
+      cx="50"
+      cy="50"
+      r="46"
+      fill="transparent"
+      stroke="#F1F1F1"
+      stroke-width="8"
+    )
+    circle.progress-circle__bar(
+      cx="50"
+      cy="50"
+      r="46"
+      fill="transparent"
+      stroke="red"
+      stroke-width="8"
+      stroke-linecap="round"
+      transform="rotate(90)"
+      transform-origin="center"
+    )
+
+  .progress-circle__info
+    p Контент для прогресса

@@ -1,0 +1,158 @@
+.recruting {
+  color: var(--color-white);
+  background-color: #171717;
+  background-image: linear-gradient(
+    82.96deg,
+    #371617 26.63%,
+    #171717 59.46%,
+    #501418 100%
+  );
+
+  &__inner {
+    margin: 0 auto;
+    padding: 61px 0;
+    max-width: 1920px;
+    background-image: url("../wp-content/themes/trading/august/img/recruting.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 130%;
+  }
+
+  &__form {
+    width: 58.33333333%;
+
+    &-fields {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+    }
+
+    &-submit {
+      flex-shrink: 0;
+      margin-right: 24px;
+    }
+
+    &-personal {
+      margin: 0;
+      color: var(--color-light-gray);
+      font-size: 14px;
+      line-height: 130%;
+      letter-spacing: 0.02em;
+
+      &-link {
+        color: var(--color-light-gray);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1919px) {
+    &__inner {
+      background-position: top left calc(50% - 752px / 2 - 126px);
+    }
+
+    &__form {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__inner {
+      padding-top: 33px;
+      padding-bottom: 89px;
+      background-position: top -87px left calc(30% - 752px / 2 - 87px);
+    }
+
+    &__form {
+      width: 58.33333333%;
+
+      &-fields {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__inner {
+      padding-top: 61px;
+      padding-bottom: 36px;
+      background-position: top 0px left calc(30% - 752px / 2 - 129px);
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 130%;
+    }
+
+    &__form {
+      &-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &-personal {
+        order: -1;
+        margin-bottom: 16px;
+      }
+
+      &-submit {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 833px) {
+    &__inner {
+      padding-top: 34px;
+      padding-bottom: 545px;
+      background-image: url("../wp-content/themes/trading/august/img/recruting-sm.png");
+      background-position: bottom -90px center;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__form {
+      width: 100%;
+
+      &-personal {
+        margin-bottom: 32px;
+      }
+
+      &-submit {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 413px) {
+    &__inner {
+      padding-bottom: 525px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+  }
+}

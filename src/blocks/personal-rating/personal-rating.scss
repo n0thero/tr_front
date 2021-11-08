@@ -1,0 +1,17 @@
+.personal-rating {
+  margin: 0;
+  color: var(--color-gold);
+
+  &__icon {
+    margin-right: 8px;
+    width: 15px;
+    height: 14px;
+    fill: var(--color-gold);
+  }
+
+  &__value {
+    font-size: 17px;
+    line-height: 134.5%;
+    letter-spacing: 0.06em;
+  }
+}

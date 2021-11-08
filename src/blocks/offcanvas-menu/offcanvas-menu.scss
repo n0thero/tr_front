@@ -1,0 +1,42 @@
+.offcanvas-menu {
+  position: fixed;
+  bottom: 0;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 217px;
+  visibility: hidden;
+  background-color: var(--color-black);
+  outline: 0;
+  transition: transform 0.3s ease-in-out;
+
+  &.offcanvas-end {
+    top: 0;
+    right: 0;
+    width: 400px;
+    transform: translateX(100%);
+  }
+
+  &.show {
+    transform: none;
+  }
+
+  &__body {
+    padding: 14px 20px;
+    overflow-y: auto;
+  }
+
+  &__logo {
+    margin-bottom: 57px;
+
+    svg {
+      width: 159px;
+      height: 46px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 84px;
+  }
+}

@@ -1,0 +1,103 @@
+.notification-modal-chat
+  .notification-modal-chat__top
+    .notification-modal-chat__messages
+      p.notification-modal-chat__info Сообщений ещё нет
+
+      // Пример сообщения
+
+      //- .notification-modal-chat__message
+      //-   picture.notification-modal-chat__message-avatar
+      //-     img.notification-modal-chat__message-avatar-img(
+      //-       src="img/webinar-card.jpg"
+      //-       alt=""
+      //-       width="29"
+      //-       height="29"
+      //-     )
+
+      //-   .notification-modal-chat__message-right
+      //-     .notification-modal-chat__message-header
+      //-       p.notification-modal-chat__message-name Виктор Климов
+      //-       p.notification-modal-chat__message-time 19:30
+
+      //-     p.notification-modal-chat__message-body Привет. Как уже отмечалось, технология коммуникации означает сет. Полиряд Как уже отмечалось, технология коммуникации означает сет? Полиряд Как уже отмечалось, технология коммуникации означает сет?
+
+      //-     .notification-modal-chat__message-pictures
+      //-       img.notification-modal-chat__message-picture(
+      //-         src="img/notification-modal-chat/chat.jpg"
+      //-         alt=""
+      //-         width="86"
+      //-         height="86"
+      //-       )
+      //-       img.notification-modal-chat__message-picture(
+      //-         src="img/notification-modal-chat/chat.jpg"
+      //-         alt=""
+      //-         width="86"
+      //-         height="86"
+      //-       )
+      //-       img.notification-modal-chat__message-picture(
+      //-         src="img/notification-modal-chat/chat.jpg"
+      //-         alt=""
+      //-         width="86"
+      //-         height="86"
+      //-       )
+      //-       img.notification-modal-chat__message-picture(
+      //-         src="img/notification-modal-chat/chat.jpg"
+      //-         alt=""
+      //-         width="86"
+      //-         height="86"
+      //-       )
+      //-       img.notification-modal-chat__message-picture(
+      //-         src="img/notification-modal-chat/chat.jpg"
+      //-         alt=""
+      //-         width="86"
+      //-         height="86"
+      //-       )
+      //-       img.notification-modal-chat__message-picture(
+      //-         src="img/notification-modal-chat/chat.jpg"
+      //-         alt=""
+      //-         width="86"
+      //-         height="86"
+      //-       )
+
+    // Пример загруженной картинки
+    //- ul.notification-modal-chat__pictures
+    //-   li.notification-modal-chat__picture
+    //-     button.notification-modal-chat__picture-btn(type="button")
+    //-       img.notification-modal-chat__picture-img(
+    //-         src="img/notification-modal-chat/chat.jpg"
+    //-         alt="ds"
+    //-         width="64"
+    //-         height="64"
+    //-       )
+    //-   li.notification-modal-chat__picture
+    //-     button.notification-modal-chat__picture-btn(type="button")
+    //-       img.notification-modal-chat__picture-img(
+    //-         src="img/notification-modal-chat/chat.jpg"
+    //-         alt=""
+    //-         width="64"
+    //-         height="64"
+    //-       )
+
+  form.notification-modal-chat__form(
+    action="/wp-json/tech-chat/send/"
+    method="post"
+  )
+    textarea.notification-modal-chat__form-text(
+      rows="1"
+      name="text"
+      placeholder="Написать комментарий"
+    )
+    label.notification-modal-chat__form-picture
+      input.notification-modal-chat__form-picture-input(
+        type="file"
+        name="files"
+        accept=".png, .jpg, .jpeg"
+        multiple
+      )
+      span.notification-modal-chat__form-picture-label
+        svg(class="icon" width="15" height="15")
+          use(xlink:href="img/svg/symbol/sprite.svg#picture")
+
+    button.notification-modal-chat__form-submit(type="submit" aria-label="Отправить сообщение")
+      svg(class="icon" width="17" height="16")
+        use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#send")

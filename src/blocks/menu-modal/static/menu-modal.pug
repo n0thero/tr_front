@@ -1,0 +1,65 @@
+.menu-modal.modal(id="menu-modal" tabindex="-1" aria-hidden="true")
+  .menu-modal__dialog.modal-dialog
+    .menu-modal__content.modal-content
+      button.menu-modal__close(type="button" data-bs-dismiss="modal" aria-label="Закрыть окно")
+        svg(class="menu-modal__close-icon icon" width="21" height="21")
+          use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#close")
+
+      a.menu-modal__logo(href="/")
+        include ../../../img/header-main-logo.svg
+
+      .menu-modal__body
+        nav.menu-modal__nav(data-content-type="main")
+          ul.menu-modal__menu
+            li.menu-modal__menu-item
+              button.menu-modal__menu-link(type="button") О компании
+              .menu-modal__chapters
+                button.menu-modal__back(type="button")
+                  svg(class="menu-modal__back-icon icon" width="24" height="24")
+                    use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+                  | О компании
+
+                ul.menu-modal__submenu
+                  li.menu-modal__submenu-item
+                    a.menu-modal__submenu-link(href="/about/") О TrendUP
+                  li.menu-modal__submenu-item
+                    a.menu-modal__submenu-link(href="/team/") Команда
+                  li.menu-modal__submenu-item
+                    a.menu-modal__submenu-link(href="/experts/") Эксперты
+                  li.menu-modal__submenu-item
+                    a.menu-modal__submenu-link(href="/contacts/") Контакты
+                  li.menu-modal__submenu-item
+                    a.menu-modal__submenu-link(href="/vacancies/") Вакансии
+                  li.menu-modal__submenu-item
+                    a.menu-modal__submenu-link(href="/replies/") Отзывы
+
+            li.menu-modal__menu-item
+              a.menu-modal__menu-link(href="/catalog/") Каталог
+            li.menu-modal__menu-item
+              a.menu-modal__menu-link(href="/webinars/") Вебинары
+            li.menu-modal__menu-item
+              a.menu-modal__menu-link(href="/materials-2/") Материалы
+            li.menu-modal__menu-item
+              a.menu-modal__menu-link(href="/wiki/") База знаний
+
+        nav.menu-modal__nav(data-content-type="admin")
+          ul.menu-modal__menu
+            li.menu-modal__menu-item
+              a.menu-modal__menu-link(href="/catalog/") Каталог
+            li.menu-modal__menu-item
+              a.menu-modal__menu-link(href="/webinars/") Вебинары
+            li.menu-modal__menu-item
+              a.menu-modal__menu-link(href="/materials-2/") Материалы
+            li.menu-modal__menu-item
+              a.menu-modal__menu-link(href="/wiki/") База знаний
+
+        ul.menu-modal__user-menu(data-content-type="main")
+          li.menu-modal__user-menu-item
+            a.menu-modal__user-menu-link.btn-primary(href="/login/") Вход
+          li.menu-modal__user-menu-item
+            a.menu-modal__user-menu-link.btn-outline(href="/registration/") Регистрация
+
+        div(data-content-type="admin")
+          a.menu-modal__user-exit.btn-primary(
+            href="/wp-login.php?action=logout&amp;redirect_to=%2F&amp;_wpnonce=e966405f85"
+          ) Выйти

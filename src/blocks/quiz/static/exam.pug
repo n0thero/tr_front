@@ -1,0 +1,21 @@
+section.quiz
+  .container
+    header.quiz__header
+      a.quiz__back.link-back(href="#")
+        svg(class="link-back__icon icon" width="24" height="24")
+          use(xlink:href="img/svg/symbol/sprite.svg#chevron-left")
+        | Вернуться к уроку
+
+      .quiz__navigate
+        p.quiz__navigate-label Выбор урока
+        include ../../webinar-navigate/static/quiz_dropdown
+
+    .quiz__body
+      h1.quiz__title.quiz__title_color_blue Экзаменационный тест за первый модуль
+
+      .quiz__body-inner
+        .quiz__content
+          include ../../quiz-preview/static/exam
+
+        .quiz__aside
+          include ../../webinar-navigate/static/quiz

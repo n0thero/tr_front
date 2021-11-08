@@ -1,0 +1,90 @@
+section.recording-course(id="recording-course")
+  .recording-course__inner.container
+    .recording-course__tariff
+      h3.recording-course__tariff-title Выберите тариф:
+
+      .recording-course__toggle
+        .recording-course__toggle-item
+          input.recording-course__toggle-input(
+            type="radio"
+            name="tariff"
+            id="tariff-1"
+            value="premium"
+            checked
+          )
+          label.recording-course__toggle-label(for="tariff-1") TrendUp-премиум
+
+        .recording-course__toggle-item
+          input.recording-course__toggle-input(
+            type="radio"
+            name="tariff"
+            id="tariff-2"
+            value="self"
+          )
+          label.recording-course__toggle-label(for="tariff-2") Cамостоятельный
+
+      .recording-course__controls
+        button.recording-course__controls-prev(type="button" aria-label="Предыдущий тариф")
+          svg(class='recording-course__controls-icon icon' width="24" height="24")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-left")
+        button.recording-course__controls-next(type="button" aria-label="Следующий тариф")
+          svg(class='recording-course__controls-icon icon' width="24" height="24")
+            use(xlink:href="wp-content/themes/trading/august/img/svg/symbol/sprite.svg#chevron-right")
+
+      .recording-course__prices
+        p.recording-course__price.recording-course__price_active 2 930 ₽/мес
+          span.recording-course__price-desc Полная стоимость курса:<br>34 990 ₽
+
+        p.recording-course__price 2 390 ₽/мес
+          span.recording-course__price-desc Полная стоимость курса:<br>27 990 ₽
+
+      ul.recording-course__list
+        li.recording-course__list-item Весь тариф
+        li.recording-course__list-item Анализ Вашего личного инвест-портфеля
+        li.recording-course__list-item Дневник трейдера
+
+    form.recording-course__form.needs-validation(
+      action="/wp-json/forms/request-consultation/"
+      method="post"
+      novalidate
+    )
+      h2.recording-course__title Запись на курс
+
+      .form-message
+        p.recording-course__desc Оставьте свою заявку и наш менеджер свяжется с Вами и проконсультирует по всем интересующим вопросам
+
+        .recording-course__fields
+          input(
+            type="hidden"
+            name="tariff"
+            value="premium"
+          )
+          .recording-course__field.field.field_color_light
+            input.field__control(
+              type="text"
+              name="name"
+              id="recording-course-name"
+              required
+            )
+            label.field__label(for="recording-course-name") Ваше имя
+
+          .recording-course__field.field.field_color_light
+            input.field__control(
+              type="text"
+              name="phone"
+              id="recording-course-phone"
+              required
+            )
+            label.field__label(for="recording-course-phone") Ваш номер телефона
+
+          .recording-course__field.field.field_color_light
+            input.field__control(
+              type="email"
+              name="email"
+              id="recording-course-email"
+            )
+            label.field__label(for="recording-course-email") Ваш E-mail
+
+        p.recording-course__personal Нажимая на кнопку, я соглашаюсь на обработку персональных данных
+
+        button.recording-course__submit.btn-primary(type="submit") Записаться на курс

@@ -1,0 +1,24 @@
+section.instructor
+  .instructor__inner.container
+    picture.instructor__picture
+      img.instructor__picture-img(
+        src="wp-content/themes/trading/august/img/instructor/instructor.jpg"
+        srcset="wp-content/themes/trading/august/img/instructor/instructor@2x.jpg 2x"
+        alt="Александр Поляков"
+        width="468"
+        height="600"
+      )
+
+    .instructor__info
+      h2.instructor__title
+        span.instructor__title-top Преподаватель
+        span.instructor__title-title.section-title Александр Поляков
+
+      p.instructor__activity Специалист в области инвестиций
+
+      .instructor__social-rating
+        //- ul.social.instructor__social
+        //-   include ../social/social
+        include ../personal-rating/personal-rating
+
+      a.instructor__more.btn-primary(href="#") Узнать подробнее
