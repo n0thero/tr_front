@@ -20,7 +20,7 @@ const templateDefault = ({
         <picture class="notification-modal-item__message-picture">
           <img
             class="notification-modal-item__message-picture-img"
-            src="img/webinar-card.jpg"
+            src="/wp-content/themes/trading/august/img/webinar-card.jpg"
             alt=""
             width="29"
             height="29"

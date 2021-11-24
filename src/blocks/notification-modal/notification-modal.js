@@ -5,8 +5,7 @@ import './js/notification';
 import { triggerAll as triggerAllEvent } from './js/observer';
 
 const URL_READ = '/wp-json/tech-chat/read/';
-// const URL_UPDATE = '/wp-json/account-updates/get/';
-const URL_UPDATE = 'data.json';
+const URL_UPDATE = '/wp-json/account-updates/get/';
 const FETCH_HEAD = {
   'X-WP-Nonce': window.rest_auth?.nonce,
 };

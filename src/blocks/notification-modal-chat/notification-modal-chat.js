@@ -42,7 +42,7 @@ const templateMessage = ({author, created_at, text, images_urls = []}) => {
         <picture class="notification-modal-chat__message-avatar">
           <img
             class="notification-modal-chat__message-avatar-img"
-            src="img/webinar-card.jpg"
+            src="/wp-content/themes/trading/august/img/webinar-card.jpg"
             alt=""
             width="29"
             height="29"

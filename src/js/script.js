@@ -102,7 +102,8 @@ import '../blocks/account-courses/dynamic/account-courses';
 import '../blocks/account-courses/account-courses';
 
 // journal
-import '../blocks/journal-card/journal-card';
+// Переопределено в шаблоне.
+// import '../blocks/journal-card/journal-card';
 
 // journal
 import '../blocks/webinars-catalog-aside/webinars-catalog-aside';
@@ -110,9 +111,9 @@ import '../blocks/webinars-catalog-aside/webinars-catalog-aside';
 import '../blocks/test-for/test-for';
 
 // quiz
-import '../blocks/quiz/quiz';
+// import '../blocks/quiz/quiz';
 
 // exam-page
-// import './components/examForm.js';
+import './components/examForm.js';
 
 svg4everybody();
